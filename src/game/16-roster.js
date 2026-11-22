@@ -49,7 +49,7 @@ function mercsPanel(){
       <button class="btn" id="mFire" style="color:#ff6a7a">${MFIRE===MSEL?'Точно уволить? Нажмите ещё раз':'Уволить'}</button></div>
       <p class="help">Активен только один наёмник — он идёт в рейд. При увольнении снаряжение и сумка уходят в ящик.</p>`}
   const attrs=sel?attrCards(sel.h,sel.active):'';
-  showOv(`<h2>НАЁМНИКИ <small>${list.length}/${ROSTER_CAP}</small></h2><div class="mtop"><div class="mlist">${list.map(x=>mercCard(x.h,x.key,x.active)).join('')}</div><div class="mattr"><div class="lh"><b>ПРОКАЧКА</b>${sel&&!sel.active?'<span>доступна у активного</span>':''}</div>${attrs}</div></div>${det}`,true);
+  showOv(`<h2>НАЁМНИКИ <small>${list.length}/${ROSTER_CAP}</small></h2><div class="mgrid"><div class="mlist mcards">${list.map(x=>mercCard(x.h,x.key,x.active)).join('')}</div><div class="mattr"><div class="lh mh"><b>ПРОКАЧКА</b>${sel&&!sel.active?'<span>доступна у активного</span>':''}</div>${attrs}</div></div>${det}`,true);
   document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{MSEL=b.dataset.m;MFIRE=null;mercsPanel()});
   const on=(id,f)=>{const e=$(id);if(e)e.onclick=f};
   on('mEq',()=>baseInvPanel());on('mAct',()=>{activateMerc(+MSEL);MSEL='active';mercsPanel()});

@@ -435,6 +435,17 @@ body.titleOn #hud,body.titleOn #side,body.titleOn #log,body.titleOn #slots,body.
 .adx{font-size:7px;line-height:1.7;color:#c8c0e0;margin:4px 0 8px}.adt{font-size:6.5px;color:#7a7298;letter-spacing:1px;margin:6px 0 3px}
 .adl{list-style:none;margin:0;padding:0}.adl li{font-size:7px;line-height:1.7;color:#8a83ab}.adl li.g{color:#7dff4f}.adl li.b{color:#ff6a7a}.adl.nx{opacity:.85}
 @media (max-width:520px){.alay{grid-template-columns:minmax(130px,44%) minmax(0,1fr)}.arow{grid-template-columns:30px minmax(0,1fr) auto auto;gap:4px;padding:3px 4px}.arow .abig{width:28px;height:28px}}
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"cards det" "head det" "skills det";grid-template-rows:auto auto 1fr;gap:6px 10px;margin-bottom:8px}
+.mgrid .mcards{grid-area:cards;display:grid;grid-template-columns:1fr;gap:5px;margin:0}
+.mgrid .mattr,.mgrid .alay{display:contents}
+.mgrid .mh{grid-area:head;margin:2px 0 0}
+.mgrid .alist{grid-area:skills;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:min-content;gap:4px;align-content:start}
+.mgrid .adwrap{grid-area:det;min-height:240px}
+.mgrid .arow{padding:4px 5px;gap:4px}
+.mgrid .arow .ainfo{display:none}.mgrid .arow{grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"ico st plus" "nm nm nm";row-gap:3px}
+.mgrid .arow .abig{grid-area:ico}.mgrid .arow .aname{display:contents}.mgrid .arow .aname span{grid-area:st;align-self:center}.mgrid .arow .aplus{grid-area:plus}
+.mgrid .arow .aname b{grid-area:nm;font-size:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mgrid .apts{display:none}
+@media (max-width:620px){.mgrid{grid-template-columns:1fr;grid-template-areas:"cards" "head" "skills" "det";grid-template-rows:auto}.mgrid .adwrap{min-height:0}.mgrid .adwrap .adet{position:static}}
 </style>
 </head>
 <body class="base">
