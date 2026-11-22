@@ -41,7 +41,10 @@ function setLang(l){try{localStorage.setItem(LS_LANG,l)}catch(e){}try{if(typeof 
 function i18nExport(){const out={_meta:{source:'ru',languages:['en','ru','uk'],exported:new Date().toISOString(),phrases:Object.keys(I18N.dict).length,
     note:'Ключ — русская фраза из кода игры. Правьте en и uk, затем Настройки → Язык → Импорт. Пустое значение = показывать оригинал.'}};
   for(const k of Object.keys(I18N.dict).sort((a,b)=>a.localeCompare(b,'ru')))out[k]={en:I18N.dict[k][0],uk:I18N.dict[k][1]};
-  const b=new Blob([JSON.stringify(out,null,1)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='reload-strings.json';document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+  const text=JSON.stringify(out,null,1);
+  (async()=>{try{const dl=window.claude&&claude.use?await Promise.race([claude.use('downloads'),new Promise(r=>setTimeout(()=>r(null),1500))]):null;
+    if(dl){await dl.save({filename:'reload-strings.json',data:text});return}}catch(e){if(e&&e.code)return}
+  const b=new Blob([text],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='reload-strings.json';document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)})()}
 function i18nImport(){const inp=document.createElement('input');inp.type='file';inp.accept='.json,application/json';
   inp.onchange=async()=>{const f=inp.files[0];if(!f)return;try{const j=JSON.parse(await f.text());let n=0;const o={};for(const k in j){if(k[0]==='_'||!j[k]||typeof j[k]!=='object')continue;o[k]={en:String(j[k].en||''),uk:String(j[k].uk||'')};n++}
       if(!n)throw new Error('empty');localStorage.setItem(LS_DICT,JSON.stringify(o));log(`Импортировано фраз: ${n}`,'#7dff4f');setTimeout(()=>setLang(LANG),300)}catch(e){log('Не удалось прочитать файл перевода','#ff6a7a')}};inp.click()}
