@@ -23,3 +23,8 @@
 {const _uh=updateHUD;let lastLv=0;updateHUD=function(){const r=_uh.apply(this,arguments);try{if(!H)return r;const need=6+H.lvl*2,f=$('xpf');if(!f)return r;
   f.style.width=Math.min(100,H.xp/need*100)+'%';$('xpt').textContent=`ур. ${H.lvl} · опыт ${Math.floor(H.xp)}/${need}`;
   if(lastLv&&H.lvl>lastLv){const b=$('hudxp');b.classList.remove('up');void b.offsetWidth;b.classList.add('up')}lastLv=H.lvl}catch(e){}return r}}
+// ---- green «+» on the hero buttons while attribute points are unspent ----
+function ptsBadges(){const has=!!(H&&!H.dead&&(H.pts||0)>0);for(const id of['pause','sHero']){const b=$(id);if(b)setDot(b,has)}const m=document.querySelector('[data-base="mercs"]');if(m)setDot(m,has||(ST&&ST.roster||[]).some(o=>(o.pts||0)>0))}
+function setDot(b,on){let d=b.querySelector('.pts-dot');if(on&&!d){d=document.createElement('span');d.className='pts-dot';d.textContent='+';b.append(d)}else if(!on&&d)d.remove()}
+{const _uh2=updateHUD;updateHUD=function(){const r=_uh2.apply(this,arguments);try{ptsBadges()}catch(e){}return r}}
+setInterval(()=>{try{ptsBadges()}catch(e){}},1000);

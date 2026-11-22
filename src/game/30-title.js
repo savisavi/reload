@@ -90,7 +90,7 @@ async function enterAs(r){$('tErr').textContent=r.created?'Аккаунт соз
   if(cloud&&cloud.data&&(!raw||tOf(cloud.data)>tOf(raw)))raw=cloud.data;
   if(!raw&&!LS.get('reload_legacy_claimed')){const old=LS.get(SAVE_KEY);if(old){raw=old;LS.set('reload_legacy_claimed','1')}}
   if(raw)LS.set('neongen_acc_'+r.id,raw);
-  clearInterval(CH_TIMER);DEMO=false;ACC={id:r.id,login:r.login};G=null;
+  clearInterval(CH_TIMER);DEMO=false;ACC={id:r.id,login:r.login};G=null;RAID_FROM=1;
   TITLE.remove();TITLE=null;document.body.classList.remove('titleOn');
   if(typeof AUD!=='undefined'&&AUD.unlock)try{AUD.unlock()}catch(e){}
   bootGame();try{saveGame()}catch(e){}cloudT=0;cloudPush();

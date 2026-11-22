@@ -208,15 +208,15 @@
   "uk": "батарея",
   "src": "06-hideout.js"
  },
- "БЕ": {
-  "en": "RU",
-  "uk": "ТІКА",
-  "src": "05-game_all.js 06-hideout.js"
- },
  "Беглец": {
   "en": "Runaway",
   "uk": "Втікач",
   "src": "04-world.js"
+ },
+ "БЕЖАТЬ": {
+  "en": "FLEE",
+  "uk": "ТІКАТИ",
+  "src": "05-game_all.js 06-hideout.js"
  },
  "Белая мгла": {
   "en": "White haze",
@@ -497,6 +497,11 @@
   "en": "In tank",
   "uk": "У баку",
   "src": "23-fuel.js"
+ },
+ "В БОЙ": {
+  "en": "FIGHT",
+  "uk": "В БІЙ",
+  "src": "05-game_all.js 06-hideout.js"
  },
  "В отряде": {
   "en": "In squad",
@@ -1468,11 +1473,6 @@
   "uk": "здобичі під час обшуку",
   "src": "24-attrui.js"
  },
- "ДОВАТЬ": {
-  "en": "ORE",
-  "uk": "ДЖУВАТИ",
-  "src": "05-game_all.js 06-hideout.js"
- },
  "дольше": {
   "en": "longer",
   "uk": "довше",
@@ -1512,11 +1512,6 @@
   "en": "Dragon",
   "uk": "Дракон",
   "src": "02-items.js"
- },
- "ДРАТЬ": {
-  "en": "FI",
-  "uk": "БИТИ",
-  "src": "05-game_all.js 06-hideout.js"
  },
  "дреды": {
   "en": "dreadlocks",
@@ -1697,11 +1692,6 @@
   "en": "not yet explored",
   "uk": "ще не розвідана",
   "src": "19-zones.js"
- },
- "ЖАТЬ": {
-  "en": "N",
-  "uk": "ТИ",
-  "src": "05-game_all.js 06-hideout.js"
  },
  "Жду цикл": {
   "en": "Waiting for the cycle",
@@ -2152,11 +2142,6 @@
   "en": "in good order",
   "uk": "справно",
   "src": "12-wpn.js"
- },
- "ИССЛЕ": {
-  "en": "EXPL",
-  "uk": "ДОСЛІ",
-  "src": "05-game_all.js 06-hideout.js"
  },
  "Исслед.": {
   "en": "Explore",
@@ -2663,10 +2648,15 @@
   "uk": "крафту",
   "src": "05-game_all.js"
  },
+ "кредиты": {
+  "en": "credits",
+  "uk": "кредити",
+  "src": "06-hideout.js 33-cash.js"
+ },
  "Кредиты": {
   "en": "Credits",
   "uk": "Кредити",
-  "src": "05-game_all.js 06-hideout.js 22-matinfo.js"
+  "src": "05-game_all.js 06-hideout.js 22-matinfo.js 33-cash.js"
  },
  "крепкое": {
   "en": "sturdy",
@@ -3443,11 +3433,6 @@
   "uk": "Найм",
   "src": "06-hideout.js 13-hire.js 17-trade2.js"
  },
- "НАЁМ": {
-  "en": "HIRE",
-  "uk": "НАЙМ",
-  "src": "index.html"
- },
  "Наёмн.": {
   "en": "Mercs",
   "uk": "Найм.",
@@ -3496,7 +3481,7 @@
  "НАЁМНИКИ": {
   "en": "MERCS",
   "uk": "НАЙМАНЦІ",
-  "src": "16-roster.js"
+  "src": "16-roster.js index.html"
  },
  "Наёмников нет. Нанять — в терминале, вкладка «Наём».": {
   "en": "No mercs. Hire one at the terminal, «Hire» tab.",
@@ -3532,6 +3517,11 @@
   "en": "Unknown blueprint found",
   "uk": "Знайдено невідоме креслення",
   "src": "26-print.js"
+ },
+ "Найдено": {
+  "en": "Found",
+  "uk": "Знайдено",
+  "src": "33-cash.js"
  },
  "найдено предметов": {
   "en": "items found",
@@ -3857,11 +3847,6 @@
   "en": "short",
   "uk": "низький",
   "src": "01-core.js"
- },
- "НИКИ": {
-  "en": "LINGS",
-  "uk": "АНЦІ",
-  "src": "index.html"
  },
  "Никс": {
   "en": "Nyx",
@@ -4808,6 +4793,11 @@
   "uk": "Втрачено із сумки: витратників",
   "src": "06-hideout.js"
  },
+ "Потеряно кредитов": {
+  "en": "Credits lost",
+  "uk": "Втрачено кредитів",
+  "src": "06-hideout.js"
+ },
  "почти не мешают": {
   "en": "barely get in the way",
   "uk": "майже не заважають",
@@ -5172,6 +5162,11 @@
   "en": "scrapping…",
   "uk": "розбір…",
   "src": "05-game_all.js"
+ },
+ "РАЗВЕДКА": {
+  "en": "EXPLORE",
+  "uk": "РОЗВІДКА",
+  "src": "05-game_all.js 06-hideout.js"
  },
  "Разворошённое гнездо выпускает тварей.": {
   "en": "A stirred-up nest releases creatures.",
@@ -6322,11 +6317,6 @@
   "en": "circuits on the face",
   "uk": "схеми на обличчі",
   "src": "01-core.js"
- },
- "СЯ": {
-  "en": "GHT",
-  "uk": "СЯ",
-  "src": "05-game_all.js 06-hideout.js"
  },
  "Тайник": {
   "en": "Stash",
@@ -7649,6 +7639,46 @@
   "src": "15-loadout2.js"
  },
  "_unused": {
+  "БЕ": {
+   "en": "RU",
+   "uk": "ТІКА",
+   "src": "05-game_all.js 06-hideout.js"
+  },
+  "ДОВАТЬ": {
+   "en": "ORE",
+   "uk": "ДЖУВАТИ",
+   "src": "05-game_all.js 06-hideout.js"
+  },
+  "ДРАТЬ": {
+   "en": "FI",
+   "uk": "БИТИ",
+   "src": "05-game_all.js 06-hideout.js"
+  },
+  "ЖАТЬ": {
+   "en": "N",
+   "uk": "ТИ",
+   "src": "05-game_all.js 06-hideout.js"
+  },
+  "ИССЛЕ": {
+   "en": "EXPL",
+   "uk": "ДОСЛІ",
+   "src": "05-game_all.js 06-hideout.js"
+  },
+  "НАЁМ": {
+   "en": "HIRE",
+   "uk": "НАЙМ",
+   "src": "index.html"
+  },
+  "НИКИ": {
+   "en": "LINGS",
+   "uk": "АНЦІ",
+   "src": "index.html"
+  },
+  "СЯ": {
+   "en": "GHT",
+   "uk": "СЯ",
+   "src": "05-game_all.js 06-hideout.js"
+  },
   "А-Яа-яЁёІіЇїЄєҐґ": {
    "en": "",
    "uk": "",

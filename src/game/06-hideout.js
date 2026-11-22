@@ -190,10 +190,10 @@ function startRaid(){
   else if(needsPower()&&!pw)log('Убежище без питания — модули не работают','#ffb04a');
 }
 function endRaid(success){
-  const P=H,pk=G.pack;MODE='base';const lines=[],base=[];const trophy={items:pk.items.slice(),mats:{...pk.mats},xp:Math.round(G.xpGain||0),lv0:G.lvl0||P.lvl,kills:G.kills,floor:G.floor,looted:G.looted};
+  const P=H,pk=G.pack;MODE='base';const lines=[],base=[];const trophy={cr:success?(pk.cr|0):0,crLost:success?0:(pk.cr|0),items:pk.items.slice(),mats:{...pk.mats},xp:Math.round(G.xpGain||0),lv0:G.lvl0||P.lvl,kills:G.kills,floor:G.floor,looted:G.looted};
   {const S=P.stats||(P.stats={raids:0,earned:0,kills:0,turns:0,deep:0,born:Date.now()});S.turns+=G.turn;S.deep=Math.max(S.deep,G.floor);
    if(success){S.raids++;let v=0;for(const m in pk.mats)v+=MATS[m].price*pk.mats[m];for(const it of pk.items)v+=sellPrice(it);S.earned+=v}}
-  if(success){
+  if(success){ST.credits+=pk.cr|0;
     for(const m in pk.mats){ST.mats[m]=(ST.mats[m]||0)+pk.mats[m];lines.push(`<span style="color:${MATS[m].c}">${MATS[m].n} ×${pk.mats[m]}</span>`)}
     let sold=0;for(const it of pk.items){if(ST.stash.length<stashCap()){ST.stash.push(it);lines.push(`<span style="color:${RAR[it.rar].c}">${it.name}</span>`)}else{const p=sellPrice(it);ST.credits+=p;sold+=p}}
     if(sold)lines.push(`Ящик полон — лишнее продано за ${sold}₵`);
@@ -215,12 +215,12 @@ function endRaid(success){
   const nItems=trophy.items.length,nMats=Object.values(trophy.mats).reduce((a,b)=>a+b,0),ups=P.lvl-trophy.lv0;
   let val=0;for(const m in trophy.mats)val+=MATS[m].price*trophy.mats[m];for(const it of trophy.items)val+=sellPrice(it);
   const stat=(n,l,c='')=>`<div class="rstat ${c}"><b>${n}</b><small>${l}</small></div>`;
-  const stats=`<div class="rstats">${stat(trophy.kills,'убито врагов')}${stat(nItems+nMats,'найдено предметов')}${stat('+'+trophy.xp,'получено опыта','xp')}${stat(trophy.floor,'глубина')}${success?stat(val+'₵','ценность добычи','gold'):''}</div>`;
+  const stats=`<div class="rstats">${stat(trophy.kills,'убито врагов')}${stat(nItems+nMats,'найдено предметов')}${stat('+'+trophy.xp,'получено опыта','xp')}${stat(trophy.floor,'глубина')}${success?stat('+'+trophy.cr+'₵','кредиты','gold')+stat(val+'₵','ценность добычи','gold'):''}</div>`;
   const xpb=`<div class="rxp"><span>ур. ${P.lvl}${ups>0?` <em>▲ +${ups} ${ups>1?'уровня':'уровень'}</em>`:''}</span><div class="xpbar"><i style="width:${Math.min(100,P.xp/(6+P.lvl*2)*100)}%"></i></div><small>${Math.floor(P.xp)}/${6+P.lvl*2} опыта</small></div>`;
   let k=0;const tile=(img,rc,cnt,title)=>`<div class="rtro" style="--rc:${rc};animation-delay:${(k++)*45}ms" title="${title}"><img src="${img}">${cnt?`<em>${cnt}</em>`:''}</div>`;
-  const tro=success?trophy.items.map(it=>tile(iconURL(it),RAR[it.rar].c,'',it.name)).join('')+Object.entries(trophy.mats).map(([m,n])=>tile(MAT_ICON[m].toDataURL(),MATS[m].c,'×'+n,MATS[m].n)).join(''):'';
+  const tro=success?(trophy.cr?tile(CASH_ICON.toDataURL(),'#f9d030',trophy.cr+'₵','Кредиты'):'')+trophy.items.map(it=>tile(iconURL(it),RAR[it.rar].c,'',it.name)).join('')+Object.entries(trophy.mats).map(([m,n])=>tile(MAT_ICON[m].toDataURL(),MATS[m].c,'×'+n,MATS[m].n)).join(''):'';
   const body=success?`${stats}${xpb}<div class="sect">ТРОФЕИ</div>${tro?`<div class="rtros">${tro}</div>`:'<p>Ничего не вынесено</p>'}${lines.filter(l=>/₵/.test(l)).length?`<p>${lines.filter(l=>/₵/.test(l)).join('<br>')}</p>`:''}`
-    :`${stats}${xpb}<p>Эвакуационный дрон вытащил героя на базу. Рюкзак и содержимое сумки потеряны, надетое снаряжение уцелело.</p><p>${lines.join('<br>')}</p><p>Отдохните на кровати перед новым рейдом.</p>`;
+    :`${stats}${xpb}<p>Эвакуационный дрон вытащил героя на базу. Рюкзак и содержимое сумки потеряны, надетое снаряжение уцелело.${trophy.crLost?` Потеряно кредитов: ${trophy.crLost}₵.`:''}</p><p>${lines.join('<br>')}</p><p>Отдохните на кровати перед новым рейдом.</p>`;
   showOv(`${head}${body}${base.length?`<div class="sect">УБЕЖИЩЕ</div><p>${base.join('<br>')}</p>`:''}<div class="row"><button class="btn" id="oClose">На базу</button></div>`);bindOv();
   saveGame();
 }
@@ -267,10 +267,10 @@ function updateHUD(){
   const w=P.eq.ranged;
   $('winfo').innerHTML=`<span style="color:${P.eq.melee?RAR[P.eq.melee.rar].c:'#b9ad95'}">⚔ ${P.eq.melee?P.eq.melee.name:'кулаки'}</span>${P.eq.melee?` <b style="color:${condCol(cond(P.eq.melee))}">${Math.round(cond(P.eq.melee)*100)}%</b>`:''}<br>`+
     (w?`<span style="color:${RAR[w.rar].c}">➶ ${w.name}</span> <b>${w.clip}/${w.mag}</b> +${P.inv.ammo[w.ammo]} ${w.ammo} <b style="color:${condCol(cond(w))}">${Math.round(cond(w)*100)}%</b>`:'➶ —')+
-    `<br><span class="st">${G.manual?'<b style="color:#ff7ad8">✋ РУЧНОЕ</b> · ':''}рюкзак <b>${packW()}/${capacity()}</b>${[G.shield>0?`щит ${G.shield}`:'',G.camo>0?`камуфляж ${tsec(G.camo)}`:'',G.haste>0?`ускорение ${tsec(G.haste)}`:'',`защ ${P.st.def}`,`убито ${G.kills}`,MODE==='raid'?`угроза ${G.threat||'-'}`:''].filter(Boolean).map(s=>' · '+s).join('')}</span>`;
-  const gl={explore:['ИССЛЕ-<br>ДОВАТЬ','c1'],deeper:['ГЛУБЖЕ<br>↓','c5'],home:['ДОМОЙ<br>⌂','c2']}[G.mode.goal];
+    `<br><span class="st">${G.manual?'<b style="color:#ff7ad8">✋ РУЧНОЕ</b> · ':''}рюкзак <b>${packW()}/${capacity()}</b>${G.pack.cr?` · <b style="color:#f9d030">${G.pack.cr}₵</b>`:''}${[G.shield>0?`щит ${G.shield}`:'',G.camo>0?`камуфляж ${tsec(G.camo)}`:'',G.haste>0?`ускорение ${tsec(G.haste)}`:'',`защ ${P.st.def}`,`убито ${G.kills}`,MODE==='raid'?`угроза ${G.threat||'-'}`:''].filter(Boolean).map(s=>' · '+s).join('')}</span>`;
+  const gl={explore:['РАЗВЕДКА<br>◎','c1'],deeper:['ГЛУБЖЕ<br>↓','c5'],home:['ДОМОЙ<br>⌂','c2']}[G.mode.goal];
   $('bGoal').innerHTML=gl[0];$('bGoal').className='btn mode '+gl[1];
-  $('bStance').innerHTML=G.mode.stance==='fight'?'ДРАТЬ-<br>СЯ':'БЕ-<br>ЖАТЬ';$('bStance').className='btn mode '+(G.mode.stance==='fight'?'c3':'c4');
+  $('bStance').innerHTML=G.mode.stance==='fight'?'В БОЙ<br>⚔':'БЕЖАТЬ<br>»';$('bStance').className='btn mode '+(G.mode.stance==='fight'?'c3':'c4');
   $('bSpeed').textContent=G.speed+'×';
   $('lowhp').style.opacity=P.hp<P.st.mhp*.3&&!G.dead?1:0;
 }

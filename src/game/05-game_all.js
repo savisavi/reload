@@ -812,9 +812,9 @@ function updateHUD(){
   $('winfo').innerHTML=`<span style="color:${P.eq.melee?RAR[P.eq.melee.rar].c:'#b9ad95'}">⚔ ${P.eq.melee?P.eq.melee.name:'кулаки'}</span><br>`+
     (w?`<span style="color:${RAR[w.rar].c}">➶ ${w.name}</span> <b>${P.inv.ammo[w.ammo]}</b> ${w.ammo}`:'➶ —')+
     `<br><span class="st">рюкзак <b>${packW()}/${capacity()}</b>${[G.shield>0?`щит ${G.shield}`:'',G.camo>0?`камуфляж ${tsec(G.camo)}`:'',G.haste>0?`ускорение ${tsec(G.haste)}`:'',`защ ${P.st.def}`,`убито ${G.kills}`].filter(Boolean).map(s=>' · '+s).join('')}</span>`;
-  const gl={explore:['ИССЛЕ-<br>ДОВАТЬ','c1'],deeper:['ГЛУБЖЕ<br>↓','c5'],home:['ДОМОЙ<br>⌂','c2']}[G.mode.goal];
+  const gl={explore:['РАЗВЕДКА<br>◎','c1'],deeper:['ГЛУБЖЕ<br>↓','c5'],home:['ДОМОЙ<br>⌂','c2']}[G.mode.goal];
   $('bGoal').innerHTML=gl[0];$('bGoal').className='btn mode '+gl[1];
-  $('bStance').innerHTML=G.mode.stance==='fight'?'ДРАТЬ-<br>СЯ':'БЕ-<br>ЖАТЬ';$('bStance').className='btn mode '+(G.mode.stance==='fight'?'c3':'c4');
+  $('bStance').innerHTML=G.mode.stance==='fight'?'В БОЙ<br>⚔':'БЕЖАТЬ<br>»';$('bStance').className='btn mode '+(G.mode.stance==='fight'?'c3':'c4');
   $('bSpeed').textContent=G.speed+'×';
   $('lowhp').style.opacity=P.hp<P.st.mhp*.3&&!G.dead?1:0;
 }

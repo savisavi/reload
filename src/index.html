@@ -415,6 +415,12 @@ body.titleOn #hud,body.titleOn #side,body.titleOn #log,body.titleOn #slots,body.
 .hxp{height:4px;margin-top:3px}
 .hudxp{position:relative;height:9px;margin:4px 0 2px;background:#0b0912;border:1px solid #2c2640;overflow:hidden}.hudxp i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#22e6ff,#7dff4f);box-shadow:0 0 6px #22e6ff;transition:width .35s}
 .hudxp span{position:absolute;right:4px;top:0;font-size:7px;line-height:9px;color:#e8fff6;text-shadow:1px 1px 0 #000}.hudxp.up{animation:xpflash .8s}@keyframes xpflash{0%,100%{border-color:#2c2640}30%{border-color:#7dff4f;box-shadow:0 0 10px #7dff4f}}
+#side{align-items:stretch}#side .btn{width:auto;min-width:66px;padding:0 9px;white-space:nowrap}
+#baseBar .btn{width:auto;white-space:nowrap}.btn{hyphens:none;overflow-wrap:normal;word-break:keep-all}
+#slots .btn .cost,#slots .btn .cnt{z-index:2}#slots .btn{overflow:visible}
+.pts-dot{position:absolute;top:-6px;right:-6px;width:16px;height:16px;border-radius:50%;background:#7dff4f;color:#0b1a06;font:12px/16px 'Press Start 2P',monospace;text-align:center;box-shadow:0 0 8px #7dff4f;animation:ptsPulse 1.2s infinite;pointer-events:none;z-index:4}
+@keyframes ptsPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+#pause,#sHero,[data-base="mercs"]{position:relative}
 </style>
 </head>
 <body class="base">
@@ -445,7 +451,7 @@ body.titleOn #hud,body.titleOn #side,body.titleOn #log,body.titleOn #slots,body.
   <button class="btn" id="sHero"><span id="iHero"></span><span class="hl">ГЕРОЙ</span></button>
 </div>
 <div id="baseBar">
-  <button class="btn" data-base="crate">ЯЩИК</button><button class="btn" data-base="terminal">ТЕРМИНАЛ</button><button class="btn" data-base="build">УБЕЖИЩЕ</button><button class="btn" data-base="mercs">НАЁМ-<br>НИКИ</button><button class="btn go" data-base="door">СБОРЫ<br>В РЕЙД</button>
+  <button class="btn" data-base="crate">ЯЩИК</button><button class="btn" data-base="terminal">ТЕРМИНАЛ</button><button class="btn" data-base="build">УБЕЖИЩЕ</button><button class="btn" data-base="mercs">НАЁМНИКИ</button><button class="btn go" data-base="door">СБОРЫ<br>В РЕЙД</button>
 </div>
 <div id="banner"></div>
 <div id="ov"><div class="panel" id="panel"></div></div>
