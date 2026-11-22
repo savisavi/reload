@@ -30,5 +30,6 @@ function attrCards(h,edit){if(!h||!h.attr||!h.st)return'';const pts=edit?(h.pts|
     return`<div class="arow ${lv} ${k===ATTR_SEL?'on':''}" data-ai="${k}" style="--ac:${U.c}"><div class="abig"><i>${U.g}</i><b>${v}</b></div><div class="aname"><b>${n}</b><span>${v<5?'слабо':v>5?'сильно':'норма'}</span></div>
       ${pts&&v<10?`<button class="aplus" data-ap="${k}">+</button>`:''}<button class="ainfo" data-ai="${k}" title="Подробнее">i</button></div>`}).join('');
   return`${pts?`<p class="apts">Свободных очков: <b>${pts}</b> — нажмите <span>+</span> у навыка</p>`:''}<div class="alay"><div class="alist">${rows}</div><div class="adwrap"><div class="adet">${attrDetail(h,ATTR_SEL)}</div></div></div>`}
-document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-ai]');if(!b||e.target.closest('[data-ap]'))return;const lay=b.closest('.alay');if(!lay||!ATTR_H)return;
-  ATTR_SEL=b.dataset.ai;lay.querySelectorAll('.arow').forEach(r=>r.classList.toggle('on',r.dataset.ai===ATTR_SEL));lay.querySelector('.adet').innerHTML=attrDetail(ATTR_H,ATTR_SEL)});
+const attrPick=e=>{const b=e.target.closest&&e.target.closest('[data-ai]');if(!b||e.target.closest('[data-ap]'))return;const lay=b.closest('.alay');if(!lay||!ATTR_H)return;
+  ATTR_SEL=b.dataset.ai;lay.querySelectorAll('.arow').forEach(r=>r.classList.toggle('on',r.dataset.ai===ATTR_SEL));lay.querySelector('.adet').innerHTML=attrDetail(ATTR_H,ATTR_SEL)};
+document.addEventListener('pointerdown',attrPick,true);document.addEventListener('click',attrPick,true);

@@ -956,7 +956,9 @@ const queue=a=>{if(MODE==='raid'&&G&&!G.dead&&!G.paused)G.buf=a};
 $('sMed').onclick=()=>queue({use:'med'});$('sGr').onclick=()=>queue({use:'gren'});$('sBat').onclick=()=>queue({use:'bat'});
 $('sA0').onclick=()=>queue({use:'imp',slot:0});$('sA1').onclick=()=>queue({use:'imp',slot:1});
 $('sHero').onclick=()=>{if(SHEET)closeSheet();else openSheet()};$('pause').onclick=()=>{if(MODE==='raid')togglePause();else{if(SHEET)closeSheet();else if(H&&!H.dead)heroPanel()}};
-setInterval(()=>{if(SHEET&&MODE==='raid'&&G&&!G.paused&&!G.dead&&$('ov').classList.contains('dock'))heroPanel()},900);
+// live refresh of the open hero sheet — but never while the player is touching it (a re-render mid-tap swallows the click)
+let OV_TOUCH=0;{const ov=$('ov');ov.addEventListener('pointerdown',()=>{OV_TOUCH=Date.now()},true);ov.addEventListener('pointerup',()=>{OV_TOUCH=Date.now()},true)}
+setInterval(()=>{if(SHEET&&MODE==='raid'&&G&&!G.paused&&!G.dead&&$('ov').classList.contains('dock')&&Date.now()-OV_TOUCH>1500&&!(typeof HPT!=='undefined'&&HPT==='attr'))heroPanel()},900);
 $('bGoal').onclick=()=>{G.manual=false;G.mode.goal={explore:'deeper',deeper:'home',home:'explore'}[G.mode.goal];G.idle=0;updateHUD()};
 $('bStance').onclick=()=>{G.manual=false;G.mode.stance=G.mode.stance==='fight'?'flee':'fight';updateHUD()};
 $('bSpeed').onclick=()=>{G.speed=G.speed>=4?1:G.speed*2;G0speed=G.speed;updateHUD()};
