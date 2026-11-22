@@ -6,11 +6,11 @@ const FXALL=PFX_?PFX_.all.effects:{};
 const FX_IDS=Object.keys(FXALL);
 const fxMeta=id=>(FXALL[id]&&FXALL[id].meta)||{};
 const fxTitle=id=>fxMeta(id).name||id.split('/')[1];
-const FX_CAT_N={moves:'Приёмы',fire:'Огонь',explosions:'Взрывы',water:'Вода',ice:'Лёд',lightning:'Молнии',scifi:'Сай-фай',melee:'Ближний бой',impacts:'Удары',projectiles:'Снаряды',spawn:'Появление',arcane:'Аркана',holy:'Свет',shadow:'Тьма',status:'Статусы',nature:'Природа',weather:'Погода',ui:'Интерфейс',pickups:'Находки',transitions:'Переходы',critters:'Существа'};
+const FX_CAT_N={moves:'Приёмы',fire:'Огонь',explosions:'Взрывы',water:'Охладитель',ice:'Лёд',lightning:'Молнии',scifi:'Сай-фай',melee:'Ближний бой',impacts:'Удары',projectiles:'Снаряды',spawn:'Появление',arcane:'Плазма',holy:'Орбитал',shadow:'Войд',status:'Статусы',nature:'Биотех',weather:'Смог',ui:'Интерфейс',pickups:'Находки',transitions:'Переходы',critters:'Дроны'};
 const ELEM={
   fire:{c:'#ff8a1f',st:'burn',lab:'Пиро'},ice:{c:'#8fe8ff',st:'freeze',lab:'Крио'},lightning:{c:'#f9f871',st:'stun',lab:'Тесла'},
-  arcane:{c:'#c06bff',st:'pierce',lab:'Арк'},holy:{c:'#ffe9a0',st:'drain',lab:'Свето'},shadow:{c:'#8a4dff',st:'bleed',lab:'Войд'},
-  nature:{c:'#7dff4f',st:'poison',lab:'Био'},water:{c:'#3fa0ff',st:'slow',lab:'Гидро'},scifi:{c:'#22e6ff',st:'stun',lab:'ЭМИ'},
+  arcane:{c:'#c06bff',st:'pierce',lab:'Плазм'},holy:{c:'#ffe9a0',st:'drain',lab:'Орбит'},shadow:{c:'#8a4dff',st:'bleed',lab:'Войд'},
+  nature:{c:'#7dff4f',st:'poison',lab:'Био'},water:{c:'#3fa0ff',st:'slow',lab:'Хладо'},scifi:{c:'#22e6ff',st:'stun',lab:'ЭМИ'},
   explosions:{c:'#ff5a1f',st:null,lab:''},critters:{c:'#9af07f',st:'poison',lab:'Рой'},spawn:{c:'#b45cff',st:null,lab:'Варп'},
   weather:{c:'#cfe8ff',st:'slow',lab:'Климат'},transitions:{c:'#ff2fa8',st:'stun',lab:'Хак'},ui:{c:'#ff2fa8',st:null,lab:'Такт'},
   pickups:{c:'#ffd23f',st:null,lab:'Сапорт'},moves:{c:'#ff3355',st:null,lab:'Боевой'},melee:{c:'#e0e6f0',st:'bleed',lab:''},

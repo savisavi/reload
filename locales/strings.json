@@ -98,16 +98,6 @@
   "uk": "Аптечки перед рейдом і крафт",
   "src": "05-game_all.js"
  },
- "Арк": {
-  "en": "Arc",
-  "uk": "Арк",
-  "src": "08-fxgame.js"
- },
- "Аркана": {
-  "en": "Arcana",
-  "uk": "Аркана",
-  "src": "08-fxgame.js"
- },
  "Арматура": {
   "en": "Rebar",
   "uk": "Арматура",
@@ -272,6 +262,11 @@
   "en": "Biolab: jungle and spores",
   "uk": "Біолабораторія: джунглі та спори",
   "src": "20-deep.js"
+ },
+ "Биотех": {
+  "en": "Biotech",
+  "uk": "Біотех",
+  "src": "08-fxgame.js"
  },
  "Биохакер": {
   "en": "Biohacker",
@@ -818,11 +813,6 @@
   "uk": "уважність!",
   "src": "05-game_all.js"
  },
- "Вода": {
-  "en": "Water",
-  "uk": "Вода",
-  "src": "08-fxgame.js"
- },
  "Войд": {
   "en": "Void",
   "uk": "Войд",
@@ -1208,11 +1198,6 @@
   "uk": "Гібридна установка",
   "src": "05-game_all.js"
  },
- "Гидро": {
-  "en": "Hydro",
-  "uk": "Гідро",
-  "src": "08-fxgame.js"
- },
  "Глаза": {
   "en": "Eyes",
   "uk": "Очі",
@@ -1557,6 +1542,11 @@
   "en": "Drone",
   "uk": "Дрон",
   "src": "05-game_all.js"
+ },
+ "Дроны": {
+  "en": "Drones",
+  "uk": "Дрони",
+  "src": "08-fxgame.js"
  },
  "Дубликат рецепта продан": {
   "en": "Duplicate recipe sold",
@@ -4198,6 +4188,16 @@
   "uk": "помаранчевий",
   "src": "01-core.js"
  },
+ "Орбит": {
+  "en": "Orbital",
+  "uk": "Орбіт",
+  "src": "08-fxgame.js"
+ },
+ "Орбитал": {
+  "en": "Orbital",
+  "uk": "Орбітал",
+  "src": "08-fxgame.js"
+ },
  "Оружейная": {
   "en": "Armory",
   "uk": "Зброярня",
@@ -4302,6 +4302,11 @@
   "en": "Dodging traps",
   "uk": "Відскок від пастки",
   "src": "24-attrui.js"
+ },
+ "Охладитель": {
+  "en": "Coolant",
+  "uk": "Охолоджувач",
+  "src": "08-fxgame.js"
  },
  "Охранник": {
   "en": "Guard",
@@ -4598,6 +4603,16 @@
   "uk": "Живлення модулів. Витрата",
   "src": "05-game_all.js"
  },
+ "Плазм": {
+  "en": "Plasma",
+  "uk": "Плазм",
+  "src": "08-fxgame.js"
+ },
+ "Плазма": {
+  "en": "Plasma",
+  "uk": "Плазма",
+  "src": "08-fxgame.js"
+ },
  "Плазменный вентиль": {
   "en": "Plasma valve",
   "uk": "Плазмовий вентиль",
@@ -4656,11 +4671,6 @@
  "Повтор": {
   "en": "Replay",
   "uk": "Повтор",
-  "src": "08-fxgame.js"
- },
- "Погода": {
-  "en": "Weather",
-  "uk": "Погода",
   "src": "08-fxgame.js"
  },
  "под капюшоном)": {
@@ -4962,11 +4972,6 @@
   "en": "The printer can't make anything yet. Loop: find a blueprint",
   "uk": "Принтер поки нічого не вміє. Цикл: знайти креслення",
   "src": "26-print.js"
- },
- "Природа": {
-  "en": "Nature",
-  "uk": "Природа",
-  "src": "08-fxgame.js"
  },
  "присоединяется к убежищу": {
   "en": "joins the shelter",
@@ -5703,11 +5708,6 @@
   "uk": "Згори падають уламки.",
   "src": "20-deep.js"
  },
- "Свет": {
-  "en": "Light",
-  "uk": "Світло",
-  "src": "08-fxgame.js"
- },
  "Свет в убежище. Нужно для майнинг-фермы": {
   "en": "Light in the shelter. Needed for the mining farm",
   "uk": "Світло у сховищі. Потрібне для майнінг-ферми",
@@ -5722,11 +5722,6 @@
   "en": "light",
   "uk": "світла",
   "src": "01-core.js"
- },
- "Свето": {
-  "en": "Light",
-  "uk": "Світло",
-  "src": "08-fxgame.js"
  },
  "Световая вспышка": {
   "en": "Light flash",
@@ -6063,6 +6058,11 @@
   "uk": "Змінити гравця",
   "src": "30-title.js"
  },
+ "Смог": {
+  "en": "Smog",
+  "uk": "Смог",
+  "src": "08-fxgame.js"
+ },
  "смуглая": {
   "en": "swarthy",
   "uk": "смаглява",
@@ -6368,11 +6368,6 @@
   "uk": "Сумку",
   "src": "15-loadout2.js"
  },
- "Существа": {
-  "en": "Creatures",
-  "uk": "Істоти",
-  "src": "08-fxgame.js"
- },
  "схемы на лице": {
   "en": "circuits on the face",
   "uk": "схеми на обличчі",
@@ -6637,11 +6632,6 @@
   "en": "A turret fires when the beam is crossed.",
   "uk": "Турель стріляє, коли перетинають промінь.",
   "src": "20-deep.js"
- },
- "Тьма": {
-  "en": "Darkness",
-  "uk": "Темрява",
-  "src": "08-fxgame.js"
  },
  "тяжёлая броня": {
   "en": "heavy armor",
@@ -7007,6 +6997,11 @@
   "en": "Predatory flower",
   "uk": "Хижа квітка",
   "src": "20-deep.js"
+ },
+ "Хладо": {
+  "en": "Cryo",
+  "uk": "Холодо",
+  "src": "08-fxgame.js"
  },
  "хлам": {
   "en": "junk",
@@ -7699,6 +7694,56 @@
   "src": "15-loadout2.js"
  },
  "_unused": {
+  "Арк": {
+   "en": "Arc",
+   "uk": "Арк",
+   "src": "08-fxgame.js"
+  },
+  "Аркана": {
+   "en": "Arcana",
+   "uk": "Аркана",
+   "src": "08-fxgame.js"
+  },
+  "Вода": {
+   "en": "Water",
+   "uk": "Вода",
+   "src": "08-fxgame.js"
+  },
+  "Гидро": {
+   "en": "Hydro",
+   "uk": "Гідро",
+   "src": "08-fxgame.js"
+  },
+  "Погода": {
+   "en": "Weather",
+   "uk": "Погода",
+   "src": "08-fxgame.js"
+  },
+  "Природа": {
+   "en": "Nature",
+   "uk": "Природа",
+   "src": "08-fxgame.js"
+  },
+  "Свет": {
+   "en": "Light",
+   "uk": "Світло",
+   "src": "08-fxgame.js"
+  },
+  "Свето": {
+   "en": "Light",
+   "uk": "Світло",
+   "src": "08-fxgame.js"
+  },
+  "Существа": {
+   "en": "Creatures",
+   "uk": "Істоти",
+   "src": "08-fxgame.js"
+  },
+  "Тьма": {
+   "en": "Darkness",
+   "uk": "Темрява",
+   "src": "08-fxgame.js"
+  },
   "БЕ": {
    "en": "RU",
    "uk": "ТІКА",
