@@ -1,0 +1,7658 @@
+{
+ "_meta": {
+  "source": "ru",
+  "languages": [
+   "en",
+   "ru",
+   "uk"
+  ],
+  "note": "Ключ — русская фраза из кода. Заполняйте en и uk. Пустое значение = показывать оригинал."
+ },
+ "а": {
+  "en": "and",
+  "uk": "а",
+  "src": "05-game_all.js"
+ },
+ "Автопилот": {
+  "en": "Autopilot",
+  "uk": "Автопілот",
+  "src": "05-game_all.js"
+ },
+ "Аккаунт создан.": {
+  "en": "Account created.",
+  "uk": "Акаунт створено.",
+  "src": "30-title.js"
+ },
+ "Аккаунт создан. Загружаю…": {
+  "en": "Account created. Loading…",
+  "uk": "Акаунт створено. Завантажую…",
+  "src": "30-title.js"
+ },
+ "Аккумулятор": {
+  "en": "Power cell",
+  "uk": "Акумулятор",
+  "src": "03-props.js"
+ },
+ "Аккумуляторы высокой ёмкости.": {
+  "en": "High-capacity power cells.",
+  "uk": "Акумулятори високої ємності.",
+  "src": "22-matinfo.js"
+ },
+ "АКТИВЕН": {
+  "en": "ACTIVE",
+  "uk": "АКТИВНИЙ",
+  "src": "16-roster.js"
+ },
+ "Активен только один наёмник — он идёт в рейд. При увольнении снаряжение и сумка уходят в ящик.": {
+  "en": "Only one merc is active — that one goes on raids. When dismissed, their gear and bag go to the crate.",
+  "uk": "Активний лише один найманець — він іде в рейд. При звільненні спорядження й сумка йдуть у скриню.",
+  "src": "16-roster.js"
+ },
+ "алые": {
+  "en": "scarlet",
+  "uk": "червоні",
+  "src": "01-core.js"
+ },
+ "андеркат": {
+  "en": "undercut",
+  "uk": "андеркат",
+  "src": "01-core.js"
+ },
+ "антенна": {
+  "en": "antenna",
+  "uk": "антена",
+  "src": "01-core.js"
+ },
+ "Антисептик": {
+  "en": "Antiseptic",
+  "uk": "Антисептик",
+  "src": "03-props.js"
+ },
+ "Антисептик для медблока и аптечек.": {
+  "en": "Antiseptic for the med bay and medkits.",
+  "uk": "Антисептик для медблоку й аптечок.",
+  "src": "22-matinfo.js"
+ },
+ "аптечка": {
+  "en": "medkit",
+  "uk": "аптечка",
+  "src": "02-items.js 05-game_all.js 06-hideout.js 13-hire.js 17-trade2.js 26-print.js"
+ },
+ "Аптечка": {
+  "en": "Medkit",
+  "uk": "Аптечка",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "аптечки": {
+  "en": "medkits",
+  "uk": "аптечки",
+  "src": "05-game_all.js 06-hideout.js 13-hire.js"
+ },
+ "Аптечки": {
+  "en": "Medkits",
+  "uk": "Аптечки",
+  "src": "02-items.js 06-hideout.js"
+ },
+ "Аптечки перед рейдом и крафт": {
+  "en": "Medkits before raids and crafting",
+  "uk": "Аптечки перед рейдом і крафт",
+  "src": "05-game_all.js"
+ },
+ "Арк": {
+  "en": "Arc",
+  "uk": "Арк",
+  "src": "08-fxgame.js"
+ },
+ "Аркана": {
+  "en": "Arcana",
+  "uk": "Аркана",
+  "src": "08-fxgame.js"
+ },
+ "Арматура": {
+  "en": "Rebar",
+  "uk": "Арматура",
+  "src": "03-props.js"
+ },
+ "Арматура — каркас для стеллажей и станков.": {
+  "en": "Rebar — a frame for shelves and machines.",
+  "uk": "Арматура — каркас для стелажів і верстатів.",
+  "src": "22-matinfo.js"
+ },
+ "Арсенал": {
+  "en": "Arsenal",
+  "uk": "Арсенал",
+  "src": "05-game_all.js"
+ },
+ "АРСЕНАЛ": {
+  "en": "ARSENAL",
+  "uk": "АРСЕНАЛ",
+  "src": "05-game_all.js"
+ },
+ "АРСЕНАЛ · ЭФФЕКТЫ": {
+  "en": "ARSENAL · EFFECTS",
+  "uk": "АРСЕНАЛ · ЕФЕКТИ",
+  "src": "08-fxgame.js"
+ },
+ "Аспид": {
+  "en": "Aspid",
+  "uk": "Аспід",
+  "src": "02-items.js"
+ },
+ "аудио-модуль": {
+  "en": "audio module",
+  "uk": "аудіомодуль",
+  "src": "01-core.js"
+ },
+ "БАЗА": {
+  "en": "BASE",
+  "uk": "БАЗА",
+  "src": "05-game_all.js"
+ },
+ "База выдала": {
+  "en": "Base supplied",
+  "uk": "База видала",
+  "src": "06-hideout.js"
+ },
+ "База выдала припасы на рейд": {
+  "en": "Base supplied gear for the raid",
+  "uk": "База видала припаси на рейд",
+  "src": "05-game_all.js"
+ },
+ "Байкер": {
+  "en": "Biker",
+  "uk": "Байкер",
+  "src": "04-world.js"
+ },
+ "Байт": {
+  "en": "Byte",
+  "uk": "Байт",
+  "src": "01-core.js"
+ },
+ "баклажан": {
+  "en": "eggplant",
+  "uk": "баклажан",
+  "src": "01-core.js"
+ },
+ "бандана": {
+  "en": "bandana",
+  "uk": "бандана",
+  "src": "01-core.js"
+ },
+ "Бандит": {
+  "en": "Bandit",
+  "uk": "Бандит",
+  "src": "04-world.js"
+ },
+ "Барракуда": {
+  "en": "Barracuda",
+  "uk": "Барракуда",
+  "src": "02-items.js"
+ },
+ "Барыга": {
+  "en": "Hustler",
+  "uk": "Барига",
+  "src": "04-world.js"
+ },
+ "батареи": {
+  "en": "batteries",
+  "uk": "батареї",
+  "src": "05-game_all.js"
+ },
+ "Батареи": {
+  "en": "Batteries",
+  "uk": "Батареї",
+  "src": "02-items.js 06-hideout.js"
+ },
+ "батарея": {
+  "en": "battery",
+  "uk": "батарея",
+  "src": "06-hideout.js"
+ },
+ "БЕ": {
+  "en": "RU",
+  "uk": "ТІКА",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Беглец": {
+  "en": "Runaway",
+  "uk": "Втікач",
+  "src": "04-world.js"
+ },
+ "Белая мгла": {
+  "en": "White haze",
+  "uk": "Біла імла",
+  "src": "20-deep.js"
+ },
+ "белый": {
+  "en": "white",
+  "uk": "білий",
+  "src": "01-core.js"
+ },
+ "бесплатно": {
+  "en": "free",
+  "uk": "безкоштовно",
+  "src": "13-hire.js"
+ },
+ "Библиотека": {
+  "en": "Library",
+  "uk": "Бібліотека",
+  "src": "25-base3.js"
+ },
+ "Библиотека эффектов не загрузилась.": {
+  "en": "The effects library failed to load.",
+  "uk": "Бібліотека ефектів не завантажилася.",
+  "src": "08-fxgame.js"
+ },
+ "Бинты": {
+  "en": "Bandages",
+  "uk": "Бинти",
+  "src": "03-props.js"
+ },
+ "Бинты и марля — основа медицины.": {
+  "en": "Bandages and gauze — the basis of medicine.",
+  "uk": "Бинти й марля — основа медицини.",
+  "src": "22-matinfo.js"
+ },
+ "Био": {
+  "en": "Bio",
+  "uk": "Біо",
+  "src": "08-fxgame.js"
+ },
+ "Биокапсула": {
+  "en": "Bio-capsule",
+  "uk": "Біокапсула",
+  "src": "20-deep.js"
+ },
+ "БИОЛАБОРАТОРИЯ": {
+  "en": "BIOLAB",
+  "uk": "БІОЛАБОРАТОРІЯ",
+  "src": "20-deep.js"
+ },
+ "Биолаборатория: джунгли и споры": {
+  "en": "Biolab: jungle and spores",
+  "uk": "Біолабораторія: джунглі та спори",
+  "src": "20-deep.js"
+ },
+ "Биохакер": {
+  "en": "Biohacker",
+  "uk": "Біохакер",
+  "src": "20-deep.js"
+ },
+ "бип!": {
+  "en": "beep!",
+  "uk": "біп!",
+  "src": "20-deep.js"
+ },
+ "бирюза": {
+  "en": "turquoise",
+  "uk": "бірюза",
+  "src": "01-core.js"
+ },
+ "бита": {
+  "en": "bat",
+  "uk": "бита",
+  "src": "02-items.js 04-world.js 08-fxgame.js 18-audio.js 20-deep.js 26-print.js"
+ },
+ "бледная": {
+  "en": "pale",
+  "uk": "бліда",
+  "src": "01-core.js"
+ },
+ "ближний": {
+  "en": "melee",
+  "uk": "ближній",
+  "src": "07-stats.js"
+ },
+ "Ближний": {
+  "en": "Melee",
+  "uk": "Ближній",
+  "src": "05-game_all.js 09-heropanel.js"
+ },
+ "ближний бой": {
+  "en": "melee",
+  "uk": "ближній бій",
+  "src": "08-fxgame.js"
+ },
+ "Ближний бой": {
+  "en": "Melee",
+  "uk": "Ближній бій",
+  "src": "02-items.js 05-game_all.js 08-fxgame.js 15-loadout2.js"
+ },
+ "Блиц": {
+  "en": "Blitz",
+  "uk": "Бліц",
+  "src": "01-core.js"
+ },
+ "Боевик банды": {
+  "en": "Gang fighter",
+  "uk": "Бойовик банди",
+  "src": "04-world.js"
+ },
+ "Боевой": {
+  "en": "Combat",
+  "uk": "Бойовий",
+  "src": "02-items.js 05-game_all.js 08-fxgame.js 09-heropanel.js"
+ },
+ "боевой имплант": {
+  "en": "combat implant",
+  "uk": "бойовий імплант",
+  "src": "08-fxgame.js"
+ },
+ "Боевой имплант": {
+  "en": "Combat implant",
+  "uk": "Бойовий імплант",
+  "src": "05-game_all.js"
+ },
+ "Боевой процессор": {
+  "en": "Combat processor",
+  "uk": "Бойовий процесор",
+  "src": "26-print.js"
+ },
+ "Бойцы": {
+  "en": "Fighters",
+  "uk": "Бійці",
+  "src": "05-game_all.js 15-loadout2.js"
+ },
+ "Болты": {
+  "en": "Bolts",
+  "uk": "Болти",
+  "src": "03-props.js"
+ },
+ "Болты и гайки — крепёж для любой мебели и механизмов.": {
+  "en": "Bolts and nuts — fasteners for any furniture and machinery.",
+  "uk": "Болти й гайки — кріплення для будь-яких меблів і механізмів.",
+  "src": "22-matinfo.js"
+ },
+ "Большая канистра: 24 ед. топлива. Генератор тратит 2 / 1,5 / 1 ед. в час (ур. 1 / 2 / 3).": {
+  "en": "Large canister: 24 u of fuel. The generator burns 2 / 1.5 / 1 u per hour (lv 1 / 2 / 3).",
+  "uk": "Велика каністра: 24 од. пального. Генератор витрачає 2 / 1,5 / 1 од. на годину (рів. 1 / 2 / 3).",
+  "src": "23-fuel.js"
+ },
+ "больше добычи, опаснее) и": {
+  "en": "more loot, more danger) and",
+  "uk": "більше здобичі, небезпечніше) і",
+  "src": "05-game_all.js"
+ },
+ "бомбер": {
+  "en": "bomber",
+  "uk": "бомбер",
+  "src": "01-core.js 02-items.js"
+ },
+ "бонус": {
+  "en": "bonus",
+  "uk": "бонус",
+  "src": "07-stats.js"
+ },
+ "Бонус на рейд активен": {
+  "en": "Raid bonus active",
+  "uk": "Бонус на рейд активний",
+  "src": "05-game_all.js"
+ },
+ "Бонусная добыча": {
+  "en": "Bonus loot",
+  "uk": "Бонусна здобич",
+  "src": "24-attrui.js"
+ },
+ "бордо": {
+  "en": "burgundy",
+  "uk": "бордо",
+  "src": "01-core.js"
+ },
+ "бордовые": {
+  "en": "burgundy",
+  "uk": "бордові",
+  "src": "01-core.js"
+ },
+ "борода": {
+  "en": "beard",
+  "uk": "борода",
+  "src": "01-core.js"
+ },
+ "ботинки": {
+  "en": "boots",
+  "uk": "черевики",
+  "src": "01-core.js"
+ },
+ "Бочка": {
+  "en": "Barrel",
+  "uk": "Бочка",
+  "src": "03-props.js"
+ },
+ "брать в рейд — через «Сборы»)": {
+  "en": "take on a raid — via «Loadout»)",
+  "uk": "брати в рейд — через «Збори»)",
+  "src": "06-hideout.js"
+ },
+ "Бритва": {
+  "en": "Razor",
+  "uk": "Бритва",
+  "src": "02-items.js"
+ },
+ "Бродячий пёс": {
+  "en": "Stray dog",
+  "uk": "Бродячий пес",
+  "src": "05-game_all.js"
+ },
+ "бронежилет": {
+  "en": "body armor",
+  "uk": "бронежилет",
+  "src": "01-core.js 02-items.js"
+ },
+ "броня": {
+  "en": "armor",
+  "uk": "броня",
+  "src": "22-matinfo.js"
+ },
+ "Броня": {
+  "en": "Armor",
+  "uk": "Броня",
+  "src": "02-items.js 05-game_all.js 09-heropanel.js 15-loadout2.js"
+ },
+ "Бросить": {
+  "en": "Throw",
+  "uk": "Кинути",
+  "src": "09-heropanel.js"
+ },
+ "Бросок": {
+  "en": "Throw",
+  "uk": "Кидок",
+  "src": "05-game_all.js"
+ },
+ "Брошенная машина": {
+  "en": "Abandoned car",
+  "uk": "Покинута машина",
+  "src": "03-props.js"
+ },
+ "брюки": {
+  "en": "pants",
+  "uk": "штани",
+  "src": "01-core.js"
+ },
+ "Бункер · 2 комнаты": {
+  "en": "Bunker · 2 rooms",
+  "uk": "Бункер · 2 кімнати",
+  "src": "27-rooms.js"
+ },
+ "быстрее": {
+  "en": "faster",
+  "uk": "швидше",
+  "src": "24-attrui.js"
+ },
+ "Быстрее наступает перегруз: наёмник замедляется": {
+  "en": "Overload kicks in sooner: the merc slows down",
+  "uk": "Перевантаження настає швидше: найманець сповільнюється",
+  "src": "24-attrui.js"
+ },
+ "Бытовая техника": {
+  "en": "Appliances",
+  "uk": "Побутова техніка",
+  "src": "20-deep.js"
+ },
+ "Бьёт струёй из-под пола.": {
+  "en": "Shoots a jet from under the floor.",
+  "uk": "Б'є струменем з-під підлоги.",
+  "src": "20-deep.js"
+ },
+ "В баке": {
+  "en": "In tank",
+  "uk": "У баку",
+  "src": "23-fuel.js"
+ },
+ "В отряде": {
+  "en": "In squad",
+  "uk": "У загоні",
+  "src": "13-hire.js"
+ },
+ "в отряде — выбрать активным можно в «Наёмниках»": {
+  "en": "in the squad — make active in «Mercs»",
+  "uk": "у загоні — зробити активним можна в «Найманцях»",
+  "src": "13-hire.js"
+ },
+ "В отряде нет мест (максимум": {
+  "en": "No room in the squad (max",
+  "uk": "У загоні немає місць (максимум",
+  "src": "13-hire.js"
+ },
+ "В РЕЙД": {
+  "en": "TO RAID",
+  "uk": "У РЕЙД",
+  "src": "05-game_all.js 15-loadout2.js index.html"
+ },
+ "В рейде — только полевой ремонт до": {
+  "en": "In a raid — only field repair up to",
+  "uk": "У рейді — лише польовий ремонт до",
+  "src": "12-wpn.js"
+ },
+ "в рюкзак": {
+  "en": "to backpack",
+  "uk": "у рюкзак",
+  "src": "05-game_all.js"
+ },
+ "в сумке": {
+  "en": "in bag",
+  "uk": "у сумці",
+  "src": "06-hideout.js 09-heropanel.js"
+ },
+ "В сумке патроны": {
+  "en": "Ammo in bag",
+  "uk": "У сумці набої",
+  "src": "09-heropanel.js"
+ },
+ "в сумку": {
+  "en": "to bag",
+  "uk": "у сумку",
+  "src": "06-hideout.js"
+ },
+ "В сумку": {
+  "en": "To bag",
+  "uk": "У сумку",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 15-loadout2.js"
+ },
+ "В терминале не продаётся.": {
+  "en": "Not sold at the terminal.",
+  "uk": "У терміналі не продається.",
+  "src": "22-matinfo.js"
+ },
+ "В убежище": {
+  "en": "At the shelter",
+  "uk": "У сховищі",
+  "src": "12-wpn.js 13-hire.js"
+ },
+ "в ящик": {
+  "en": "to crate",
+  "uk": "у скриню",
+  "src": "05-game_all.js 06-hideout.js 15-loadout2.js 17-trade2.js 26-print.js"
+ },
+ "В ящик": {
+  "en": "To crate",
+  "uk": "У скриню",
+  "src": "09-heropanel.js 15-loadout2.js"
+ },
+ "В ящик все": {
+  "en": "All to crate",
+  "uk": "У скриню все",
+  "src": "09-heropanel.js"
+ },
+ "в ящике": {
+  "en": "in crate",
+  "uk": "у скрині",
+  "src": "05-game_all.js 06-hideout.js 17-trade2.js 22-matinfo.js"
+ },
+ "в ящике ещё": {
+  "en": "more in crate",
+  "uk": "у скрині ще",
+  "src": "23-fuel.js"
+ },
+ "в ящике нет замены": {
+  "en": "nothing to swap in the crate",
+  "uk": "у скрині немає заміни",
+  "src": "06-hideout.js"
+ },
+ "В ящике нет подходящих предметов": {
+  "en": "No suitable items in the crate",
+  "uk": "У скрині немає відповідних предметів",
+  "src": "06-hideout.js"
+ },
+ "В ящике нет чертежей. Их находят в рейдах во всех зонах и продают в терминале.": {
+  "en": "No blueprints in the crate. They drop on raids in every zone and are sold at the terminal.",
+  "uk": "У скрині немає креслень. Їх знаходять у рейдах у всіх зонах і продають у терміналі.",
+  "src": "26-print.js"
+ },
+ "В ящике патроны": {
+  "en": "Ammo in crate",
+  "uk": "У скрині набої",
+  "src": "09-heropanel.js"
+ },
+ "Вайпер": {
+  "en": "Viper",
+  "uk": "Вайпер",
+  "src": "01-core.js"
+ },
+ "вампиризм": {
+  "en": "lifesteal",
+  "uk": "вампіризм",
+  "src": "08-fxgame.js"
+ },
+ "Варп": {
+  "en": "Warp",
+  "uk": "Варп",
+  "src": "08-fxgame.js"
+ },
+ "Вега": {
+  "en": "Vega",
+  "uk": "Вега",
+  "src": "01-core.js"
+ },
+ "везде": {
+  "en": "everywhere",
+  "uk": "всюди",
+  "src": "20-deep.js"
+ },
+ "Векс": {
+  "en": "Vex",
+  "uk": "Векс",
+  "src": "01-core.js"
+ },
+ "вернуть автопилот": {
+  "en": "back to autopilot",
+  "uk": "повернути автопілот",
+  "src": "05-game_all.js"
+ },
+ "верстак": {
+  "en": "workbench",
+  "uk": "верстак",
+  "src": "12-wpn.js"
+ },
+ "Верстак": {
+  "en": "Workbench",
+  "uk": "Верстак",
+  "src": "05-game_all.js"
+ },
+ "ВЕРСТАК": {
+  "en": "WORKBENCH",
+  "uk": "ВЕРСТАК",
+  "src": "05-game_all.js"
+ },
+ "верстак)": {
+  "en": "workbench)",
+  "uk": "верстак)",
+  "src": "06-hideout.js"
+ },
+ "Верх": {
+  "en": "Top",
+  "uk": "Верх",
+  "src": "05-game_all.js"
+ },
+ "вес": {
+  "en": "weight",
+  "uk": "вага",
+  "src": "05-game_all.js 15-loadout2.js 22-matinfo.js"
+ },
+ "Вес": {
+  "en": "Weight",
+  "uk": "Вага",
+  "src": "05-game_all.js"
+ },
+ "веса": {
+  "en": "weight",
+  "uk": "ваги",
+  "src": "09-heropanel.js 24-attrui.js"
+ },
+ "веса · аптечки": {
+  "en": "weight · medkits",
+  "uk": "ваги · аптечки",
+  "src": "05-game_all.js"
+ },
+ "веса) наёмник замедляется": {
+  "en": "weight) the merc slows down",
+  "uk": "ваги) найманець сповільнюється",
+  "src": "07-stats.js"
+ },
+ "взлом": {
+  "en": "hack",
+  "uk": "злам",
+  "src": "08-fxgame.js"
+ },
+ "Взрыв с осколками.": {
+  "en": "Shrapnel blast.",
+  "uk": "Вибух з осколками.",
+  "src": "20-deep.js"
+ },
+ "взрыв!": {
+  "en": "boom!",
+  "uk": "вибух!",
+  "src": "20-deep.js"
+ },
+ "Взрывы": {
+  "en": "Explosions",
+  "uk": "Вибухи",
+  "src": "08-fxgame.js"
+ },
+ "Взять": {
+  "en": "Take",
+  "uk": "Взяти",
+  "src": "09-heropanel.js"
+ },
+ "Взять все": {
+  "en": "Take all",
+  "uk": "Взяти все",
+  "src": "09-heropanel.js"
+ },
+ "Взять добровольца": {
+  "en": "Take a volunteer",
+  "uk": "Взяти добровольця",
+  "src": "13-hire.js"
+ },
+ "Видеокарта": {
+  "en": "GPU",
+  "uk": "Відеокарта",
+  "src": "03-props.js"
+ },
+ "Видеокарта установлена": {
+  "en": "GPU installed",
+  "uk": "Відеокарту встановлено",
+  "src": "06-hideout.js"
+ },
+ "Видеокарты": {
+  "en": "GPUs",
+  "uk": "Відеокарти",
+  "src": "06-hideout.js"
+ },
+ "ВИДЕОКАРТЫ": {
+  "en": "GPUS",
+  "uk": "ВІДЕОКАРТИ",
+  "src": "06-hideout.js"
+ },
+ "Видеокарты — самая ценная находка, нужны майнинг-ферме.": {
+  "en": "GPUs — the most valuable find, needed for the mining farm.",
+  "uk": "Відеокарти — найцінніша знахідка, потрібні майнінг-фермі.",
+  "src": "22-matinfo.js"
+ },
+ "Видеокарты встречаются в серверных стойках и вычислительных блоках.": {
+  "en": "GPUs are found in server racks and compute units.",
+  "uk": "Відеокарти трапляються в серверних стійках і обчислювальних блоках.",
+  "src": "06-hideout.js"
+ },
+ "Видимость падает до шага.": {
+  "en": "Visibility drops to one step.",
+  "uk": "Видимість падає до кроку.",
+  "src": "20-deep.js"
+ },
+ "визор": {
+  "en": "visor",
+  "uk": "візор",
+  "src": "01-core.js 07-stats.js"
+ },
+ "винтовка": {
+  "en": "rifle",
+  "uk": "гвинтівка",
+  "src": "02-items.js 04-world.js 08-fxgame.js 20-deep.js 26-print.js"
+ },
+ "ВИТРИНА": {
+  "en": "SHOWCASE",
+  "uk": "ВІТРИНА",
+  "src": "17-trade2.js"
+ },
+ "ВИТРИНА (обновляется после рейда)": {
+  "en": "SHOWCASE (refreshes after a raid)",
+  "uk": "ВІТРИНА (оновлюється після рейду)",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Вихрь": {
+  "en": "Whirlwind",
+  "uk": "Вихор",
+  "src": "02-items.js"
+ },
+ "Вклад в замах и перезарядку": {
+  "en": "Affects swing and reload",
+  "uk": "Впливає на замах і перезаряджання",
+  "src": "24-attrui.js"
+ },
+ "Вместимость": {
+  "en": "Capacity",
+  "uk": "Місткість",
+  "src": "05-game_all.js"
+ },
+ "ВНИ": {
+  "en": "PER",
+  "uk": "УВА",
+  "src": "07-stats.js"
+ },
+ "Внимательность": {
+  "en": "Perception",
+  "uk": "Уважність",
+  "src": "07-stats.js"
+ },
+ "внимательность!": {
+  "en": "perception!",
+  "uk": "уважність!",
+  "src": "05-game_all.js"
+ },
+ "Вода": {
+  "en": "Water",
+  "uk": "Вода",
+  "src": "08-fxgame.js"
+ },
+ "Войд": {
+  "en": "Void",
+  "uk": "Войд",
+  "src": "08-fxgame.js"
+ },
+ "Войти": {
+  "en": "Enter",
+  "uk": "Увійти",
+  "src": "30-title.js"
+ },
+ "Войти / создать": {
+  "en": "Log in / create",
+  "uk": "Увійти / створити",
+  "src": "30-title.js"
+ },
+ "Вольт": {
+  "en": "Volt",
+  "uk": "Вольт",
+  "src": "01-core.js"
+ },
+ "ВольтМаш": {
+  "en": "VoltMash",
+  "uk": "ВольтМаш",
+  "src": "02-items.js"
+ },
+ "Ворон": {
+  "en": "Raven",
+  "uk": "Ворон",
+  "src": "02-items.js"
+ },
+ "Ворота конвейера": {
+  "en": "Conveyor gate",
+  "uk": "Ворота конвеєра",
+  "src": "20-deep.js"
+ },
+ "Ворота линии сборки.": {
+  "en": "Assembly line gate.",
+  "uk": "Ворота лінії складання.",
+  "src": "20-deep.js"
+ },
+ "Восстанавливает энергию": {
+  "en": "Restores energy",
+  "uk": "Відновлює енергію",
+  "src": "08-fxgame.js"
+ },
+ "Враг вне досягаемости": {
+  "en": "Enemy out of reach",
+  "uk": "Ворог поза досяжністю",
+  "src": "05-game_all.js"
+ },
+ "враги": {
+  "en": "enemies",
+  "uk": "вороги",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "врагов": {
+  "en": "enemies",
+  "uk": "ворогів",
+  "src": "13-hire.js"
+ },
+ "врагов)": {
+  "en": "enemies)",
+  "uk": "ворогів)",
+  "src": "20-deep.js"
+ },
+ "Вращающиеся ножи.": {
+  "en": "Spinning blades.",
+  "uk": "Обертові ножі.",
+  "src": "20-deep.js"
+ },
+ "Время замаха": {
+  "en": "Swing time",
+  "uk": "Час замаху",
+  "src": "24-attrui.js"
+ },
+ "Время стройки": {
+  "en": "Build time",
+  "uk": "Час будівництва",
+  "src": "06-hideout.js"
+ },
+ "все": {
+  "en": "all",
+  "uk": "усе",
+  "src": "15-loadout2.js"
+ },
+ "Все": {
+  "en": "All",
+  "uk": "Усі",
+  "src": "05-game_all.js 06-hideout.js 15-loadout2.js"
+ },
+ "Всё": {
+  "en": "All",
+  "uk": "Усе",
+  "src": "05-game_all.js"
+ },
+ "все компоненты, включая видеокарты": {
+  "en": "all components, GPUs included",
+  "uk": "усі компоненти, включно з відеокартами",
+  "src": "19-zones.js 21-loot2.js"
+ },
+ "Всё построено.": {
+  "en": "Everything is built.",
+  "uk": "Усе збудовано.",
+  "src": "06-hideout.js"
+ },
+ "Все предметы": {
+  "en": "All items",
+  "uk": "Усі предмети",
+  "src": "15-loadout2.js"
+ },
+ "Все тексты игры": {
+  "en": "All game texts",
+  "uk": "Усі тексти гри",
+  "src": "32-i18n.js"
+ },
+ "Все эффекты": {
+  "en": "All effects",
+  "uk": "Усі ефекти",
+  "src": "08-fxgame.js"
+ },
+ "всего": {
+  "en": "total",
+  "uk": "усього",
+  "src": "09-heropanel.js"
+ },
+ "Всего питания хватит на": {
+  "en": "Power will last",
+  "uk": "Живлення вистачить на",
+  "src": "23-fuel.js"
+ },
+ "Всего хватает — можно строить": {
+  "en": "You have everything — ready to build",
+  "uk": "Усього вистачає — можна будувати",
+  "src": "22-matinfo.js"
+ },
+ "всем в радиусе": {
+  "en": "everyone within radius",
+  "uk": "усім у радіусі",
+  "src": "02-items.js"
+ },
+ "встречается везде": {
+  "en": "found everywhere",
+  "uk": "трапляється всюди",
+  "src": "22-matinfo.js"
+ },
+ "Всякий мусор: обрезки, банки, сломанные мелочи. Основа для переработки и простого крафта.": {
+  "en": "All sorts of trash: scraps, cans, broken bits. The basis for recycling and simple crafting.",
+  "uk": "Усіляке сміття: обрізки, банки, зламані дрібниці. Основа для переробки й простого крафту.",
+  "src": "22-matinfo.js"
+ },
+ "Вторая комната: медблок, библиотека, тренажёр, переработчик": {
+  "en": "Second room: med bay, library, gym, recycler",
+  "uk": "Друга кімната: медблок, бібліотека, тренажер, переробник",
+  "src": "27-rooms.js"
+ },
+ "ВХОД": {
+  "en": "LOGIN",
+  "uk": "ВХІД",
+  "src": "30-title.js"
+ },
+ "Вы вошли как": {
+  "en": "Logged in as",
+  "uk": "Ви увійшли як",
+  "src": "30-title.js"
+ },
+ "Выберите навык": {
+  "en": "Choose a skill",
+  "uk": "Оберіть навичку",
+  "src": "25-base3.js"
+ },
+ "Выберите слот или предмет": {
+  "en": "Choose a slot or an item",
+  "uk": "Оберіть слот або предмет",
+  "src": "09-heropanel.js"
+ },
+ "Выберите товар — покупки кладутся в ящик": {
+  "en": "Choose an item — purchases go to the crate",
+  "uk": "Оберіть товар — покупки кладуться у скриню",
+  "src": "17-trade2.js"
+ },
+ "Выберите, что продать из ящика": {
+  "en": "Choose what to sell from the crate",
+  "uk": "Оберіть, що продати зі скрині",
+  "src": "17-trade2.js"
+ },
+ "Выбивает энергию и глушит машин.": {
+  "en": "Knocks out energy and jams machines.",
+  "uk": "Вибиває енергію та глушить машини.",
+  "src": "20-deep.js"
+ },
+ "Выброс жидкого азота.": {
+  "en": "Liquid nitrogen burst.",
+  "uk": "Викид рідкого азоту.",
+  "src": "20-deep.js"
+ },
+ "Выброс плазмы охлаждения.": {
+  "en": "Coolant plasma burst.",
+  "uk": "Викид плазми охолодження.",
+  "src": "20-deep.js"
+ },
+ "Выбросить": {
+  "en": "Drop",
+  "uk": "Викинути",
+  "src": "09-heropanel.js"
+ },
+ "Выброшено": {
+  "en": "Dropped",
+  "uk": "Викинуто",
+  "src": "09-heropanel.js"
+ },
+ "Выдвигаются из стены по циклу.": {
+  "en": "Extend from the wall on a cycle.",
+  "uk": "Висуваються зі стіни за циклом.",
+  "src": "20-deep.js"
+ },
+ "Выезжающие лезвия.": {
+  "en": "Extending blades.",
+  "uk": "Висувні леза.",
+  "src": "20-deep.js"
+ },
+ "Выжидает циклы ловушек и обезвреживает": {
+  "en": "Waits out trap cycles and disarms",
+  "uk": "Вичікує цикли пасток і знешкоджує",
+  "src": "24-attrui.js"
+ },
+ "Выкл": {
+  "en": "Off",
+  "uk": "Вимк",
+  "src": "31-crt.js"
+ },
+ "вынесенной добычи": {
+  "en": "of loot carried out",
+  "uk": "винесеної здобичі",
+  "src": "13-hire.js"
+ },
+ "Высасывает энергию из имплантов.": {
+  "en": "Drains energy from implants.",
+  "uk": "Висмоктує енергію з імплантів.",
+  "src": "20-deep.js"
+ },
+ "высокие сапоги": {
+  "en": "tall boots",
+  "uk": "високі чоботи",
+  "src": "01-core.js"
+ },
+ "высокий": {
+  "en": "tall",
+  "uk": "високий",
+  "src": "01-core.js"
+ },
+ "высокотехнологичный": {
+  "en": "high-tech",
+  "uk": "високотехнологічний",
+  "src": "26-print.js"
+ },
+ "ВЫХОД В РЕЙД": {
+  "en": "OUT TO RAID",
+  "uk": "ВИХІД У РЕЙД",
+  "src": "05-game_all.js"
+ },
+ "Выходите в рейд через дверь внизу. Герой сам исследует уровни, дерётся и разбирает стойки, блоки и хлам на ресурсы. Доберитесь до": {
+  "en": "Head out on a raid through the door below. The hero explores levels, fights and strips racks, units and junk for resources on their own. Reach",
+  "uk": "Виходьте в рейд через двері внизу. Герой сам досліджує рівні, б'ється й розбирає стійки, блоки та мотлох на ресурси. Дістаньтеся до",
+  "src": "05-game_all.js"
+ },
+ "Вычислительный блок": {
+  "en": "Compute unit",
+  "uk": "Обчислювальний блок",
+  "src": "03-props.js"
+ },
+ "вязнет в песке": {
+  "en": "stuck in sand",
+  "uk": "грузне в піску",
+  "src": "20-deep.js"
+ },
+ "Гадюка": {
+  "en": "Adder",
+  "uk": "Гадюка",
+  "src": "02-items.js"
+ },
+ "Где искать": {
+  "en": "Where to find",
+  "uk": "Де шукати",
+  "src": "05-game_all.js"
+ },
+ "ГДЕ ИСКАТЬ": {
+  "en": "WHERE TO FIND",
+  "uk": "ДЕ ШУКАТИ",
+  "src": "22-matinfo.js"
+ },
+ "Где-то появилась группа врагов": {
+  "en": "A group of enemies appeared somewhere",
+  "uk": "Десь з'явилася група ворогів",
+  "src": "05-game_all.js"
+ },
+ "Где-то появился новый враг": {
+  "en": "A new enemy appeared somewhere",
+  "uk": "Десь з'явився новий ворог",
+  "src": "05-game_all.js"
+ },
+ "Гейзер": {
+  "en": "Geyser",
+  "uk": "Гейзер",
+  "src": "20-deep.js"
+ },
+ "Генератор": {
+  "en": "Generator",
+  "uk": "Генератор",
+  "src": "05-game_all.js 23-fuel.js"
+ },
+ "ГЕНЕРАТОР": {
+  "en": "GENERATOR",
+  "uk": "ГЕНЕРАТОР",
+  "src": "05-game_all.js"
+ },
+ "Генератор заправился из ящика": {
+  "en": "Generator refueled from the crate",
+  "uk": "Генератор заправився зі скрині",
+  "src": "23-fuel.js"
+ },
+ "Генератор работает в реальном времени, даже когда игра закрыта. Чем выше уровень, тем экономнее": {
+  "en": "The generator runs in real time, even when the game is closed. The higher its level, the more economical",
+  "uk": "Генератор працює в реальному часі, навіть коли гра закрита. Що вищий рівень, то економніше",
+  "src": "23-fuel.js"
+ },
+ "Генератор с баком": {
+  "en": "Generator with tank",
+  "uk": "Генератор з баком",
+  "src": "05-game_all.js"
+ },
+ "Генератор сам дозаправился из ящика": {
+  "en": "Generator refueled itself from the crate",
+  "uk": "Генератор сам дозаправився зі скрині",
+  "src": "23-fuel.js"
+ },
+ "Генератор: в баке": {
+  "en": "Generator: in tank",
+  "uk": "Генератор: у баку",
+  "src": "06-hideout.js"
+ },
+ "генератора нет": {
+  "en": "no generator",
+  "uk": "генератора немає",
+  "src": "06-hideout.js"
+ },
+ "ГЕНЕРАТОРЫ И АРСЕНАЛ": {
+  "en": "GENERATORS AND ARSENAL",
+  "uk": "ГЕНЕРАТОРИ Й АРСЕНАЛ",
+  "src": "15-loadout2.js"
+ },
+ "Гермозатвор": {
+  "en": "Blast door",
+  "uk": "Гермозатвор",
+  "src": "20-deep.js"
+ },
+ "ГЕРОЙ": {
+  "en": "HERO",
+  "uk": "ГЕРОЙ",
+  "src": "index.html"
+ },
+ "Герой отдохнул": {
+  "en": "The hero rested",
+  "uk": "Герой відпочив",
+  "src": "05-game_all.js"
+ },
+ "Герой ранен — отдохните на кровати перед выходом.": {
+  "en": "The hero is wounded — rest in bed before heading out.",
+  "uk": "Герой поранений — відпочиньте на ліжку перед виходом.",
+  "src": "06-hideout.js"
+ },
+ "Герой ранен. Стоит отдохнуть на кровати.": {
+  "en": "The hero is wounded. Worth resting in bed.",
+  "uk": "Герой поранений. Варто відпочити на ліжку.",
+  "src": "05-game_all.js"
+ },
+ "Гефест": {
+  "en": "Hephaestus",
+  "uk": "Гефест",
+  "src": "02-items.js"
+ },
+ "Гибридная установка": {
+  "en": "Hybrid plant",
+  "uk": "Гібридна установка",
+  "src": "05-game_all.js"
+ },
+ "Гидро": {
+  "en": "Hydro",
+  "uk": "Гідро",
+  "src": "08-fxgame.js"
+ },
+ "Глаза": {
+  "en": "Eyes",
+  "uk": "Очі",
+  "src": "07-stats.js"
+ },
+ "Глитч": {
+  "en": "Glitch",
+  "uk": "Глітч",
+  "src": "01-core.js"
+ },
+ "Глуб.": {
+  "en": "Depth",
+  "uk": "Глиб.",
+  "src": "30-title.js"
+ },
+ "Глубже": {
+  "en": "Deeper",
+  "uk": "Глибше",
+  "src": "05-game_all.js"
+ },
+ "ГЛУБЖЕ": {
+  "en": "DEEPER",
+  "uk": "ГЛИБШЕ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Глубже — сильнее враги и ценнее добыча: редкие предметы и детали встречаются только в дальних зонах.": {
+  "en": "Deeper means stronger enemies and richer loot: rare items and parts only appear in distant zones.",
+  "uk": "Глибше — сильніші вороги й цінніша здобич: рідкісні предмети й деталі трапляються лише в далеких зонах.",
+  "src": "19-zones.js"
+ },
+ "глубина": {
+  "en": "depth",
+  "uk": "глибина",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Глубина": {
+  "en": "Depth",
+  "uk": "Глибина",
+  "src": "05-game_all.js 30-title.js"
+ },
+ "Гнездо": {
+  "en": "Nest",
+  "uk": "Гніздо",
+  "src": "20-deep.js"
+ },
+ "го уровня · где искать": {
+  "en": "tier · where to find",
+  "uk": "го рівня · де шукати",
+  "src": "21-loot2.js"
+ },
+ "Голозапись курса. Нужен голопроигрыватель: 180 мин обучения.": {
+  "en": "Course holo-recording. Needs a holo-player: 180 min of study.",
+  "uk": "Голозапис курсу. Потрібен голопрогравач: 180 хв навчання.",
+  "src": "25-base3.js"
+ },
+ "голубой мод": {
+  "en": "light-blue mod",
+  "uk": "блакитний мод",
+  "src": "01-core.js"
+ },
+ "Гопник": {
+  "en": "Thug",
+  "uk": "Гопник",
+  "src": "04-world.js"
+ },
+ "горение": {
+  "en": "burning",
+  "uk": "горіння",
+  "src": "08-fxgame.js 20-deep.js"
+ },
+ "готово через": {
+  "en": "ready in",
+  "uk": "готово через",
+  "src": "06-hideout.js"
+ },
+ "граната": {
+  "en": "grenade",
+  "uk": "граната",
+  "src": "08-fxgame.js"
+ },
+ "Граната": {
+  "en": "Grenade",
+  "uk": "Граната",
+  "src": "05-game_all.js 08-fxgame.js 26-print.js"
+ },
+ "Граната на леске.": {
+  "en": "Tripwire grenade.",
+  "uk": "Граната на волосіні.",
+  "src": "20-deep.js"
+ },
+ "гранаты": {
+  "en": "grenades",
+  "uk": "гранати",
+  "src": "05-game_all.js 13-hire.js"
+ },
+ "Гранаты": {
+  "en": "Grenades",
+  "uk": "Гранати",
+  "src": "06-hideout.js 08-fxgame.js"
+ },
+ "графит": {
+  "en": "graphite",
+  "uk": "графіт",
+  "src": "01-core.js"
+ },
+ "Гром": {
+  "en": "Thunder",
+  "uk": "Грім",
+  "src": "02-items.js"
+ },
+ "дальн.": {
+  "en": "rng.",
+  "uk": "дальн.",
+  "src": "12-wpn.js"
+ },
+ "Дальн.": {
+  "en": "Range",
+  "uk": "Дальн.",
+  "src": "02-items.js"
+ },
+ "Дальний": {
+  "en": "Ranged",
+  "uk": "Дальній",
+  "src": "05-game_all.js 09-heropanel.js"
+ },
+ "дальний бой": {
+  "en": "ranged",
+  "uk": "дальній бій",
+  "src": "08-fxgame.js"
+ },
+ "Дальний бой": {
+  "en": "Ranged",
+  "uk": "Дальній бій",
+  "src": "02-items.js 05-game_all.js 15-loadout2.js"
+ },
+ "Дата-диск": {
+  "en": "Data disk",
+  "uk": "Дата-диск",
+  "src": "03-props.js"
+ },
+ "два пучка": {
+  "en": "two tails",
+  "uk": "два пучки",
+  "src": "01-core.js"
+ },
+ "дверь": {
+  "en": "door",
+  "uk": "двері",
+  "src": "20-deep.js"
+ },
+ "Двойная скорость": {
+  "en": "Double speed",
+  "uk": "Подвійна швидкість",
+  "src": "02-items.js 08-fxgame.js"
+ },
+ "действует быстрее на": {
+  "en": "acts faster by",
+  "uk": "діє швидше на",
+  "src": "07-stats.js"
+ },
+ "действует медленнее на": {
+  "en": "acts slower by",
+  "uk": "діє повільніше на",
+  "src": "07-stats.js"
+ },
+ "Декор": {
+  "en": "Decor",
+  "uk": "Декор",
+  "src": "05-game_all.js 15-loadout2.js"
+ },
+ "Декс": {
+  "en": "Dex",
+  "uk": "Декс",
+  "src": "01-core.js"
+ },
+ "Деревянный ящик": {
+  "en": "Wooden crate",
+  "uk": "Дерев'яна скриня",
+  "src": "05-game_all.js"
+ },
+ "Джуно": {
+  "en": "Juno",
+  "uk": "Джуно",
+  "src": "01-core.js"
+ },
+ "Дизель-генератор": {
+  "en": "Diesel generator",
+  "uk": "Дизель-генератор",
+  "src": "05-game_all.js"
+ },
+ "Дисковая пила ездит по направляющей.": {
+  "en": "A circular saw runs along a rail.",
+  "uk": "Дискова пила їздить напрямною.",
+  "src": "20-deep.js"
+ },
+ "длинные": {
+  "en": "long",
+  "uk": "довгі",
+  "src": "01-core.js"
+ },
+ "дн": {
+  "en": "d",
+  "uk": "дн",
+  "src": "13-hire.js"
+ },
+ "До спуска": {
+  "en": "To the descent",
+  "uk": "До спуску",
+  "src": "05-game_all.js"
+ },
+ "до эвакуации": {
+  "en": "to evac",
+  "uk": "до евакуації",
+  "src": "09-heropanel.js"
+ },
+ "До эвакуации": {
+  "en": "To evac",
+  "uk": "До евакуації",
+  "src": "05-game_all.js"
+ },
+ "добивает героя": {
+  "en": "finishes the hero",
+  "uk": "добиває героя",
+  "src": "05-game_all.js"
+ },
+ "добивает наёмника": {
+  "en": "finishes the merc",
+  "uk": "добиває найманця",
+  "src": "20-deep.js"
+ },
+ "Добро пожаловать": {
+  "en": "Welcome",
+  "uk": "Ласкаво просимо",
+  "src": "30-title.js"
+ },
+ "ДОБРО ПОЖАЛОВАТЬ": {
+  "en": "WELCOME",
+  "uk": "ЛАСКАВО ПРОСИМО",
+  "src": "05-game_all.js"
+ },
+ "Доброволец: снаряжение изношено, навыки слабее": {
+  "en": "Volunteer: worn gear, weaker skills",
+  "uk": "Доброволець: спорядження зношене, навички слабші",
+  "src": "13-hire.js"
+ },
+ "Добыча": {
+  "en": "Loot",
+  "uk": "Здобич",
+  "src": "05-game_all.js"
+ },
+ "добыча попадёт в ящик. Из ресурсов стройте улучшения базы.": {
+  "en": "the loot goes to the crate. Build base upgrades from resources.",
+  "uk": "здобич потрапить у скриню. З ресурсів будуйте покращення бази.",
+  "src": "05-game_all.js"
+ },
+ "добычи": {
+  "en": "loot",
+  "uk": "здобичі",
+  "src": "07-stats.js"
+ },
+ "добычи при обыске": {
+  "en": "loot when searching",
+  "uk": "здобичі під час обшуку",
+  "src": "24-attrui.js"
+ },
+ "ДОВАТЬ": {
+  "en": "ORE",
+  "uk": "ДЖУВАТИ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "дольше": {
+  "en": "longer",
+  "uk": "довше",
+  "src": "24-attrui.js"
+ },
+ "Домой": {
+  "en": "Home",
+  "uk": "Додому",
+  "src": "05-game_all.js"
+ },
+ "ДОМОЙ": {
+  "en": "HOME",
+  "uk": "ДОДОМУ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Доски": {
+  "en": "Boards",
+  "uk": "Дошки",
+  "src": "03-props.js"
+ },
+ "Доски и щепа от ящиков и стройки.": {
+  "en": "Boards and chips from crates and construction.",
+  "uk": "Дошки й тріски від ящиків і будівництва.",
+  "src": "22-matinfo.js"
+ },
+ "доступна у активного": {
+  "en": "available for the active",
+  "uk": "доступна в активного",
+  "src": "16-roster.js"
+ },
+ "Доход": {
+  "en": "Income",
+  "uk": "Дохід",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Дракон": {
+  "en": "Dragon",
+  "uk": "Дракон",
+  "src": "02-items.js"
+ },
+ "ДРАТЬ": {
+  "en": "FI",
+  "uk": "БИТИ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "дреды": {
+  "en": "dreadlocks",
+  "uk": "дреди",
+  "src": "01-core.js"
+ },
+ "Дрифт": {
+  "en": "Drift",
+  "uk": "Дрифт",
+  "src": "01-core.js"
+ },
+ "дроби": {
+  "en": "shot",
+  "uk": "шроту",
+  "src": "06-hideout.js"
+ },
+ "Дробилка": {
+  "en": "Crusher",
+  "uk": "Дробарка",
+  "src": "20-deep.js"
+ },
+ "дробовик": {
+  "en": "shotgun",
+  "uk": "дробовик",
+  "src": "02-items.js 04-world.js 05-game_all.js 08-fxgame.js 12-wpn.js 20-deep.js 26-print.js"
+ },
+ "дробь": {
+  "en": "buckshot",
+  "uk": "шріт",
+  "src": "02-items.js 05-game_all.js 06-hideout.js 09-heropanel.js 26-print.js"
+ },
+ "Дробь": {
+  "en": "Buckshot",
+  "uk": "Шріт",
+  "src": "02-items.js 05-game_all.js 06-hideout.js 26-print.js"
+ },
+ "Дрон": {
+  "en": "Drone",
+  "uk": "Дрон",
+  "src": "05-game_all.js"
+ },
+ "Дубликат рецепта продан": {
+  "en": "Duplicate recipe sold",
+  "uk": "Дублікат рецепта продано",
+  "src": "26-print.js"
+ },
+ "Дым: невидимость": {
+  "en": "Smoke: invisibility",
+  "uk": "Дим: невидимість",
+  "src": "08-fxgame.js"
+ },
+ "дымовая завеса": {
+  "en": "smoke screen",
+  "uk": "димова завіса",
+  "src": "08-fxgame.js"
+ },
+ "Дымовая шашка": {
+  "en": "Smoke bomb",
+  "uk": "Димова шашка",
+  "src": "08-fxgame.js"
+ },
+ "ед.": {
+  "en": "u",
+  "uk": "од.",
+  "src": "07-stats.js 23-fuel.js"
+ },
+ "ед. — хватит на": {
+  "en": "u — enough for",
+  "uk": "од. — вистачить на",
+  "src": "06-hideout.js"
+ },
+ "ед. (в баке": {
+  "en": "u (in tank",
+  "uk": "од. (у баку",
+  "src": "23-fuel.js"
+ },
+ "ед. в час. Когда бак пустеет, он сам берёт из ящика канистры (от малых), потом энергоячейки, потом батареи.": {
+  "en": "u per hour. When the tank runs dry it takes canisters from the crate (smallest first), then energy cells, then batteries.",
+  "uk": "од. на годину. Коли бак порожніє, він сам бере зі скрині каністри (від малих), потім енергокомірки, потім батареї.",
+  "src": "23-fuel.js"
+ },
+ "ед. и перезарядка": {
+  "en": "u and reload",
+  "uk": "од. і перезаряджання",
+  "src": "07-stats.js"
+ },
+ "ед. от 5, замах": {
+  "en": "u from 5, swing",
+  "uk": "од. від 5, замах",
+  "src": "07-stats.js"
+ },
+ "ед. от 5, урон": {
+  "en": "u from 5, damage",
+  "uk": "од. від 5, шкода",
+  "src": "07-stats.js"
+ },
+ "ед. топлива в час. Энергия героя": {
+  "en": "u of fuel per hour. Hero energy",
+  "uk": "од. пального на годину. Енергія героя",
+  "src": "05-game_all.js"
+ },
+ "ед., импланты": {
+  "en": "u, implants",
+  "uk": "од., імпланти",
+  "src": "07-stats.js"
+ },
+ "ед., лечение": {
+  "en": "u, healing",
+  "uk": "од., лікування",
+  "src": "07-stats.js"
+ },
+ "ед., меньше теряется макс. прочность": {
+  "en": "u, less max durability lost",
+  "uk": "од., менше втрачається макс. міцність",
+  "src": "07-stats.js"
+ },
+ "ед., стоимость ремонта и улучшений": {
+  "en": "u, repair and upgrade cost",
+  "uk": "од., вартість ремонту й покращень",
+  "src": "07-stats.js"
+ },
+ "ед.; износ оружия": {
+  "en": "u; weapon wear",
+  "uk": "од.; знос зброї",
+  "src": "07-stats.js"
+ },
+ "ед.; ниже 5 — сам промахивается в ближнем бою": {
+  "en": "u; below 5 — misses in melee on their own",
+  "uk": "од.; нижче 5 — сам промахується в ближньому бою",
+  "src": "07-stats.js"
+ },
+ "ед.; перезарядка": {
+  "en": "u; reload",
+  "uk": "од.; перезаряджання",
+  "src": "07-stats.js"
+ },
+ "ед.; при перегрузе": {
+  "en": "u; when overloaded",
+  "uk": "од.; при перевантаженні",
+  "src": "07-stats.js"
+ },
+ "ед.: выше 5 — враги чаще не успевают ответить": {
+  "en": "u: above 5 — enemies more often fail to respond",
+  "uk": "од.: вище 5 — вороги частіше не встигають відповісти",
+  "src": "07-stats.js"
+ },
+ "ед.)": {
+  "en": "u)",
+  "uk": "од.)",
+  "src": "23-fuel.js"
+ },
+ "ед./ч": {
+  "en": "u/h",
+  "uk": "од./год",
+  "src": "23-fuel.js"
+ },
+ "ёжик": {
+  "en": "buzz cut",
+  "uk": "їжачок",
+  "src": "01-core.js"
+ },
+ "есть": {
+  "en": "yes",
+  "uk": "є",
+  "src": "06-hideout.js"
+ },
+ "есть в терминале": {
+  "en": "available at the terminal",
+  "uk": "є в терміналі",
+  "src": "05-game_all.js"
+ },
+ "есть замена в ящике)": {
+  "en": "replacement in crate)",
+  "uk": "є заміна в скрині)",
+  "src": "06-hideout.js"
+ },
+ "ещё не разведана": {
+  "en": "not yet explored",
+  "uk": "ще не розвідана",
+  "src": "19-zones.js"
+ },
+ "ЖАТЬ": {
+  "en": "N",
+  "uk": "ТИ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Жду цикл": {
+  "en": "Waiting for the cycle",
+  "uk": "Чекаю цикл",
+  "src": "20-deep.js"
+ },
+ "жёлтые": {
+  "en": "yellow",
+  "uk": "жовті",
+  "src": "01-core.js"
+ },
+ "жёлтый": {
+  "en": "yellow",
+  "uk": "жовтий",
+  "src": "01-core.js"
+ },
+ "Жилая, мастерская и серверная. Место под всё, включая майнинг-ферму": {
+  "en": "Living quarters, workshop and server room. Room for everything, mining farm included",
+  "uk": "Житлова, майстерня й серверна. Місце для всього, включно з майнінг-фермою",
+  "src": "27-rooms.js"
+ },
+ "Жнец": {
+  "en": "Reaper",
+  "uk": "Женець",
+  "src": "02-items.js"
+ },
+ "Журнал": {
+  "en": "Magazine",
+  "uk": "Журнал",
+  "src": "03-props.js"
+ },
+ "Журнал о технике и выживании. Полка: 20 мин обучения.": {
+  "en": "A magazine about tech and survival. Shelf: 20 min of study.",
+  "uk": "Журнал про техніку й виживання. Полиця: 20 хв навчання.",
+  "src": "25-base3.js"
+ },
+ "Журналы, книги и дата-диски; голозаписи учат в 1,5 раза быстрее (нужно питание)": {
+  "en": "Magazines, books and data disks; holo-recordings teach 1.5× faster (needs power)",
+  "uk": "Журнали, книги й дата-диски; голозаписи навчають у 1,5 раза швидше (потрібне живлення)",
+  "src": "25-base3.js"
+ },
+ "за": {
+  "en": "per",
+  "uk": "за",
+  "src": "07-stats.js 24-attrui.js"
+ },
+ "за карту за рейд": {
+  "en": "per card per raid",
+  "uk": "за карту за рейд",
+  "src": "05-game_all.js"
+ },
+ "за неон": {
+  "en": "for neon",
+  "uk": "за неон",
+  "src": "17-trade2.js"
+ },
+ "за неон)": {
+  "en": "for neon)",
+  "uk": "за неон)",
+  "src": "06-hideout.js"
+ },
+ "за рейд": {
+  "en": "per raid",
+  "uk": "за рейд",
+  "src": "06-hideout.js"
+ },
+ "Забрасывает в случайную точку этажа.": {
+  "en": "Throws you to a random spot on the floor.",
+  "uk": "Закидає у випадкову точку поверху.",
+  "src": "20-deep.js"
+ },
+ "Забрать рецепт": {
+  "en": "Take recipe",
+  "uk": "Забрати рецепт",
+  "src": "26-print.js"
+ },
+ "Заводной солдатик": {
+  "en": "Wind-up soldier",
+  "uk": "Заводний солдатик",
+  "src": "20-deep.js"
+ },
+ "Загадочное излучение: всё обращается в песок.": {
+  "en": "A mysterious radiation: everything turns to sand.",
+  "uk": "Загадкове випромінювання: усе обертається на пісок.",
+  "src": "20-deep.js"
+ },
+ "Загружаю…": {
+  "en": "Loading…",
+  "uk": "Завантажую…",
+  "src": "30-title.js"
+ },
+ "Загрузите в": {
+  "en": "Load into",
+  "uk": "Завантажте в",
+  "src": "26-print.js"
+ },
+ "загрузить в принтер": {
+  "en": "load into printer",
+  "uk": "завантажити в принтер",
+  "src": "26-print.js"
+ },
+ "загрузить рецепт сюда.": {
+  "en": "load the recipe here.",
+  "uk": "завантажити рецепт сюди.",
+  "src": "26-print.js"
+ },
+ "задето": {
+  "en": "hit",
+  "uk": "зачеплено",
+  "src": "08-fxgame.js"
+ },
+ "Зажимает ногу: кровотечение и обездвиживание.": {
+  "en": "Clamps a leg: bleeding and immobilization.",
+  "uk": "Затискає ногу: кровотеча й знерухомлення.",
+  "src": "20-deep.js"
+ },
+ "Закрыть": {
+  "en": "Close",
+  "uk": "Закрити",
+  "src": "05-game_all.js 06-hideout.js 13-hire.js 15-loadout2.js"
+ },
+ "замах": {
+  "en": "swing",
+  "uk": "замах",
+  "src": "07-stats.js 12-wpn.js"
+ },
+ "Замах": {
+  "en": "Swing",
+  "uk": "Замах",
+  "src": "12-wpn.js"
+ },
+ "замедление": {
+  "en": "slow",
+  "uk": "уповільнення",
+  "src": "08-fxgame.js 20-deep.js"
+ },
+ "Замечает ловушки": {
+  "en": "Spots traps",
+  "uk": "Помічає пастки",
+  "src": "24-attrui.js"
+ },
+ "Замечена ловушка": {
+  "en": "Trap spotted",
+  "uk": "Помічено пастку",
+  "src": "20-deep.js"
+ },
+ "заморозка": {
+  "en": "freeze",
+  "uk": "заморожування",
+  "src": "08-fxgame.js 20-deep.js"
+ },
+ "Занесённый механизм": {
+  "en": "Sand-buried machine",
+  "uk": "Занесений механізм",
+  "src": "20-deep.js"
+ },
+ "заработал": {
+  "en": "earned",
+  "uk": "заробив",
+  "src": "13-hire.js 16-roster.js"
+ },
+ "Заработал": {
+  "en": "Earned",
+  "uk": "Заробив",
+  "src": "13-hire.js"
+ },
+ "Заражённый манекен": {
+  "en": "Infected mannequin",
+  "uk": "Заражений манекен",
+  "src": "20-deep.js"
+ },
+ "Заражённый рабочий": {
+  "en": "Infected worker",
+  "uk": "Заражений робітник",
+  "src": "20-deep.js"
+ },
+ "Засасывает: несколько секунд на выбирание.": {
+  "en": "Sucks you in: a few seconds to climb out.",
+  "uk": "Засмоктує: кілька секунд, щоб вибратися.",
+  "src": "20-deep.js"
+ },
+ "затем Настройки": {
+  "en": "then Settings",
+  "uk": "потім Налаштування",
+  "src": "32-i18n.js"
+ },
+ "Захлопывается на проходящих.": {
+  "en": "Slams shut on passers-by.",
+  "uk": "Зачиняється на тих, хто проходить.",
+  "src": "20-deep.js"
+ },
+ "защ": {
+  "en": "def",
+  "uk": "зах",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 13-hire.js 15-loadout2.js 16-roster.js"
+ },
+ "защита": {
+  "en": "defense",
+  "uk": "захист",
+  "src": "02-items.js"
+ },
+ "Защита": {
+  "en": "Defense",
+  "uk": "Захист",
+  "src": "02-items.js"
+ },
+ "ЗВУК": {
+  "en": "SOUND",
+  "uk": "ЗВУК",
+  "src": "18-audio.js"
+ },
+ "Звук включён": {
+  "en": "Sound on",
+  "uk": "Звук увімкнено",
+  "src": "18-audio.js"
+ },
+ "Звук выключен": {
+  "en": "Sound off",
+  "uk": "Звук вимкнено",
+  "src": "18-audio.js"
+ },
+ "Звуковая мина": {
+  "en": "Sonic mine",
+  "uk": "Звукова міна",
+  "src": "20-deep.js"
+ },
+ "Здоровье": {
+  "en": "Health",
+  "uk": "Здоров'я",
+  "src": "07-stats.js 24-attrui.js"
+ },
+ "ЗДР": {
+  "en": "VIT",
+  "uk": "ЗДР",
+  "src": "07-stats.js"
+ },
+ "зелёный мод": {
+  "en": "green mod",
+  "uk": "зелений мод",
+  "src": "01-core.js"
+ },
+ "Зеро": {
+  "en": "Zero",
+  "uk": "Зеро",
+  "src": "01-core.js"
+ },
+ "Зета": {
+  "en": "Zeta",
+  "uk": "Зета",
+  "src": "01-core.js"
+ },
+ "знает дорогу до": {
+  "en": "knows the way to",
+  "uk": "знає дорогу до",
+  "src": "19-zones.js"
+ },
+ "золото": {
+  "en": "gold",
+  "uk": "золото",
+  "src": "01-core.js"
+ },
+ "зона": {
+  "en": "zone",
+  "uk": "зона",
+  "src": "20-deep.js"
+ },
+ "Зыбучий песок": {
+  "en": "Quicksand",
+  "uk": "Сипучий пісок",
+  "src": "20-deep.js"
+ },
+ "и": {
+  "en": "and",
+  "uk": "і",
+  "src": "32-i18n.js"
+ },
+ "и в общей таблице": {
+  "en": "and in the shared table",
+  "uk": "і в спільній таблиці",
+  "src": "30-title.js"
+ },
+ "и на сервере": {
+  "en": "and on the server",
+  "uk": "і на сервері",
+  "src": "30-title.js"
+ },
+ "и нет аптечек — эвакуируйтесь": {
+  "en": "and no medkits — evacuate",
+  "uk": "і немає аптечок — евакуюйтеся",
+  "src": "09-heropanel.js"
+ },
+ "и убежище сохранились.": {
+  "en": "and the shelter were kept.",
+  "uk": "і сховище збереглися.",
+  "src": "13-hire.js"
+ },
+ "и энергию": {
+  "en": "and energy",
+  "uk": "і енергію",
+  "src": "05-game_all.js"
+ },
+ "и энергия восстановлены": {
+  "en": "and energy restored",
+  "uk": "і енергію відновлено",
+  "src": "05-game_all.js"
+ },
+ "ИГРА": {
+  "en": "GAME",
+  "uk": "ГРА",
+  "src": "15-loadout2.js"
+ },
+ "Игрок": {
+  "en": "Player",
+  "uk": "Гравець",
+  "src": "30-title.js"
+ },
+ "ИГРОК": {
+  "en": "PLAYER",
+  "uk": "ГРАВЕЦЬ",
+  "src": "30-title.js"
+ },
+ "Идёт в реальном времени, пока наёмник в убежище — даже когда игра закрыта (до 24 ч). Скорость": {
+  "en": "Runs in real time while the merc is at the shelter — even when the game is closed (up to 24 h). Speed",
+  "uk": "Іде в реальному часі, поки найманець у сховищі, — навіть коли гра закрита (до 24 год). Швидкість",
+  "src": "25-base3.js"
+ },
+ "из стены": {
+  "en": "from the wall",
+  "uk": "зі стіни",
+  "src": "20-deep.js"
+ },
+ "Изи": {
+  "en": "Izzy",
+  "uk": "Ізі",
+  "src": "01-core.js"
+ },
+ "Излучатель": {
+  "en": "Emitter",
+  "uk": "Випромінювач",
+  "src": "20-deep.js"
+ },
+ "износ": {
+  "en": "wear",
+  "uk": "знос",
+  "src": "07-stats.js 20-deep.js"
+ },
+ "Износ оружия": {
+  "en": "Weapon wear",
+  "uk": "Знос зброї",
+  "src": "24-attrui.js"
+ },
+ "износ, нужен ремонт": {
+  "en": "worn, needs repair",
+  "uk": "знос, потрібен ремонт",
+  "src": "12-wpn.js"
+ },
+ "Изолента": {
+  "en": "Duct tape",
+  "uk": "Ізолента",
+  "src": "03-props.js"
+ },
+ "Изолента. Чинит всё — от проводки до приклада.": {
+  "en": "Duct tape. Fixes anything — from wiring to a rifle stock.",
+  "uk": "Ізолента. Лагодить усе — від проводки до приклада.",
+  "src": "22-matinfo.js"
+ },
+ "или": {
+  "en": "or",
+  "uk": "або",
+  "src": "30-title.js"
+ },
+ "Имплант установлен": {
+  "en": "Implant installed",
+  "uk": "Імплант встановлено",
+  "src": "05-game_all.js"
+ },
+ "импланты": {
+  "en": "implants",
+  "uk": "імпланти",
+  "src": "22-matinfo.js"
+ },
+ "Импланты": {
+  "en": "Implants",
+  "uk": "Імпланти",
+  "src": "02-items.js 05-game_all.js 07-stats.js 15-loadout2.js"
+ },
+ "Импорт": {
+  "en": "Import",
+  "uk": "Імпорт",
+  "src": "32-i18n.js"
+ },
+ "Импорт. Пустое значение": {
+  "en": "Import. Empty value",
+  "uk": "Імпорт. Порожнє значення",
+  "src": "32-i18n.js"
+ },
+ "Импортировано фраз": {
+  "en": "Phrases imported",
+  "uk": "Імпортовано фраз",
+  "src": "32-i18n.js"
+ },
+ "Импульс": {
+  "en": "Impulse",
+  "uk": "Імпульс",
+  "src": "02-items.js"
+ },
+ "Импульсный модуль": {
+  "en": "Pulse module",
+  "uk": "Імпульсний модуль",
+  "src": "08-fxgame.js"
+ },
+ "иногда мешают": {
+  "en": "sometimes get in the way",
+  "uk": "іноді заважають",
+  "src": "24-attrui.js"
+ },
+ "ИНТ": {
+  "en": "INT",
+  "uk": "ІНТ",
+  "src": "07-stats.js"
+ },
+ "Интеллект": {
+  "en": "Intelligence",
+  "uk": "Інтелект",
+  "src": "07-stats.js"
+ },
+ "Интерфейс": {
+  "en": "Interface",
+  "uk": "Інтерфейс",
+  "src": "08-fxgame.js"
+ },
+ "ирокез": {
+  "en": "mohawk",
+  "uk": "ірокез",
+  "src": "01-core.js"
+ },
+ "Исп.": {
+  "en": "Use",
+  "uk": "Вик.",
+  "src": "05-game_all.js"
+ },
+ "Использовать": {
+  "en": "Use",
+  "uk": "Використати",
+  "src": "09-heropanel.js"
+ },
+ "исправно": {
+  "en": "in good order",
+  "uk": "справно",
+  "src": "12-wpn.js"
+ },
+ "ИССЛЕ": {
+  "en": "EXPL",
+  "uk": "ДОСЛІ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Исслед.": {
+  "en": "Explore",
+  "uk": "Дослід.",
+  "src": "05-game_all.js"
+ },
+ "ИССЛЕДОВАНИЕ": {
+  "en": "RESEARCH",
+  "uk": "ДОСЛІДЖЕННЯ",
+  "src": "26-print.js"
+ },
+ "Исследование чертежей": {
+  "en": "Blueprint research",
+  "uk": "Дослідження креслень",
+  "src": "26-print.js"
+ },
+ "Исследование чертежей вдвое быстрее": {
+  "en": "Blueprint research twice as fast",
+  "uk": "Дослідження креслень удвічі швидше",
+  "src": "26-print.js"
+ },
+ "Исследовательский станок": {
+  "en": "Research station",
+  "uk": "Дослідницький верстат",
+  "src": "26-print.js"
+ },
+ "исследовать на станке": {
+  "en": "research at the station",
+  "uk": "дослідити на верстаті",
+  "src": "26-print.js"
+ },
+ "к": {
+  "en": "to",
+  "uk": "до",
+  "src": "05-game_all.js"
+ },
+ "К списку": {
+  "en": "Back to list",
+  "uk": "До списку",
+  "src": "06-hideout.js"
+ },
+ "каждые": {
+  "en": "every",
+  "uk": "кожні",
+  "src": "24-attrui.js"
+ },
+ "Кай": {
+  "en": "Kai",
+  "uk": "Кай",
+  "src": "01-core.js"
+ },
+ "Кайдзю": {
+  "en": "Kaiju",
+  "uk": "Кайдзю",
+  "src": "02-items.js"
+ },
+ "как текущее": {
+  "en": "same as current",
+  "uk": "як поточне",
+  "src": "09-heropanel.js"
+ },
+ "камуфляж": {
+  "en": "camo",
+  "uk": "камуфляж",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Камуфляж": {
+  "en": "Camo",
+  "uk": "Камуфляж",
+  "src": "05-game_all.js"
+ },
+ "канал сменится сам · тап по экрану — следующий канал": {
+  "en": "the channel changes by itself · tap the screen — next channel",
+  "uk": "канал зміниться сам · тап по екрану — наступний канал",
+  "src": "30-title.js"
+ },
+ "Канализация": {
+  "en": "Sewers",
+  "uk": "Каналізація",
+  "src": "06-hideout.js"
+ },
+ "КАНАЛИЗАЦИЯ": {
+  "en": "SEWERS",
+  "uk": "КАНАЛІЗАЦІЯ",
+  "src": "04-world.js"
+ },
+ "канализация и переулки (эт. 1–2)": {
+  "en": "sewers and alleys (fl. 1–2)",
+  "uk": "каналізація й провулки (пов. 1–2)",
+  "src": "21-loot2.js"
+ },
+ "канистра": {
+  "en": "canister",
+  "uk": "каністра",
+  "src": "06-hideout.js"
+ },
+ "Канистра (большая)": {
+  "en": "Canister (large)",
+  "uk": "Каністра (велика)",
+  "src": "03-props.js"
+ },
+ "Канистра (малая)": {
+  "en": "Canister (small)",
+  "uk": "Каністра (мала)",
+  "src": "03-props.js"
+ },
+ "Канистра (средняя)": {
+  "en": "Canister (medium)",
+  "uk": "Каністра (середня)",
+  "src": "03-props.js"
+ },
+ "Канистра топлива": {
+  "en": "Fuel canister",
+  "uk": "Каністра пального",
+  "src": "06-hideout.js"
+ },
+ "Канистра топлива — питает генератор.": {
+  "en": "Fuel canister — powers the generator.",
+  "uk": "Каністра пального — живить генератор.",
+  "src": "22-matinfo.js"
+ },
+ "Капкан": {
+  "en": "Bear trap",
+  "uk": "Капкан",
+  "src": "20-deep.js"
+ },
+ "Капсула": {
+  "en": "Capsule",
+  "uk": "Капсула",
+  "src": "08-fxgame.js"
+ },
+ "Капсула сна": {
+  "en": "Sleep capsule",
+  "uk": "Капсула сну",
+  "src": "05-game_all.js"
+ },
+ "капюшон)": {
+  "en": "hood)",
+  "uk": "каптур)",
+  "src": "01-core.js"
+ },
+ "карбон": {
+  "en": "carbon",
+  "uk": "карбон",
+  "src": "01-core.js"
+ },
+ "карго": {
+  "en": "cargo",
+  "uk": "карго",
+  "src": "01-core.js"
+ },
+ "Кардио-модуль": {
+  "en": "Cardio module",
+  "uk": "Кардіомодуль",
+  "src": "26-print.js"
+ },
+ "каре": {
+  "en": "bob",
+  "uk": "каре",
+  "src": "01-core.js"
+ },
+ "Касса": {
+  "en": "Cash",
+  "uk": "Каса",
+  "src": "30-title.js"
+ },
+ "Кассетная мина": {
+  "en": "Cluster mine",
+  "uk": "Касетна міна",
+  "src": "20-deep.js"
+ },
+ "катана": {
+  "en": "katana",
+  "uk": "катана",
+  "src": "04-world.js 08-fxgame.js 20-deep.js 26-print.js"
+ },
+ "каштановые": {
+  "en": "chestnut",
+  "uk": "каштанові",
+  "src": "01-core.js"
+ },
+ "Квант": {
+  "en": "Quantum",
+  "uk": "Квант",
+  "src": "02-items.js"
+ },
+ "квантовый аккумулятор": {
+  "en": "quantum battery",
+  "uk": "квантовий акумулятор",
+  "src": "02-items.js"
+ },
+ "Квантовый аккумулятор": {
+  "en": "Quantum battery",
+  "uk": "Квантовий акумулятор",
+  "src": "26-print.js"
+ },
+ "кевларовый жилет": {
+  "en": "kevlar vest",
+  "uk": "кевларовий жилет",
+  "src": "02-items.js"
+ },
+ "Кибер-волк": {
+  "en": "Cyber wolf",
+  "uk": "Кібервовк",
+  "src": "20-deep.js"
+ },
+ "кибер-глаз": {
+  "en": "cyber eye",
+  "uk": "кібероко",
+  "src": "01-core.js"
+ },
+ "кибер-данж": {
+  "en": "cyber dungeon",
+  "uk": "кібер-данж",
+  "src": "index.html"
+ },
+ "кибер-данж · наёмники · серверные глубины": {
+  "en": "cyber dungeon · mercenaries · server depths",
+  "uk": "кібер-данж · найманці · серверні глибини",
+  "src": "30-title.js"
+ },
+ "кибер-ноги": {
+  "en": "cyber legs",
+  "uk": "кіберноги",
+  "src": "01-core.js"
+ },
+ "кибер-рука": {
+  "en": "cyber arm",
+  "uk": "кіберрука",
+  "src": "01-core.js"
+ },
+ "КИБЕРСНЕГ": {
+  "en": "CYBERSNOW",
+  "uk": "КІБЕРСНІГ",
+  "src": "20-deep.js"
+ },
+ "Киберснег: лёд скользкий — ловкость помогает удержаться": {
+  "en": "Cybersnow: the ice is slippery — agility helps you keep your footing",
+  "uk": "Кіберсніг: лід слизький — спритність допомагає втриматися",
+  "src": "20-deep.js"
+ },
+ "Киборг": {
+  "en": "Cyborg",
+  "uk": "Кіборг",
+  "src": "04-world.js"
+ },
+ "Кира": {
+  "en": "Kira",
+  "uk": "Кіра",
+  "src": "01-core.js"
+ },
+ "Кирпичи": {
+  "en": "Bricks",
+  "uk": "Цегла",
+  "src": "03-props.js"
+ },
+ "Кирпичи и обломки кладки — для прочных конструкций.": {
+  "en": "Bricks and masonry rubble — for sturdy structures.",
+  "uk": "Цегла й уламки кладки — для міцних конструкцій.",
+  "src": "22-matinfo.js"
+ },
+ "Кислота разъедает оружие.": {
+  "en": "Acid corrodes weapons.",
+  "uk": "Кислота роз'їдає зброю.",
+  "src": "20-deep.js"
+ },
+ "кислотно-зелёные": {
+  "en": "acid green",
+  "uk": "кислотно-зелені",
+  "src": "01-core.js"
+ },
+ "Кислотный распылитель": {
+  "en": "Acid sprayer",
+  "uk": "Кислотний розпилювач",
+  "src": "20-deep.js"
+ },
+ "Клеевая лужа": {
+  "en": "Glue puddle",
+  "uk": "Клейова калюжа",
+  "src": "20-deep.js"
+ },
+ "клеток": {
+  "en": "tiles",
+  "uk": "клітинок",
+  "src": "24-attrui.js"
+ },
+ "Климат": {
+  "en": "Climate",
+  "uk": "Клімат",
+  "src": "08-fxgame.js"
+ },
+ "Климат-модуль": {
+  "en": "Climate module",
+  "uk": "Клімат-модуль",
+  "src": "08-fxgame.js"
+ },
+ "Клык": {
+  "en": "Fang",
+  "uk": "Ікло",
+  "src": "02-items.js"
+ },
+ "Ключ — русская фраза из кода игры. Правьте": {
+  "en": "The key is the Russian phrase from the game code. Edit",
+  "uk": "Ключ — російська фраза з коду гри. Редагуйте",
+  "src": "32-i18n.js"
+ },
+ "Книга": {
+  "en": "Book",
+  "uk": "Книга",
+  "src": "03-props.js"
+ },
+ "Книжная полка": {
+  "en": "Bookshelf",
+  "uk": "Книжкова полиця",
+  "src": "25-base3.js"
+ },
+ "Кобальт": {
+  "en": "Cobalt",
+  "uk": "Кобальт",
+  "src": "02-items.js"
+ },
+ "Кобра-Тех": {
+  "en": "Cobra-Tech",
+  "uk": "Кобра-Тех",
+  "src": "02-items.js"
+ },
+ "когти/зубы": {
+  "en": "claws/teeth",
+  "uk": "кігті/зуби",
+  "src": "05-game_all.js"
+ },
+ "Кода": {
+  "en": "Koda",
+  "uk": "Кода",
+  "src": "01-core.js"
+ },
+ "кожа": {
+  "en": "leather",
+  "uk": "шкіра",
+  "src": "01-core.js"
+ },
+ "Койка": {
+  "en": "Bunk",
+  "uk": "Койка",
+  "src": "05-game_all.js"
+ },
+ "комбинезон": {
+  "en": "jumpsuit",
+  "uk": "комбінезон",
+  "src": "01-core.js"
+ },
+ "Комнатушка": {
+  "en": "Tiny room",
+  "uk": "Кімнатка",
+  "src": "27-rooms.js"
+ },
+ "Комплекс · 3 комнаты": {
+  "en": "Complex · 3 rooms",
+  "uk": "Комплекс · 3 кімнати",
+  "src": "27-rooms.js"
+ },
+ "Компонент · вес": {
+  "en": "Component · weight",
+  "uk": "Компонент · вага",
+  "src": "09-heropanel.js"
+ },
+ "компонент 1-го уровня": {
+  "en": "tier-1 component",
+  "uk": "компонент 1-го рівня",
+  "src": "21-loot2.js"
+ },
+ "компонент 2-го уровня": {
+  "en": "tier-2 component",
+  "uk": "компонент 2-го рівня",
+  "src": "21-loot2.js"
+ },
+ "компонент 3-го уровня": {
+  "en": "tier-3 component",
+  "uk": "компонент 3-го рівня",
+  "src": "21-loot2.js"
+ },
+ "компонент 4-го уровня": {
+  "en": "tier-4 component",
+  "uk": "компонент 4-го рівня",
+  "src": "21-loot2.js"
+ },
+ "компонентов": {
+  "en": "components",
+  "uk": "компонентів",
+  "src": "06-hideout.js"
+ },
+ "Компонентов нет": {
+  "en": "No components",
+  "uk": "Компонентів немає",
+  "src": "06-hideout.js"
+ },
+ "Компонентов пока нет": {
+  "en": "No components yet",
+  "uk": "Компонентів поки немає",
+  "src": "05-game_all.js"
+ },
+ "Компоненты": {
+  "en": "Components",
+  "uk": "Компоненти",
+  "src": "21-loot2.js"
+ },
+ "КОМПОНЕНТЫ": {
+  "en": "COMPONENTS",
+  "uk": "КОМПОНЕНТИ",
+  "src": "06-hideout.js"
+ },
+ "КОМПОНЕНТЫ (только обычные — редкие добываются в рейдах)": {
+  "en": "COMPONENTS (common only — rare ones come from raids)",
+  "uk": "КОМПОНЕНТИ (лише звичайні — рідкісні видобуваються в рейдах)",
+  "src": "06-hideout.js"
+ },
+ "компоненты 1-го уровня: болты, доски, провода, изолента…": {
+  "en": "tier-1 components: bolts, boards, wires, duct tape…",
+  "uk": "компоненти 1-го рівня: болти, дошки, дроти, ізолента…",
+  "src": "21-loot2.js"
+ },
+ "компоненты до 2-го уровня: листы металла, арматура, микрочипы…": {
+  "en": "components up to tier 2: metal sheets, rebar, microchips…",
+  "uk": "компоненти до 2-го рівня: листи металу, арматура, мікрочипи…",
+  "src": "21-loot2.js"
+ },
+ "компоненты до 3-го уровня: сервоприводы, процессоры, аккумуляторы": {
+  "en": "components up to tier 3: servos, processors, power cells",
+  "uk": "компоненти до 3-го рівня: сервоприводи, процесори, акумулятори",
+  "src": "21-loot2.js"
+ },
+ "компоненты до микрочипов": {
+  "en": "components up to microchips",
+  "uk": "компоненти до мікрочипів",
+  "src": "19-zones.js"
+ },
+ "компоненты до процессоров и сервоприводов": {
+  "en": "components up to processors and servos",
+  "uk": "компоненти до процесорів і сервоприводів",
+  "src": "19-zones.js"
+ },
+ "Конденсаторы": {
+  "en": "Capacitors",
+  "uk": "Конденсатори",
+  "src": "03-props.js"
+ },
+ "Конденсаторы — накопители заряда для электроники.": {
+  "en": "Capacitors — charge storage for electronics.",
+  "uk": "Конденсатори — накопичувачі заряду для електроніки.",
+  "src": "22-matinfo.js"
+ },
+ "коричневые": {
+  "en": "brown",
+  "uk": "коричневі",
+  "src": "01-core.js"
+ },
+ "Коробка игрушек": {
+  "en": "Toy box",
+  "uk": "Коробка іграшок",
+  "src": "20-deep.js"
+ },
+ "короче": {
+  "en": "shorter",
+  "uk": "коротше",
+  "src": "24-attrui.js"
+ },
+ "красный": {
+  "en": "red",
+  "uk": "червоний",
+  "src": "01-core.js"
+ },
+ "КРАФТ": {
+  "en": "CRAFTING",
+  "uk": "КРАФТ",
+  "src": "06-hideout.js"
+ },
+ "Крафт аптечек; +1 аптечка перед рейдом": {
+  "en": "Craft medkits; +1 medkit before each raid",
+  "uk": "Крафт аптечок; +1 аптечка перед рейдом",
+  "src": "05-game_all.js"
+ },
+ "Крафт нано-аптечек; +2 аптечки перед рейдом": {
+  "en": "Craft nano-medkits; +2 medkits before each raid",
+  "uk": "Крафт наноаптечок; +2 аптечки перед рейдом",
+  "src": "05-game_all.js"
+ },
+ "Крафт патронов": {
+  "en": "Ammo crafting",
+  "uk": "Крафт набоїв",
+  "src": "05-game_all.js"
+ },
+ "Крафт пуль и дроби из хлама": {
+  "en": "Craft bullets and buckshot from junk",
+  "uk": "Крафт куль і шроту з мотлоху",
+  "src": "05-game_all.js"
+ },
+ "Крафт энергоячеек; патроны перед каждым рейдом": {
+  "en": "Craft energy cells; ammo before every raid",
+  "uk": "Крафт енергокомірок; набої перед кожним рейдом",
+  "src": "05-game_all.js"
+ },
+ "крафта": {
+  "en": "crafting",
+  "uk": "крафту",
+  "src": "05-game_all.js"
+ },
+ "Кредиты": {
+  "en": "Credits",
+  "uk": "Кредити",
+  "src": "05-game_all.js 06-hideout.js 22-matinfo.js"
+ },
+ "крепкое": {
+  "en": "sturdy",
+  "uk": "міцна",
+  "src": "01-core.js 05-game_all.js 07-stats.js"
+ },
+ "Крио": {
+  "en": "Cryo",
+  "uk": "Кріо",
+  "src": "08-fxgame.js"
+ },
+ "Крио-камера": {
+  "en": "Cryo chamber",
+  "uk": "Кріокамера",
+  "src": "20-deep.js"
+ },
+ "Крио-мина": {
+  "en": "Cryo mine",
+  "uk": "Кріоміна",
+  "src": "20-deep.js"
+ },
+ "Крио-плита": {
+  "en": "Cryo plate",
+  "uk": "Кріоплита",
+  "src": "20-deep.js"
+ },
+ "Крио-техник": {
+  "en": "Cryo tech",
+  "uk": "Кріотехнік",
+  "src": "20-deep.js"
+ },
+ "Криослизь": {
+  "en": "Cryo slime",
+  "uk": "Кріослиз",
+  "src": "20-deep.js"
+ },
+ "крит": {
+  "en": "crit",
+  "uk": "крит",
+  "src": "05-game_all.js 12-wpn.js"
+ },
+ "Крит": {
+  "en": "Crit",
+  "uk": "Крит",
+  "src": "02-items.js"
+ },
+ "Кровать": {
+  "en": "Bed",
+  "uk": "Ліжко",
+  "src": "05-game_all.js"
+ },
+ "КРОВАТЬ": {
+  "en": "BED",
+  "uk": "ЛІЖКО",
+  "src": "05-game_all.js"
+ },
+ "кровотечение": {
+  "en": "bleeding",
+  "uk": "кровотеча",
+  "src": "08-fxgame.js 20-deep.js"
+ },
+ "Крон": {
+  "en": "Kron",
+  "uk": "Крон",
+  "src": "01-core.js"
+ },
+ "кроссовки": {
+  "en": "sneakers",
+  "uk": "кросівки",
+  "src": "01-core.js"
+ },
+ "Крутит и ослепляет.": {
+  "en": "Spins and blinds.",
+  "uk": "Крутить і засліплює.",
+  "src": "20-deep.js"
+ },
+ "Крыса": {
+  "en": "Rat",
+  "uk": "Щур",
+  "src": "05-game_all.js"
+ },
+ "КУДА ИДЁМ?": {
+  "en": "WHERE TO?",
+  "uk": "КУДИ ЙДЕМО?",
+  "src": "19-zones.js"
+ },
+ "Кукловод": {
+  "en": "Puppeteer",
+  "uk": "Ляльковод",
+  "src": "20-deep.js"
+ },
+ "кулаки": {
+  "en": "fists",
+  "uk": "кулаки",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Кулаки": {
+  "en": "Fists",
+  "uk": "Кулаки",
+  "src": "05-game_all.js"
+ },
+ "Купить": {
+  "en": "Buy",
+  "uk": "Купити",
+  "src": "05-game_all.js 06-hideout.js 13-hire.js 17-trade2.js"
+ },
+ "Купить за": {
+  "en": "Buy for",
+  "uk": "Купити за",
+  "src": "05-game_all.js 06-hideout.js 17-trade2.js"
+ },
+ "Куплено": {
+  "en": "Bought",
+  "uk": "Куплено",
+  "src": "05-game_all.js 06-hideout.js 17-trade2.js"
+ },
+ "куртка": {
+  "en": "jacket",
+  "uk": "куртка",
+  "src": "01-core.js 02-items.js"
+ },
+ "Куча хлама": {
+  "en": "Junk pile",
+  "uk": "Купа мотлоху",
+  "src": "03-props.js"
+ },
+ "Лаборант": {
+  "en": "Lab assistant",
+  "uk": "Лаборант",
+  "src": "20-deep.js"
+ },
+ "Лаборатория": {
+  "en": "Laboratory",
+  "uk": "Лабораторія",
+  "src": "26-print.js"
+ },
+ "лазер": {
+  "en": "laser",
+  "uk": "лазер",
+  "src": "02-items.js 04-world.js 08-fxgame.js 20-deep.js 26-print.js"
+ },
+ "Лазерная растяжка": {
+  "en": "Laser tripwire",
+  "uk": "Лазерна розтяжка",
+  "src": "20-deep.js"
+ },
+ "Лазерная сетка": {
+  "en": "Laser grid",
+  "uk": "Лазерна сітка",
+  "src": "20-deep.js"
+ },
+ "лайм": {
+  "en": "lime",
+  "uk": "лайм",
+  "src": "01-core.js"
+ },
+ "Лампы": {
+  "en": "Bulbs",
+  "uk": "Лампи",
+  "src": "03-props.js 05-game_all.js"
+ },
+ "Лампы и светодиоды — освещение и индикаторы.": {
+  "en": "Bulbs and LEDs — lighting and indicators.",
+  "uk": "Лампи й світлодіоди — освітлення та індикатори.",
+  "src": "22-matinfo.js"
+ },
+ "Ласка": {
+  "en": "Weasel",
+  "uk": "Ласка",
+  "src": "02-items.js"
+ },
+ "левая": {
+  "en": "left",
+  "uk": "ліва",
+  "src": "01-core.js"
+ },
+ "леггинсы": {
+  "en": "leggings",
+  "uk": "легінси",
+  "src": "01-core.js"
+ },
+ "легендарный": {
+  "en": "legendary",
+  "uk": "легендарний",
+  "src": "02-items.js"
+ },
+ "Лёгкая": {
+  "en": "Light",
+  "uk": "Легка",
+  "src": "31-crt.js"
+ },
+ "Лёд": {
+  "en": "Ice",
+  "uk": "Лід",
+  "src": "08-fxgame.js 20-deep.js"
+ },
+ "лёд и песок": {
+  "en": "ice and sand",
+  "uk": "лід і пісок",
+  "src": "24-attrui.js"
+ },
+ "Ледяная створка": {
+  "en": "Ice shutter",
+  "uk": "Крижана стулка",
+  "src": "20-deep.js"
+ },
+ "Ледяной взрыв.": {
+  "en": "Ice blast.",
+  "uk": "Крижаний вибух.",
+  "src": "20-deep.js"
+ },
+ "Ледяной гейзер": {
+  "en": "Ice geyser",
+  "uk": "Крижаний гейзер",
+  "src": "20-deep.js"
+ },
+ "Ледяной отшельник": {
+  "en": "Ice hermit",
+  "uk": "Крижаний відлюдник",
+  "src": "20-deep.js"
+ },
+ "Ледяные шипы": {
+  "en": "Ice spikes",
+  "uk": "Крижані шипи",
+  "src": "20-deep.js"
+ },
+ "Лезвия в стене": {
+  "en": "Wall blades",
+  "uk": "Леза в стіні",
+  "src": "20-deep.js"
+ },
+ "лечение": {
+  "en": "healing",
+  "uk": "лікування",
+  "src": "07-stats.js"
+ },
+ "Лечение": {
+  "en": "Healing",
+  "uk": "Лікування",
+  "src": "24-attrui.js"
+ },
+ "Лечение и усиление аптечек": {
+  "en": "Healing and medkit boost",
+  "uk": "Лікування й посилення аптечок",
+  "src": "26-print.js"
+ },
+ "Лечит": {
+  "en": "Heals",
+  "uk": "Лікує",
+  "src": "02-items.js"
+ },
+ "Лечит часть": {
+  "en": "Heals part",
+  "uk": "Лікує частину",
+  "src": "08-fxgame.js"
+ },
+ "лиловый мод": {
+  "en": "lilac mod",
+  "uk": "бузковий мод",
+  "src": "01-core.js"
+ },
+ "Липкая масса замедляет.": {
+  "en": "A sticky mass slows you down.",
+  "uk": "Липка маса уповільнює.",
+  "src": "20-deep.js"
+ },
+ "Лира": {
+  "en": "Lyra",
+  "uk": "Ліра",
+  "src": "01-core.js"
+ },
+ "Лист металла": {
+  "en": "Metal sheet",
+  "uk": "Лист металу",
+  "src": "03-props.js"
+ },
+ "Листовой металл для корпусов, шкафов и брони.": {
+  "en": "Sheet metal for casings, cabinets and armor.",
+  "uk": "Листовий метал для корпусів, шаф і броні.",
+  "src": "22-matinfo.js"
+ },
+ "лишнее продано за": {
+  "en": "surplus sold for",
+  "uk": "зайве продано за",
+  "src": "16-roster.js"
+ },
+ "ЛОВ": {
+  "en": "AGI",
+  "uk": "СПР",
+  "src": "07-stats.js"
+ },
+ "Ловкость": {
+  "en": "Agility",
+  "uk": "Спритність",
+  "src": "07-stats.js"
+ },
+ "Ловушка": {
+  "en": "Trap",
+  "uk": "Пастка",
+  "src": "20-deep.js"
+ },
+ "Ловушки": {
+  "en": "Traps",
+  "uk": "Пастки",
+  "src": "20-deep.js"
+ },
+ "ЛОВУШКИ": {
+  "en": "TRAPS",
+  "uk": "ПАСТКИ",
+  "src": "20-deep.js"
+ },
+ "логин": {
+  "en": "login",
+  "uk": "логін",
+  "src": "30-title.js"
+ },
+ "Логин: 3–16 букв, цифр": {
+  "en": "Login: 3–16 letters, digits",
+  "uk": "Логін: 3–16 літер, цифр",
+  "src": "30-title.js"
+ },
+ "Лозный змей": {
+  "en": "Vine serpent",
+  "uk": "Лозяний змій",
+  "src": "20-deep.js"
+ },
+ "Лут": {
+  "en": "Loot",
+  "uk": "Лут",
+  "src": "30-title.js"
+ },
+ "лут: до": {
+  "en": "loot: up to",
+  "uk": "лут: до",
+  "src": "19-zones.js"
+ },
+ "луч": {
+  "en": "beam",
+  "uk": "промінь",
+  "src": "20-deep.js"
+ },
+ "лучше на": {
+  "en": "better by",
+  "uk": "краще на",
+  "src": "09-heropanel.js"
+ },
+ "Лучшее": {
+  "en": "Best",
+  "uk": "Найкраще",
+  "src": "06-hideout.js"
+ },
+ "Лучшее уже надето": {
+  "en": "Best gear already equipped",
+  "uk": "Найкраще вже вдягнено",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Лучшие зоны": {
+  "en": "Best zones",
+  "uk": "Найкращі зони",
+  "src": "22-matinfo.js"
+ },
+ "лысый": {
+  "en": "bald",
+  "uk": "лисий",
+  "src": "01-core.js"
+ },
+ "Люкс": {
+  "en": "Lux",
+  "uk": "Люкс",
+  "src": "01-core.js"
+ },
+ "Магнит портит оружие и вырывает патроны.": {
+  "en": "The magnet damages weapons and rips out ammo.",
+  "uk": "Магніт псує зброю й вириває набої.",
+  "src": "20-deep.js"
+ },
+ "Магнитная ловушка": {
+  "en": "Magnetic trap",
+  "uk": "Магнітна пастка",
+  "src": "20-deep.js"
+ },
+ "майка": {
+  "en": "tank top",
+  "uk": "майка",
+  "src": "01-core.js"
+ },
+ "Майнинг-ферма": {
+  "en": "Mining farm",
+  "uk": "Майнінг-ферма",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "макс.": {
+  "en": "max",
+  "uk": "макс.",
+  "src": "06-hideout.js"
+ },
+ "Максимальный уровень": {
+  "en": "Max level",
+  "uk": "Максимальний рівень",
+  "src": "05-game_all.js 12-wpn.js"
+ },
+ "максимум": {
+  "en": "max",
+  "uk": "максимум",
+  "src": "12-wpn.js 25-base3.js"
+ },
+ "Малая канистра: 4 ед. топлива. Генератор тратит 2 / 1,5 / 1 ед. в час (ур. 1 / 2 / 3).": {
+  "en": "Small canister: 4 u of fuel. The generator burns 2 / 1.5 / 1 u per hour (lv 1 / 2 / 3).",
+  "uk": "Мала каністра: 4 од. пального. Генератор витрачає 2 / 1,5 / 1 од. на годину (рів. 1 / 2 / 3).",
+  "src": "23-fuel.js"
+ },
+ "Мало": {
+  "en": "Low",
+  "uk": "Мало",
+  "src": "09-heropanel.js"
+ },
+ "Мало здоровья и нет аптечек — лучше эвакуироваться": {
+  "en": "Low health and no medkits — better evacuate",
+  "uk": "Мало здоров'я й немає аптечок — краще евакуюватися",
+  "src": "05-game_all.js"
+ },
+ "Мало энергии": {
+  "en": "Low energy",
+  "uk": "Мало енергії",
+  "src": "05-game_all.js"
+ },
+ "Мангуст": {
+  "en": "Mongoose",
+  "uk": "Мангуст",
+  "src": "02-items.js"
+ },
+ "Маршрут": {
+  "en": "Route",
+  "uk": "Маршрут",
+  "src": "14-base2.js 15-loadout2.js"
+ },
+ "МАРШРУТ": {
+  "en": "ROUTE",
+  "uk": "МАРШРУТ",
+  "src": "06-hideout.js"
+ },
+ "маска: строки развёртки": {
+  "en": "mask: scanlines",
+  "uk": "маска: рядки розгортки",
+  "src": "31-crt.js"
+ },
+ "Маскировщик": {
+  "en": "Cloaker",
+  "uk": "Маскувальник",
+  "src": "08-fxgame.js"
+ },
+ "Масляное пятно": {
+  "en": "Oil slick",
+  "uk": "Масляна пляма",
+  "src": "20-deep.js"
+ },
+ "массивное": {
+  "en": "massive",
+  "uk": "масивна",
+  "src": "01-core.js 05-game_all.js 07-stats.js"
+ },
+ "Мастер цеха": {
+  "en": "Shop foreman",
+  "uk": "Майстер цеху",
+  "src": "20-deep.js"
+ },
+ "Мастерская": {
+  "en": "Workshop",
+  "uk": "Майстерня",
+  "src": "05-game_all.js"
+ },
+ "МАСШ": {
+  "en": "ZOOM",
+  "uk": "МАСШ",
+  "src": "index.html"
+ },
+ "Материалов для чтения": {
+  "en": "Reading material",
+  "uk": "Матеріалів для читання",
+  "src": "25-base3.js"
+ },
+ "Матрас": {
+  "en": "Mattress",
+  "uk": "Матрац",
+  "src": "05-game_all.js"
+ },
+ "мачете": {
+  "en": "machete",
+  "uk": "мачете",
+  "src": "04-world.js 08-fxgame.js 20-deep.js 26-print.js"
+ },
+ "Мглистый призрак": {
+  "en": "Haze ghost",
+  "uk": "Імлистий привид",
+  "src": "20-deep.js"
+ },
+ "Мгновенное обморожение.": {
+  "en": "Instant frostbite.",
+  "uk": "Миттєве обмороження.",
+  "src": "20-deep.js"
+ },
+ "Мебель": {
+  "en": "Furniture",
+  "uk": "Меблі",
+  "src": "20-deep.js"
+ },
+ "Мегастрой": {
+  "en": "Megastroy",
+  "uk": "Мегабуд",
+  "src": "02-items.js"
+ },
+ "Мед-модуль": {
+  "en": "Med module",
+  "uk": "Медмодуль",
+  "src": "08-fxgame.js"
+ },
+ "Медблок": {
+  "en": "Med bay",
+  "uk": "Медблок",
+  "src": "05-game_all.js"
+ },
+ "МЕДБЛОК": {
+  "en": "MED BAY",
+  "uk": "МЕДБЛОК",
+  "src": "05-game_all.js"
+ },
+ "медленнее": {
+  "en": "slower",
+  "uk": "повільніше",
+  "src": "24-attrui.js"
+ },
+ "Медленно портит снаряжение и здоровье.": {
+  "en": "Slowly ruins gear and health.",
+  "uk": "Повільно псує спорядження й здоров'я.",
+  "src": "20-deep.js"
+ },
+ "Медленное отравление.": {
+  "en": "Slow poisoning.",
+  "uk": "Повільне отруєння.",
+  "src": "20-deep.js"
+ },
+ "Медные провода для питания и электроники.": {
+  "en": "Copper wires for power and electronics.",
+  "uk": "Мідні дроти для живлення й електроніки.",
+  "src": "22-matinfo.js"
+ },
+ "Медпункт": {
+  "en": "First-aid post",
+  "uk": "Медпункт",
+  "src": "05-game_all.js"
+ },
+ "МЕМОРИАЛ": {
+  "en": "MEMORIAL",
+  "uk": "МЕМОРІАЛ",
+  "src": "13-hire.js"
+ },
+ "Металлический шкаф": {
+  "en": "Metal cabinet",
+  "uk": "Металева шафа",
+  "src": "05-game_all.js"
+ },
+ "меткость": {
+  "en": "accuracy",
+  "uk": "влучність",
+  "src": "07-stats.js"
+ },
+ "Меткость": {
+  "en": "Accuracy",
+  "uk": "Влучність",
+  "src": "24-attrui.js"
+ },
+ "метод и часть ядра": {
+  "en": "method and part of the core",
+  "uk": "метод і частина ядра",
+  "src": "08-fxgame.js"
+ },
+ "Мехабогомол": {
+  "en": "Mecha-mantis",
+  "uk": "Мехабогомол",
+  "src": "20-deep.js"
+ },
+ "Мешки цемента — для фундамента и тяжёлых модулей.": {
+  "en": "Bags of cement — for foundations and heavy modules.",
+  "uk": "Мішки цементу — для фундаменту й важких модулів.",
+  "src": "22-matinfo.js"
+ },
+ "Микрочип": {
+  "en": "Microchip",
+  "uk": "Мікрочип",
+  "src": "03-props.js"
+ },
+ "Микрочипы — мозги простых устройств.": {
+  "en": "Microchips — the brains of simple devices.",
+  "uk": "Мікрочипи — мізки простих пристроїв.",
+  "src": "22-matinfo.js"
+ },
+ "мимо": {
+  "en": "miss",
+  "uk": "мимо",
+  "src": "05-game_all.js 12-wpn.js"
+ },
+ "мин": {
+  "en": "min",
+  "uk": "хв",
+  "src": "13-hire.js 23-fuel.js 25-base3.js"
+ },
+ "мин учёбы)": {
+  "en": "min of study)",
+  "uk": "хв навчання)",
+  "src": "25-base3.js"
+ },
+ "мин)": {
+  "en": "min)",
+  "uk": "хв)",
+  "src": "25-base3.js"
+ },
+ "мина": {
+  "en": "mine",
+  "uk": "міна",
+  "src": "20-deep.js"
+ },
+ "Мини-заряд": {
+  "en": "Mini charge",
+  "uk": "Мінізаряд",
+  "src": "08-fxgame.js"
+ },
+ "Мира": {
+  "en": "Mira",
+  "uk": "Міра",
+  "src": "01-core.js"
+ },
+ "Многотонный пресс опускается по циклу.": {
+  "en": "A multi-ton press drops on a cycle.",
+  "uk": "Багатотонний прес опускається за циклом.",
+  "src": "20-deep.js"
+ },
+ "МОЖНО ПОСТРОИТЬ": {
+  "en": "AVAILABLE TO BUILD",
+  "uk": "МОЖНА ЗБУДУВАТИ",
+  "src": "06-hideout.js"
+ },
+ "Можно продолжать": {
+  "en": "Can keep going",
+  "uk": "Можна продовжувати",
+  "src": "09-heropanel.js"
+ },
+ "Можно продолжать: место и силы есть": {
+  "en": "Can keep going: room and strength left",
+  "uk": "Можна продовжувати: місце й сили є",
+  "src": "05-game_all.js"
+ },
+ "можно строить": {
+  "en": "can build",
+  "uk": "можна будувати",
+  "src": "06-hideout.js"
+ },
+ "Молнии": {
+  "en": "Lightning",
+  "uk": "Блискавки",
+  "src": "08-fxgame.js"
+ },
+ "Молот": {
+  "en": "Hammer",
+  "uk": "Молот",
+  "src": "02-items.js"
+ },
+ "моно-линза": {
+  "en": "mono-lens",
+  "uk": "монолінза",
+  "src": "01-core.js 07-stats.js"
+ },
+ "Морозная зона": {
+  "en": "Frost zone",
+  "uk": "Морозна зона",
+  "src": "20-deep.js"
+ },
+ "Морозный мародёр": {
+  "en": "Frost marauder",
+  "uk": "Морозний мародер",
+  "src": "20-deep.js"
+ },
+ "Музыка": {
+  "en": "Music",
+  "uk": "Музика",
+  "src": "18-audio.js"
+ },
+ "Музыка и все звуки синтезируются процедурно прямо в игре.": {
+  "en": "All music and sound are synthesized procedurally right in the game.",
+  "uk": "Уся музика й звуки синтезуються процедурно просто в грі.",
+  "src": "18-audio.js"
+ },
+ "Мусорщик": {
+  "en": "Scavenger",
+  "uk": "Сміттяр",
+  "src": "04-world.js"
+ },
+ "Мусорщик дюн": {
+  "en": "Dune scavenger",
+  "uk": "Сміттяр дюн",
+  "src": "20-deep.js"
+ },
+ "Мутант": {
+  "en": "Mutant",
+  "uk": "Мутант",
+  "src": "04-world.js"
+ },
+ "на": {
+  "en": "for",
+  "uk": "на",
+  "src": "23-fuel.js"
+ },
+ "На базу": {
+  "en": "To base",
+  "uk": "На базу",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "на базу. Погибнете — рюкзак потерян.": {
+  "en": "to base. Die — and the backpack is lost.",
+  "uk": "на базу. Загинете — рюкзак втрачено.",
+  "src": "05-game_all.js"
+ },
+ "На каждом этаже два выхода": {
+  "en": "Each floor has two exits",
+  "uk": "На кожному поверсі два виходи",
+  "src": "05-game_all.js"
+ },
+ "на меньшей глубине — редко": {
+  "en": "rare at shallower depths",
+  "uk": "на меншій глибині — рідко",
+  "src": "22-matinfo.js"
+ },
+ "На полку": {
+  "en": "On the shelf",
+  "uk": "На полицю",
+  "src": "25-base3.js"
+ },
+ "на удар (с учётом навыков)": {
+  "en": "per hit (skills included)",
+  "uk": "на удар (з урахуванням навичок)",
+  "src": "12-wpn.js"
+ },
+ "Наводки разряжают импланты.": {
+  "en": "Interference drains implants.",
+  "uk": "Наводки розряджають імпланти.",
+  "src": "20-deep.js"
+ },
+ "Надето": {
+  "en": "Equipped",
+  "uk": "Вдягнено",
+  "src": "09-heropanel.js"
+ },
+ "Надетое": {
+  "en": "Equipped",
+  "uk": "Вдягнене",
+  "src": "15-loadout2.js"
+ },
+ "Надеть": {
+  "en": "Equip",
+  "uk": "Вдягти",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 15-loadout2.js"
+ },
+ "Надеть лучшее": {
+  "en": "Equip best",
+  "uk": "Вдягти найкраще",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Надеть лучшее везде": {
+  "en": "Equip best everywhere",
+  "uk": "Вдягти найкраще всюди",
+  "src": "06-hideout.js"
+ },
+ "Наём": {
+  "en": "Hire",
+  "uk": "Найм",
+  "src": "06-hideout.js 13-hire.js 17-trade2.js"
+ },
+ "НАЁМ": {
+  "en": "HIRE",
+  "uk": "НАЙМ",
+  "src": "index.html"
+ },
+ "Наёмн.": {
+  "en": "Mercs",
+  "uk": "Найм.",
+  "src": "30-title.js"
+ },
+ "Наёмник": {
+  "en": "Mercenary",
+  "uk": "Найманець",
+  "src": "04-world.js"
+ },
+ "НАЁМНИК ПОГИБ": {
+  "en": "MERC DOWN",
+  "uk": "НАЙМАНЕЦЬ ЗАГИНУВ",
+  "src": "13-hire.js"
+ },
+ "Наёмник прокачался": {
+  "en": "The merc leveled up",
+  "uk": "Найманець прокачався",
+  "src": "25-base3.js"
+ },
+ "Наёмник топтался на месте — иду другим путём": {
+  "en": "The merc was going in circles — taking another route",
+  "uk": "Найманець тупцяв на місці — іду іншим шляхом",
+  "src": "29-rt.js"
+ },
+ "Наёмник тренируется сам, пока вы не в игре: Сила, Ловкость, Скорость, Здоровье": {
+  "en": "The merc trains on their own while you're away: Strength, Agility, Speed, Health",
+  "uk": "Найманець тренується сам, поки ви не в грі: Сила, Спритність, Швидкість, Здоров'я",
+  "src": "25-base3.js"
+ },
+ "наёмник успел отскочить": {
+  "en": "the merc jumped clear",
+  "uk": "найманець встиг відскочити",
+  "src": "20-deep.js"
+ },
+ "Наёмник читает журналы и книги, пока вы не в игре: Интеллект и Внимательность": {
+  "en": "The merc reads magazines and books while you're away: Intelligence and Perception",
+  "uk": "Найманець читає журнали й книги, поки ви не в грі: Інтелект і Уважність",
+  "src": "25-base3.js"
+ },
+ "Наёмники": {
+  "en": "Mercs",
+  "uk": "Найманці",
+  "src": "30-title.js"
+ },
+ "НАЁМНИКИ": {
+  "en": "MERCS",
+  "uk": "НАЙМАНЦІ",
+  "src": "16-roster.js"
+ },
+ "Наёмников нет. Нанять — в терминале, вкладка «Наём».": {
+  "en": "No mercs. Hire one at the terminal, «Hire» tab.",
+  "uk": "Найманців немає. Найняти — у терміналі, вкладка «Найм».",
+  "src": "16-roster.js"
+ },
+ "Нажимная плита": {
+  "en": "Pressure plate",
+  "uk": "Натискна плита",
+  "src": "20-deep.js"
+ },
+ "нажмите": {
+  "en": "tap",
+  "uk": "натисніть",
+  "src": "24-attrui.js"
+ },
+ "нажмите на компонент, чтобы узнать, где его найти": {
+  "en": "tap a component to see where to find it",
+  "uk": "натисніть на компонент, щоб дізнатися, де його знайти",
+  "src": "06-hideout.js"
+ },
+ "Назад": {
+  "en": "Back",
+  "uk": "Назад",
+  "src": "05-game_all.js 08-fxgame.js 20-deep.js 30-title.js"
+ },
+ "назад — убежище было без питания": {
+  "en": "ago — the shelter had no power",
+  "uk": "тому — сховище було без живлення",
+  "src": "23-fuel.js"
+ },
+ "Найден неизвестный чертёж": {
+  "en": "Unknown blueprint found",
+  "uk": "Знайдено невідоме креслення",
+  "src": "26-print.js"
+ },
+ "найдено предметов": {
+  "en": "items found",
+  "uk": "знайдено предметів",
+  "src": "06-hideout.js"
+ },
+ "нано-аптечка": {
+  "en": "nano-medkit",
+  "uk": "наноаптечка",
+  "src": "02-items.js 06-hideout.js 26-print.js"
+ },
+ "Нано-аптечка": {
+  "en": "Nano-medkit",
+  "uk": "Наноаптечка",
+  "src": "06-hideout.js"
+ },
+ "Нано-ремонт": {
+  "en": "Nano-repair",
+  "uk": "Наноремонт",
+  "src": "02-items.js 05-game_all.js 26-print.js"
+ },
+ "нанят": {
+  "en": "hired",
+  "uk": "найнятий",
+  "src": "13-hire.js"
+ },
+ "Нанять за": {
+  "en": "Hire for",
+  "uk": "Найняти за",
+  "src": "13-hire.js"
+ },
+ "Напалм-мина": {
+  "en": "Napalm mine",
+  "uk": "Напалм-міна",
+  "src": "20-deep.js"
+ },
+ "Напечатано": {
+  "en": "Printed",
+  "uk": "Надруковано",
+  "src": "26-print.js"
+ },
+ "Нарастают из стены.": {
+  "en": "Grow out of the wall.",
+  "uk": "Наростають зі стіни.",
+  "src": "20-deep.js"
+ },
+ "НАСТРОЙКИ": {
+  "en": "SETTINGS",
+  "uk": "НАЛАШТУВАННЯ",
+  "src": "15-loadout2.js"
+ },
+ "Находки": {
+  "en": "Pickups",
+  "uk": "Знахідки",
+  "src": "08-fxgame.js"
+ },
+ "Начать рейд": {
+  "en": "Start raid",
+  "uk": "Почати рейд",
+  "src": "05-game_all.js"
+ },
+ "НАЧАТЬ РЕЙД": {
+  "en": "START RAID",
+  "uk": "ПОЧАТИ РЕЙД",
+  "src": "06-hideout.js 14-base2.js"
+ },
+ "не влезло": {
+  "en": "didn't fit",
+  "uk": "не влізло",
+  "src": "11-scrap.js"
+ },
+ "Не подходит в этот слот": {
+  "en": "Doesn't fit this slot",
+  "uk": "Не підходить у цей слот",
+  "src": "15-loadout2.js"
+ },
+ "Не понимает ловушек: идёт напролом": {
+  "en": "Doesn't understand traps: barges straight through",
+  "uk": "Не розуміє пасток: іде напролом",
+  "src": "24-attrui.js"
+ },
+ "не построен": {
+  "en": "not built",
+  "uk": "не збудовано",
+  "src": "05-game_all.js 25-base3.js 26-print.js"
+ },
+ "не построена": {
+  "en": "not built",
+  "uk": "не збудована",
+  "src": "05-game_all.js 25-base3.js"
+ },
+ "Не построено": {
+  "en": "Not built",
+  "uk": "Не збудовано",
+  "src": "06-hideout.js"
+ },
+ "Не удалось обезвредить": {
+  "en": "Failed to disarm",
+  "uk": "Не вдалося знешкодити",
+  "src": "20-deep.js"
+ },
+ "Не удалось прочитать файл перевода": {
+  "en": "Could not read the translation file",
+  "uk": "Не вдалося прочитати файл перекладу",
+  "src": "32-i18n.js"
+ },
+ "Не удалось сохранить аккаунт в общей таблице": {
+  "en": "Couldn't save the account to the shared table",
+  "uk": "Не вдалося зберегти акаунт у спільній таблиці",
+  "src": "30-title.js"
+ },
+ "Не хватает": {
+  "en": "Not enough",
+  "uk": "Не вистачає",
+  "src": "13-hire.js 22-matinfo.js"
+ },
+ "Не хватает компонентов": {
+  "en": "Not enough components",
+  "uk": "Не вистачає компонентів",
+  "src": "12-wpn.js"
+ },
+ "Не хватает кредитов": {
+  "en": "Not enough credits",
+  "uk": "Не вистачає кредитів",
+  "src": "17-trade2.js"
+ },
+ "не хватает ресурсов": {
+  "en": "not enough resources",
+  "uk": "не вистачає ресурсів",
+  "src": "06-hideout.js"
+ },
+ "Неверный пароль для": {
+  "en": "Wrong password for",
+  "uk": "Неправильний пароль для",
+  "src": "30-title.js"
+ },
+ "Невидимость": {
+  "en": "Invisibility",
+  "uk": "Невидимість",
+  "src": "02-items.js 08-fxgame.js"
+ },
+ "Неизвестный чертёж": {
+  "en": "Unknown blueprint",
+  "uk": "Невідоме креслення",
+  "src": "26-print.js"
+ },
+ "нейро-порт": {
+  "en": "neuro-port",
+  "uk": "нейропорт",
+  "src": "01-core.js"
+ },
+ "Нейро-прицел": {
+  "en": "Neuro-sight",
+  "uk": "Нейроприціл",
+  "src": "26-print.js"
+ },
+ "Нейрон": {
+  "en": "Neuron",
+  "uk": "Нейрон",
+  "src": "02-items.js"
+ },
+ "Нео": {
+  "en": "Neo",
+  "uk": "Нео",
+  "src": "01-core.js"
+ },
+ "необычный": {
+  "en": "uncommon",
+  "uk": "незвичайний",
+  "src": "02-items.js"
+ },
+ "Неон": {
+  "en": "Neon",
+  "uk": "Неон",
+  "src": "02-items.js 05-game_all.js"
+ },
+ "неон-розовые": {
+  "en": "neon pink",
+  "uk": "неон-рожеві",
+  "src": "01-core.js"
+ },
+ "неон-тату": {
+  "en": "neon tattoo",
+  "uk": "неон-тату",
+  "src": "01-core.js"
+ },
+ "Неоновые вывески: продажа в терминале": {
+  "en": "Neon signs: terminal sales",
+  "uk": "Неонові вивіски: продаж у терміналі",
+  "src": "05-game_all.js"
+ },
+ "неоновые губы": {
+  "en": "neon lips",
+  "uk": "неонові губи",
+  "src": "01-core.js"
+ },
+ "неплохая находка": {
+  "en": "a decent find",
+  "uk": "непогана знахідка",
+  "src": "26-print.js"
+ },
+ "нет": {
+  "en": "none",
+  "uk": "немає",
+  "src": "01-core.js 05-game_all.js 07-stats.js"
+ },
+ "Нет активного наёмника — наймите нового": {
+  "en": "No active merc — hire a new one",
+  "uk": "Немає активного найманця — найміть нового",
+  "src": "13-hire.js"
+ },
+ "Нет активного наёмника — обучение стоит.": {
+  "en": "No active merc — study is paused.",
+  "uk": "Немає активного найманця — навчання стоїть.",
+  "src": "25-base3.js"
+ },
+ "Нет активного наёмника. Наймите в терминале или выберите в «Наёмниках».": {
+  "en": "No active merc. Hire one at the terminal or pick one in «Mercs».",
+  "uk": "Немає активного найманця. Найміть у терміналі або оберіть у «Найманцях».",
+  "src": "15-loadout2.js"
+ },
+ "Нет аптечек": {
+  "en": "No medkits",
+  "uk": "Немає аптечок",
+  "src": "05-game_all.js"
+ },
+ "Нет батарей": {
+  "en": "No batteries",
+  "uk": "Немає батарей",
+  "src": "05-game_all.js"
+ },
+ "нет генер.": {
+  "en": "no gen.",
+  "uk": "немає генер.",
+  "src": "06-hideout.js"
+ },
+ "Нет гранат": {
+  "en": "No grenades",
+  "uk": "Немає гранат",
+  "src": "08-fxgame.js"
+ },
+ "Нет оружия дальнего боя": {
+  "en": "No ranged weapon",
+  "uk": "Немає зброї дальнього бою",
+  "src": "05-game_all.js"
+ },
+ "Нет патронов": {
+  "en": "No ammo",
+  "uk": "Немає набоїв",
+  "src": "05-game_all.js 12-wpn.js"
+ },
+ "нет питания": {
+  "en": "no power",
+  "uk": "немає живлення",
+  "src": "06-hideout.js 26-print.js"
+ },
+ "нет питания — как у 1-го уровня)": {
+  "en": "no power — as lv 1)",
+  "uk": "немає живлення — як у 1-го рівня)",
+  "src": "25-base3.js"
+ },
+ "нет питания — стоит": {
+  "en": "no power — idle",
+  "uk": "немає живлення — стоїть",
+  "src": "26-print.js"
+ },
+ "нет питания!)": {
+  "en": "no power!)",
+  "uk": "немає живлення!)",
+  "src": "06-hideout.js"
+ },
+ "нет регенерации": {
+  "en": "no regeneration",
+  "uk": "немає регенерації",
+  "src": "07-stats.js"
+ },
+ "Нет регенерации": {
+  "en": "No regeneration",
+  "uk": "Немає регенерації",
+  "src": "24-attrui.js"
+ },
+ "Нет такого логина — создадим новый. Есть — войдём.": {
+  "en": "No such login — we'll create it. Exists — we'll log in.",
+  "uk": "Немає такого логіна — створимо новий. Є — увійдемо.",
+  "src": "30-title.js"
+ },
+ "нет топлива": {
+  "en": "no fuel",
+  "uk": "немає пального",
+  "src": "06-hideout.js"
+ },
+ "Нет цели": {
+  "en": "No target",
+  "uk": "Немає цілі",
+  "src": "08-fxgame.js"
+ },
+ "Нет цели для гранаты": {
+  "en": "No target for the grenade",
+  "uk": "Немає цілі для гранати",
+  "src": "08-fxgame.js"
+ },
+ "Нет цели для ракеты": {
+  "en": "No target for the rocket",
+  "uk": "Немає цілі для ракети",
+  "src": "05-game_all.js"
+ },
+ "Нетраннер": {
+  "en": "Netrunner",
+  "uk": "Нетранер",
+  "src": "04-world.js"
+ },
+ "Нечего снимать": {
+  "en": "Nothing to take off",
+  "uk": "Нічого знімати",
+  "src": "15-loadout2.js"
+ },
+ "ниже среднего": {
+  "en": "below average",
+  "uk": "нижче середнього",
+  "src": "01-core.js"
+ },
+ "низкий": {
+  "en": "short",
+  "uk": "низький",
+  "src": "01-core.js"
+ },
+ "НИКИ": {
+  "en": "LINGS",
+  "uk": "АНЦІ",
+  "src": "index.html"
+ },
+ "Никс": {
+  "en": "Nyx",
+  "uk": "Нікс",
+  "src": "01-core.js"
+ },
+ "ничего": {
+  "en": "nothing",
+  "uk": "нічого",
+  "src": "11-scrap.js"
+ },
+ "Ничего не вынесено": {
+  "en": "Nothing carried out",
+  "uk": "Нічого не винесено",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Нова": {
+  "en": "Nova",
+  "uk": "Нова",
+  "src": "01-core.js"
+ },
+ "Новая зона разведана": {
+  "en": "New zone discovered",
+  "uk": "Нову зону розвідано",
+  "src": "19-zones.js"
+ },
+ "НОВЫЕ РЕЦЕПТЫ В ЯЩИКЕ": {
+  "en": "NEW RECIPES IN THE CRATE",
+  "uk": "НОВІ РЕЦЕПТИ У СКРИНІ",
+  "src": "26-print.js"
+ },
+ "НОВЫЙ БОЕЦ": {
+  "en": "NEW FIGHTER",
+  "uk": "НОВИЙ БОЄЦЬ",
+  "src": "13-hire.js"
+ },
+ "Новый набор": {
+  "en": "New set",
+  "uk": "Новий набір",
+  "src": "05-game_all.js"
+ },
+ "Новый уровень": {
+  "en": "Level up",
+  "uk": "Новий рівень",
+  "src": "05-game_all.js"
+ },
+ "нож": {
+  "en": "knife",
+  "uk": "ніж",
+  "src": "04-world.js 08-fxgame.js 20-deep.js 26-print.js"
+ },
+ "норма": {
+  "en": "normal",
+  "uk": "норма",
+  "src": "24-attrui.js"
+ },
+ "Нужен верстак ур.": {
+  "en": "Needs workbench lv",
+  "uk": "Потрібен верстак рів.",
+  "src": "12-wpn.js"
+ },
+ "нужен голопроигрыватель": {
+  "en": "needs a holo-player",
+  "uk": "потрібен голопрогравач",
+  "src": "25-base3.js"
+ },
+ "Нужен для": {
+  "en": "Needed for",
+  "uk": "Потрібен для",
+  "src": "05-game_all.js"
+ },
+ "Нужен доступ «Участник» к игре.": {
+  "en": "You need «Contributor» access to the game.",
+  "uk": "Потрібен доступ «Учасник» до гри.",
+  "src": "30-title.js"
+ },
+ "нужно": {
+  "en": "needs",
+  "uk": "потрібно",
+  "src": "06-hideout.js 22-matinfo.js"
+ },
+ "обезврежено": {
+  "en": "disarmed",
+  "uk": "знешкоджено",
+  "src": "20-deep.js"
+ },
+ "Обезврежено": {
+  "en": "Disarmed",
+  "uk": "Знешкоджено",
+  "src": "20-deep.js"
+ },
+ "обездвижен": {
+  "en": "immobilized",
+  "uk": "знерухомлений",
+  "src": "20-deep.js"
+ },
+ "обзор": {
+  "en": "sight",
+  "uk": "огляд",
+  "src": "07-stats.js"
+ },
+ "Обзор": {
+  "en": "Sight",
+  "uk": "Огляд",
+  "src": "24-attrui.js"
+ },
+ "обзор 3+ВНИ клеток; бонус/потеря добычи; шанс улучшения +5%/ед.; осечки изношенного оружия": {
+  "en": "sight 3+PER tiles; loot bonus/loss; upgrade chance +5%/pt; misfires of worn weapons",
+  "uk": "огляд 3+УВА клітинок; бонус/втрата здобичі; шанс покращення +5%/од.; осічки зношеної зброї",
+  "src": "07-stats.js"
+ },
+ "обитатели как на глубине": {
+  "en": "inhabitants as at depth",
+  "uk": "мешканці як на глибині",
+  "src": "05-game_all.js"
+ },
+ "Облако спор вокруг.": {
+  "en": "A cloud of spores around.",
+  "uk": "Хмара спор навколо.",
+  "src": "20-deep.js"
+ },
+ "Обледеневший шлюз.": {
+  "en": "Iced-over airlock.",
+  "uk": "Обмерзлий шлюз.",
+  "src": "20-deep.js"
+ },
+ "Обновлено снаряжения": {
+  "en": "Gear upgraded",
+  "uk": "Оновлено спорядження",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "обновляется после рейда": {
+  "en": "refreshes after a raid",
+  "uk": "оновлюється після рейду",
+  "src": "17-trade2.js"
+ },
+ "Обойма": {
+  "en": "Magazine",
+  "uk": "Обойма",
+  "src": "12-wpn.js"
+ },
+ "Обрушение потолка": {
+  "en": "Ceiling collapse",
+  "uk": "Обвал стелі",
+  "src": "20-deep.js"
+ },
+ "ОБУЧЕНИЕ": {
+  "en": "TRAINING",
+  "uk": "НАВЧАННЯ",
+  "src": "25-base3.js"
+ },
+ "Обучение навыкам по книгам, пока вы отдыхаете": {
+  "en": "Learn skills from books while you rest",
+  "uk": "Навчання навичок за книгами, поки ви відпочиваєте",
+  "src": "25-base3.js"
+ },
+ "Обходной путь найден": {
+  "en": "Detour found",
+  "uk": "Обхідний шлях знайдено",
+  "src": "05-game_all.js"
+ },
+ "Общая таблица сейчас недоступна — показаны игроки этого устройства.": {
+  "en": "The shared table is unavailable right now — showing players from this device.",
+  "uk": "Спільна таблиця зараз недоступна — показано гравців цього пристрою.",
+  "src": "30-title.js"
+ },
+ "обычная находка": {
+  "en": "a common find",
+  "uk": "звичайна знахідка",
+  "src": "26-print.js"
+ },
+ "обычно": {
+  "en": "usually",
+  "uk": "зазвичай",
+  "src": "24-attrui.js"
+ },
+ "обычные": {
+  "en": "regular",
+  "uk": "звичайні",
+  "src": "01-core.js"
+ },
+ "обычный": {
+  "en": "common",
+  "uk": "звичайний",
+  "src": "01-core.js 02-items.js 03-props.js 26-print.js"
+ },
+ "оглуш.": {
+  "en": "stun",
+  "uk": "оглуш.",
+  "src": "12-wpn.js"
+ },
+ "Оглушает всех видимых врагов": {
+  "en": "Stuns all visible enemies",
+  "uk": "Оглушує всіх видимих ворогів",
+  "src": "08-fxgame.js"
+ },
+ "Оглушает всех вокруг, и врагов тоже.": {
+  "en": "Stuns everyone around, enemies included.",
+  "uk": "Оглушує всіх навколо, ворогів теж.",
+  "src": "20-deep.js"
+ },
+ "оглушён": {
+  "en": "stunned",
+  "uk": "оглушений",
+  "src": "05-game_all.js 12-wpn.js"
+ },
+ "оглушение": {
+  "en": "stun",
+  "uk": "оглушення",
+  "src": "02-items.js 08-fxgame.js 20-deep.js"
+ },
+ "оглушено": {
+  "en": "stunned",
+  "uk": "оглушено",
+  "src": "08-fxgame.js"
+ },
+ "Огненная плита": {
+  "en": "Fire plate",
+  "uk": "Вогняна плита",
+  "src": "20-deep.js"
+ },
+ "Огненная форсунка": {
+  "en": "Fire nozzle",
+  "uk": "Вогняна форсунка",
+  "src": "20-deep.js"
+ },
+ "Огненный разлёт.": {
+  "en": "Fire spray.",
+  "uk": "Вогняний розліт.",
+  "src": "20-deep.js"
+ },
+ "огнестрел": {
+  "en": "firearms",
+  "uk": "вогнепал",
+  "src": "22-matinfo.js"
+ },
+ "Огонь": {
+  "en": "Fire",
+  "uk": "Вогонь",
+  "src": "08-fxgame.js"
+ },
+ "Огонь в щели": {
+  "en": "Fire in the gap",
+  "uk": "Вогонь у щілині",
+  "src": "20-deep.js"
+ },
+ "одежда": {
+  "en": "clothing",
+  "uk": "одяг",
+  "src": "22-matinfo.js"
+ },
+ "Одежда": {
+  "en": "Clothing",
+  "uk": "Одяг",
+  "src": "02-items.js 05-game_all.js 09-heropanel.js 15-loadout2.js"
+ },
+ "Одна комната: генератор, верстак, станок и принтер": {
+  "en": "One room: generator, workbench, station and printer",
+  "uk": "Одна кімната: генератор, верстак, дослідницький верстат і принтер",
+  "src": "27-rooms.js"
+ },
+ "одновременно можно вести одну стройку.": {
+  "en": "only one construction at a time.",
+  "uk": "одночасно можна вести одне будівництво.",
+  "src": "06-hideout.js"
+ },
+ "округлая": {
+  "en": "round",
+  "uk": "округла",
+  "src": "01-core.js"
+ },
+ "Окружение": {
+  "en": "Ambience",
+  "uk": "Оточення",
+  "src": "18-audio.js"
+ },
+ "оливковая": {
+  "en": "olive",
+  "uk": "оливкова",
+  "src": "01-core.js"
+ },
+ "Оникс": {
+  "en": "Onyx",
+  "uk": "Онікс",
+  "src": "01-core.js 02-items.js"
+ },
+ "Оптический камуфляж": {
+  "en": "Optical camo",
+  "uk": "Оптичний камуфляж",
+  "src": "02-items.js 05-game_all.js 26-print.js"
+ },
+ "Опутывает сетью на несколько секунд.": {
+  "en": "Tangles you in a net for a few seconds.",
+  "uk": "Обплутує сіткою на кілька секунд.",
+  "src": "20-deep.js"
+ },
+ "опыт": {
+  "en": "xp",
+  "uk": "досвід",
+  "src": "07-stats.js 09-heropanel.js 16-roster.js 29-rt.js"
+ },
+ "Опыт": {
+  "en": "Experience",
+  "uk": "Досвід",
+  "src": "24-attrui.js"
+ },
+ "опыта": {
+  "en": "xp",
+  "uk": "досвіду",
+  "src": "06-hideout.js"
+ },
+ "оранжевые": {
+  "en": "orange",
+  "uk": "помаранчеві",
+  "src": "01-core.js"
+ },
+ "оранжевый": {
+  "en": "orange",
+  "uk": "помаранчевий",
+  "src": "01-core.js"
+ },
+ "Оружейная": {
+  "en": "Armory",
+  "uk": "Зброярня",
+  "src": "05-game_all.js"
+ },
+ "Оружие": {
+  "en": "Weapons",
+  "uk": "Зброя",
+  "src": "15-loadout2.js"
+ },
+ "Оса": {
+  "en": "Wasp",
+  "uk": "Оса",
+  "src": "02-items.js"
+ },
+ "Освещение": {
+  "en": "Lighting",
+  "uk": "Освітлення",
+  "src": "05-game_all.js"
+ },
+ "осечка": {
+  "en": "misfire",
+  "uk": "осічка",
+  "src": "12-wpn.js"
+ },
+ "осечки": {
+  "en": "misfires",
+  "uk": "осічки",
+  "src": "07-stats.js 24-attrui.js"
+ },
+ "ослепление": {
+  "en": "blindness",
+  "uk": "засліплення",
+  "src": "20-deep.js"
+ },
+ "Ослепляет на несколько секунд.": {
+  "en": "Blinds for a few seconds.",
+  "uk": "Засліплює на кілька секунд.",
+  "src": "20-deep.js"
+ },
+ "особо ценный": {
+  "en": "especially valuable",
+  "uk": "особливо цінний",
+  "src": "03-props.js"
+ },
+ "осталось": {
+  "en": "left",
+  "uk": "залишилося",
+  "src": "06-hideout.js"
+ },
+ "осталось рейдов": {
+  "en": "raids left",
+  "uk": "залишилося рейдів",
+  "src": "06-hideout.js"
+ },
+ "Остаться": {
+  "en": "Stay",
+  "uk": "Залишитися",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "отдать переводчику и загрузить обратно.": {
+  "en": "handed to a translator and loaded back.",
+  "uk": "віддати перекладачеві й завантажити назад.",
+  "src": "32-i18n.js"
+ },
+ "Отдохните на кровати перед новым рейдом.": {
+  "en": "Rest in bed before the next raid.",
+  "uk": "Відпочиньте на ліжку перед новим рейдом.",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Отдохнуть": {
+  "en": "Rest",
+  "uk": "Відпочити",
+  "src": "05-game_all.js"
+ },
+ "Отдых восстанавливает": {
+  "en": "Rest restores",
+  "uk": "Відпочинок відновлює",
+  "src": "05-game_all.js"
+ },
+ "Отдых: полное восстановление + бонус на рейд": {
+  "en": "Rest: full recovery + raid bonus",
+  "uk": "Відпочинок: повне відновлення + бонус на рейд",
+  "src": "05-game_all.js"
+ },
+ "откат": {
+  "en": "cooldown",
+  "uk": "перезарядка",
+  "src": "02-items.js 08-fxgame.js"
+ },
+ "Открыть ящик": {
+  "en": "Open crate",
+  "uk": "Відкрити скриню",
+  "src": "05-game_all.js"
+ },
+ "Отремонтировано": {
+  "en": "Repaired",
+  "uk": "Відремонтовано",
+  "src": "12-wpn.js"
+ },
+ "Отскок с ловушки": {
+  "en": "Dodging traps",
+  "uk": "Відскок від пастки",
+  "src": "24-attrui.js"
+ },
+ "Охранник": {
+  "en": "Guard",
+  "uk": "Охоронець",
+  "src": "04-world.js"
+ },
+ "очень высокий": {
+  "en": "very tall",
+  "uk": "дуже високий",
+  "src": "01-core.js"
+ },
+ "очень редкая находка": {
+  "en": "a very rare find",
+  "uk": "дуже рідкісна знахідка",
+  "src": "26-print.js"
+ },
+ "очень тёмная": {
+  "en": "very dark",
+  "uk": "дуже темна",
+  "src": "01-core.js"
+ },
+ "очки": {
+  "en": "glasses",
+  "uk": "окуляри",
+  "src": "01-core.js"
+ },
+ "очко характеристик": {
+  "en": "attribute point",
+  "uk": "очко характеристик",
+  "src": "05-game_all.js"
+ },
+ "очков": {
+  "en": "points",
+  "uk": "очок",
+  "src": "07-stats.js"
+ },
+ "п": {
+  "en": "p",
+  "uk": "п",
+  "src": "05-game_all.js"
+ },
+ "Падальщик": {
+  "en": "Scavenger",
+  "uk": "Падлоїд",
+  "src": "04-world.js"
+ },
+ "Пал на": {
+  "en": "Fell on",
+  "uk": "Загинув на",
+  "src": "13-hire.js"
+ },
+ "пал на этаже": {
+  "en": "fell on floor",
+  "uk": "загинув на поверсі",
+  "src": "13-hire.js"
+ },
+ "Паровой клапан": {
+  "en": "Steam valve",
+  "uk": "Паровий клапан",
+  "src": "20-deep.js"
+ },
+ "Пароль: минимум 4 символа": {
+  "en": "Password: at least 4 characters",
+  "uk": "Пароль: щонайменше 4 символи",
+  "src": "30-title.js"
+ },
+ "Пассив": {
+  "en": "Passive",
+  "uk": "Пасив",
+  "src": "05-game_all.js 09-heropanel.js"
+ },
+ "Пассивные тренировки": {
+  "en": "Passive training",
+  "uk": "Пасивні тренування",
+  "src": "25-base3.js"
+ },
+ "Пассивный": {
+  "en": "Passive",
+  "uk": "Пасивний",
+  "src": "02-items.js 05-game_all.js"
+ },
+ "Пассивный доход от видеокарт": {
+  "en": "Passive income from GPUs",
+  "uk": "Пасивний дохід від відеокарт",
+  "src": "05-game_all.js"
+ },
+ "патр.": {
+  "en": "ammo",
+  "uk": "наб.",
+  "src": "20-deep.js"
+ },
+ "Патронный станок": {
+  "en": "Ammo station",
+  "uk": "Набійний верстат",
+  "src": "05-game_all.js"
+ },
+ "патронов": {
+  "en": "ammo",
+  "uk": "набоїв",
+  "src": "06-hideout.js"
+ },
+ "патроны": {
+  "en": "ammo",
+  "uk": "набої",
+  "src": "06-hideout.js 13-hire.js 15-loadout2.js"
+ },
+ "Патроны": {
+  "en": "Ammo",
+  "uk": "Набої",
+  "src": "02-items.js 15-loadout2.js 17-trade2.js 26-print.js"
+ },
+ "Патроны в ящике: пули": {
+  "en": "Ammo in crate: bullets",
+  "uk": "Набої у скрині: кулі",
+  "src": "06-hideout.js"
+ },
+ "ПАУЗА": {
+  "en": "PAUSED",
+  "uk": "ПАУЗА",
+  "src": "29-rt.js"
+ },
+ "переброшен!": {
+  "en": "teleported!",
+  "uk": "перекинутий!",
+  "src": "20-deep.js"
+ },
+ "Перегруз — враги ходят чаще": {
+  "en": "Overloaded — enemies act more often",
+  "uk": "Перевантаження — вороги ходять частіше",
+  "src": "09-heropanel.js"
+ },
+ "Перегруз — наёмник двигается медленнее": {
+  "en": "Overloaded — the merc moves slower",
+  "uk": "Перевантаження — найманець рухається повільніше",
+  "src": "05-game_all.js"
+ },
+ "перезар.": {
+  "en": "reload",
+  "uk": "перезар.",
+  "src": "07-stats.js"
+ },
+ "перезарядка": {
+  "en": "reload",
+  "uk": "перезаряджання",
+  "src": "05-game_all.js 12-wpn.js"
+ },
+ "Перезарядка": {
+  "en": "Reload",
+  "uk": "Перезаряджання",
+  "src": "12-wpn.js 24-attrui.js"
+ },
+ "ПЕРЕРАБОТКА": {
+  "en": "RECYCLING",
+  "uk": "ПЕРЕРОБКА",
+  "src": "05-game_all.js"
+ },
+ "Переработка хлама": {
+  "en": "Junk recycling",
+  "uk": "Переробка мотлоху",
+  "src": "06-hideout.js"
+ },
+ "Переработчик": {
+  "en": "Recycler",
+  "uk": "Переробник",
+  "src": "05-game_all.js"
+ },
+ "Пересчёт маршрута…": {
+  "en": "Recalculating route…",
+  "uk": "Перерахунок маршруту…",
+  "src": "05-game_all.js"
+ },
+ "Переходы": {
+  "en": "Transitions",
+  "uk": "Переходи",
+  "src": "08-fxgame.js"
+ },
+ "Периодически бьёт струёй пара.": {
+  "en": "Periodically blasts a jet of steam.",
+  "uk": "Періодично б'є струменем пари.",
+  "src": "20-deep.js"
+ },
+ "Периодический выброс пламени.": {
+  "en": "Periodic burst of flame.",
+  "uk": "Періодичний викид полум'я.",
+  "src": "20-deep.js"
+ },
+ "Пески перекатываются волной.": {
+  "en": "The sands roll in a wave.",
+  "uk": "Піски перекочуються хвилею.",
+  "src": "20-deep.js"
+ },
+ "песочные часы": {
+  "en": "hourglass",
+  "uk": "пісочний годинник",
+  "src": "01-core.js"
+ },
+ "Песчаная волна": {
+  "en": "Sand wave",
+  "uk": "Піщана хвиля",
+  "src": "20-deep.js"
+ },
+ "Песчаный бандит": {
+  "en": "Sand bandit",
+  "uk": "Піщаний бандит",
+  "src": "20-deep.js"
+ },
+ "Песчаный вихрь": {
+  "en": "Sand whirl",
+  "uk": "Піщаний вихор",
+  "src": "20-deep.js"
+ },
+ "Песчаный клещ": {
+  "en": "Sand mite",
+  "uk": "Піщаний кліщ",
+  "src": "20-deep.js"
+ },
+ "Песчаный червь": {
+  "en": "Sandworm",
+  "uk": "Піщаний черв'як",
+  "src": "20-deep.js"
+ },
+ "Печать": {
+  "en": "Print",
+  "uk": "Друк",
+  "src": "26-print.js"
+ },
+ "ПЕЧАТЬ": {
+  "en": "PRINTING",
+  "uk": "ДРУК",
+  "src": "26-print.js"
+ },
+ "Печать из": {
+  "en": "Prints from",
+  "uk": "Друк з",
+  "src": "26-print.js"
+ },
+ "Печать оружия, имплантов и расходников по рецептам (нужно питание)": {
+  "en": "Prints weapons, implants and consumables from recipes (needs power)",
+  "uk": "Друк зброї, імплантів і витратників за рецептами (потрібне живлення)",
+  "src": "26-print.js"
+ },
+ "Печать предметов по рецептам": {
+  "en": "Prints items from recipes",
+  "uk": "Друк предметів за рецептами",
+  "src": "26-print.js"
+ },
+ "Печать: выше редкость, патронов": {
+  "en": "Printing: higher rarity, ammo",
+  "uk": "Друк: вища рідкісність, набоїв",
+  "src": "26-print.js"
+ },
+ "Пики из стены": {
+  "en": "Wall spikes",
+  "uk": "Шипи зі стіни",
+  "src": "20-deep.js"
+ },
+ "Пила по рельсу": {
+  "en": "Rail saw",
+  "uk": "Пила на рейці",
+  "src": "20-deep.js"
+ },
+ "Пиро": {
+  "en": "Pyro",
+  "uk": "Піро",
+  "src": "08-fxgame.js"
+ },
+ "пирсинг": {
+  "en": "piercing",
+  "uk": "пірсинг",
+  "src": "01-core.js"
+ },
+ "пистолет": {
+  "en": "pistol",
+  "uk": "пістолет",
+  "src": "02-items.js 04-world.js 05-game_all.js 08-fxgame.js 13-hire.js 20-deep.js 26-print.js"
+ },
+ "Питание": {
+  "en": "Power",
+  "uk": "Живлення",
+  "src": "06-hideout.js"
+ },
+ "Питание для модулей, работает на топливе": {
+  "en": "Powers the modules, runs on fuel",
+  "uk": "Живлення для модулів, працює на пальному",
+  "src": "05-game_all.js"
+ },
+ "питание есть, топлива на": {
+  "en": "power on, fuel for",
+  "uk": "живлення є, пального на",
+  "src": "06-hideout.js"
+ },
+ "Питание модулей. Расход": {
+  "en": "Powers the modules. Burn",
+  "uk": "Живлення модулів. Витрата",
+  "src": "05-game_all.js"
+ },
+ "Плазменный вентиль": {
+  "en": "Plasma valve",
+  "uk": "Плазмовий вентиль",
+  "src": "20-deep.js"
+ },
+ "Плазменный поток": {
+  "en": "Plasma stream",
+  "uk": "Плазмовий потік",
+  "src": "20-deep.js"
+ },
+ "Пламя бежит по щели в полу.": {
+  "en": "Flame runs along a gap in the floor.",
+  "uk": "Полум'я біжить щілиною в підлозі.",
+  "src": "20-deep.js"
+ },
+ "платина": {
+  "en": "platinum",
+  "uk": "платина",
+  "src": "01-core.js"
+ },
+ "плащ": {
+  "en": "cloak",
+  "uk": "плащ",
+  "src": "01-core.js 02-items.js"
+ },
+ "плита": {
+  "en": "plate",
+  "uk": "плита",
+  "src": "20-deep.js"
+ },
+ "Плотный выброс тумана.": {
+  "en": "Dense burst of fog.",
+  "uk": "Щільний викид туману.",
+  "src": "20-deep.js"
+ },
+ "по цели + взрыв": {
+  "en": "on target + blast",
+  "uk": "по цілі + вибух",
+  "src": "02-items.js"
+ },
+ "по циклу": {
+  "en": "on a cycle",
+  "uk": "за циклом",
+  "src": "20-deep.js"
+ },
+ "по щели": {
+  "en": "along a gap",
+  "uk": "по щілині",
+  "src": "20-deep.js"
+ },
+ "повержен": {
+  "en": "defeated",
+  "uk": "переможений",
+  "src": "05-game_all.js"
+ },
+ "Повтор": {
+  "en": "Replay",
+  "uk": "Повтор",
+  "src": "08-fxgame.js"
+ },
+ "Погода": {
+  "en": "Weather",
+  "uk": "Погода",
+  "src": "08-fxgame.js"
+ },
+ "под капюшоном)": {
+  "en": "under a hood)",
+  "uk": "під каптуром)",
+  "src": "01-core.js"
+ },
+ "подводка": {
+  "en": "eyeliner",
+  "uk": "підводка",
+  "src": "01-core.js"
+ },
+ "Подворотни": {
+  "en": "Backstreets",
+  "uk": "Підворіття",
+  "src": "06-hideout.js"
+ },
+ "ПОДВОРОТНИ": {
+  "en": "BACKSTREETS",
+  "uk": "ПІДВОРІТТЯ",
+  "src": "04-world.js"
+ },
+ "Подгнивший настил: падение.": {
+  "en": "Rotten decking: a fall.",
+  "uk": "Підгнилий настил: падіння.",
+  "src": "20-deep.js"
+ },
+ "Поджигает.": {
+  "en": "Sets on fire.",
+  "uk": "Підпалює.",
+  "src": "20-deep.js"
+ },
+ "Подкожная броня": {
+  "en": "Subdermal armor",
+  "uk": "Підшкірна броня",
+  "src": "26-print.js"
+ },
+ "Поднимает тревогу: враги сбегаются.": {
+  "en": "Raises the alarm: enemies come running.",
+  "uk": "Здіймає тривогу: вороги збігаються.",
+  "src": "20-deep.js"
+ },
+ "подходят к оружию": {
+  "en": "fit the weapon",
+  "uk": "підходять до зброї",
+  "src": "09-heropanel.js 15-loadout2.js"
+ },
+ "Пока вас не было": {
+  "en": "While you were away",
+  "uk": "Поки вас не було",
+  "src": "25-base3.js"
+ },
+ "Пока ничего не построено.": {
+  "en": "Nothing built yet.",
+  "uk": "Поки нічого не збудовано.",
+  "src": "06-hideout.js"
+ },
+ "Пока пусто — станьте первым.": {
+  "en": "Empty so far — be the first.",
+  "uk": "Поки порожньо — станьте першим.",
+  "src": "30-title.js"
+ },
+ "Показывает весь лут уровня": {
+  "en": "Shows all loot on the level",
+  "uk": "Показує весь лут рівня",
+  "src": "08-fxgame.js"
+ },
+ "показывать оригинал.": {
+  "en": "show the original.",
+  "uk": "показувати оригінал.",
+  "src": "32-i18n.js"
+ },
+ "Полевой ремонт (до 60%)": {
+  "en": "Field repair (up to 60%)",
+  "uk": "Польовий ремонт (до 60%)",
+  "src": "12-wpn.js"
+ },
+ "Полка с голопроигрывателем": {
+  "en": "Shelf with a holo-player",
+  "uk": "Полиця з голопрогравачем",
+  "src": "25-base3.js"
+ },
+ "Полная": {
+  "en": "Full",
+  "uk": "Повна",
+  "src": "31-crt.js"
+ },
+ "Полное лечение после рейда; аптечки лечат на 20% сильнее": {
+  "en": "Full heal after a raid; medkits heal 20% more",
+  "uk": "Повне лікування після рейду; аптечки лікують на 20% сильніше",
+  "src": "26-print.js"
+ },
+ "Полное лечение после рейда; аптечки лечат на 40% сильнее": {
+  "en": "Full heal after a raid; medkits heal 40% more",
+  "uk": "Повне лікування після рейду; аптечки лікують на 40% сильніше",
+  "src": "26-print.js"
+ },
+ "положите журнал или книгу": {
+  "en": "put in a magazine or a book",
+  "uk": "покладіть журнал або книгу",
+  "src": "25-base3.js"
+ },
+ "полон": {
+  "en": "full",
+  "uk": "повний",
+  "src": "15-loadout2.js"
+ },
+ "Получаемый урон": {
+  "en": "Damage taken",
+  "uk": "Отримувана шкода",
+  "src": "24-attrui.js"
+ },
+ "получено опыта": {
+  "en": "xp gained",
+  "uk": "отримано досвіду",
+  "src": "06-hideout.js"
+ },
+ "Понятно": {
+  "en": "Got it",
+  "uk": "Зрозуміло",
+  "src": "05-game_all.js"
+ },
+ "поскользнулся": {
+  "en": "slipped",
+  "uk": "послизнувся",
+  "src": "20-deep.js"
+ },
+ "ПОСЛЕДНЯЯ РАСШИФРОВКА": {
+  "en": "LAST DECRYPTION",
+  "uk": "ОСТАННЄ РОЗШИФРУВАННЯ",
+  "src": "26-print.js"
+ },
+ "Построено": {
+  "en": "Built",
+  "uk": "Збудовано",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "ПОСТРОЕНО": {
+  "en": "BUILT",
+  "uk": "ЗБУДОВАНО",
+  "src": "06-hideout.js"
+ },
+ "Построить": {
+  "en": "Build",
+  "uk": "Збудувати",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Потерянный": {
+  "en": "The Lost",
+  "uk": "Загублений",
+  "src": "20-deep.js"
+ },
+ "потеряно": {
+  "en": "lost",
+  "uk": "втрачено",
+  "src": "20-deep.js"
+ },
+ "Потеряно из сумки: расходников": {
+  "en": "Lost from bag: consumables",
+  "uk": "Втрачено із сумки: витратників",
+  "src": "06-hideout.js"
+ },
+ "почти не мешают": {
+  "en": "barely get in the way",
+  "uk": "майже не заважають",
+  "src": "24-attrui.js"
+ },
+ "Появление": {
+  "en": "Spawn",
+  "uk": "Поява",
+  "src": "08-fxgame.js"
+ },
+ "ПП": {
+  "en": "SMG",
+  "uk": "ПП",
+  "src": "02-items.js 04-world.js 08-fxgame.js 20-deep.js 26-print.js"
+ },
+ "правая": {
+  "en": "right",
+  "uk": "права",
+  "src": "01-core.js"
+ },
+ "Превращает чертёж в рецепт (нужно питание)": {
+  "en": "Turns a blueprint into a recipe (needs power)",
+  "uk": "Перетворює креслення на рецепт (потрібне живлення)",
+  "src": "26-print.js"
+ },
+ "предм.": {
+  "en": "items",
+  "uk": "предм.",
+  "src": "15-loadout2.js 17-trade2.js"
+ },
+ "предм.): не поместилось": {
+  "en": "items): didn't fit",
+  "uk": "предм.): не вмістилося",
+  "src": "15-loadout2.js"
+ },
+ "предметов": {
+  "en": "items",
+  "uk": "предметів",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Предметов пока нет": {
+  "en": "No items yet",
+  "uk": "Предметів поки немає",
+  "src": "05-game_all.js"
+ },
+ "Предметы": {
+  "en": "Items",
+  "uk": "Предмети",
+  "src": "05-game_all.js"
+ },
+ "ПРЕДМЕТЫ": {
+  "en": "ITEMS",
+  "uk": "ПРЕДМЕТИ",
+  "src": "06-hideout.js"
+ },
+ "ПРЕДМЕТЫ ИЗ ЯЩИКА": {
+  "en": "ITEMS FROM THE CRATE",
+  "uk": "ПРЕДМЕТИ ЗІ СКРИНІ",
+  "src": "05-game_all.js"
+ },
+ "Пресс": {
+  "en": "Press",
+  "uk": "Прес",
+  "src": "20-deep.js"
+ },
+ "При гибели рюкзак будет потерян.": {
+  "en": "If you die, the backpack is lost.",
+  "uk": "У разі загибелі рюкзак буде втрачено.",
+  "src": "05-game_all.js"
+ },
+ "при гибели теряется)": {
+  "en": "lost on death)",
+  "uk": "при загибелі втрачається)",
+  "src": "06-hideout.js"
+ },
+ "при ЗДР 3 и ниже регенерации нет": {
+  "en": "no regeneration at VIT 3 and below",
+  "uk": "при ЗДР 3 і нижче регенерації немає",
+  "src": "07-stats.js"
+ },
+ "пригодится для полевого ремонта": {
+  "en": "useful for field repair",
+  "uk": "знадобиться для польового ремонту",
+  "src": "15-loadout2.js"
+ },
+ "Приёмы": {
+  "en": "Moves",
+  "uk": "Прийоми",
+  "src": "08-fxgame.js"
+ },
+ "Призрак": {
+  "en": "Phantom",
+  "uk": "Привид",
+  "src": "02-items.js"
+ },
+ "Призрак сети": {
+  "en": "Net ghost",
+  "uk": "Привид мережі",
+  "src": "04-world.js"
+ },
+ "примерно до": {
+  "en": "until about",
+  "uk": "приблизно до",
+  "src": "23-fuel.js"
+ },
+ "принтер": {
+  "en": "printer",
+  "uk": "принтер",
+  "src": "26-print.js"
+ },
+ "Принтер выучил": {
+  "en": "Printer learned",
+  "uk": "Принтер вивчив",
+  "src": "26-print.js"
+ },
+ "Принтер пока ничего не умеет. Цикл: найти чертёж": {
+  "en": "The printer can't make anything yet. Loop: find a blueprint",
+  "uk": "Принтер поки нічого не вміє. Цикл: знайти креслення",
+  "src": "26-print.js"
+ },
+ "Природа": {
+  "en": "Nature",
+  "uk": "Природа",
+  "src": "08-fxgame.js"
+ },
+ "присоединяется к убежищу": {
+  "en": "joins the shelter",
+  "uk": "приєднується до сховища",
+  "src": "13-hire.js"
+ },
+ "Причёска": {
+  "en": "Hairstyle",
+  "uk": "Зачіска",
+  "src": "05-game_all.js"
+ },
+ "пробитие": {
+  "en": "penetration",
+  "uk": "пробиття",
+  "src": "08-fxgame.js"
+ },
+ "провал": {
+  "en": "pit",
+  "uk": "провал",
+  "src": "20-deep.js"
+ },
+ "Провал в полу": {
+  "en": "Hole in the floor",
+  "uk": "Провал у підлозі",
+  "src": "20-deep.js"
+ },
+ "Проверяю…": {
+  "en": "Checking…",
+  "uk": "Перевіряю…",
+  "src": "30-title.js"
+ },
+ "Провода": {
+  "en": "Wires",
+  "uk": "Дроти",
+  "src": "03-props.js"
+ },
+ "Прогресс сохраняется на этом устройстве": {
+  "en": "Progress is saved on this device",
+  "uk": "Прогрес зберігається на цьому пристрої",
+  "src": "30-title.js"
+ },
+ "Продаётся в терминале.": {
+  "en": "Sold at the terminal.",
+  "uk": "Продається в терміналі.",
+  "src": "22-matinfo.js"
+ },
+ "продажа": {
+  "en": "sale",
+  "uk": "продаж",
+  "src": "05-game_all.js"
+ },
+ "продано": {
+  "en": "sold",
+  "uk": "продано",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Продано": {
+  "en": "Sold",
+  "uk": "Продано",
+  "src": "05-game_all.js 06-hideout.js 17-trade2.js"
+ },
+ "Продать": {
+  "en": "Sell",
+  "uk": "Продати",
+  "src": "05-game_all.js 06-hideout.js 13-hire.js 17-trade2.js"
+ },
+ "Продать все": {
+  "en": "Sell all",
+  "uk": "Продати все",
+  "src": "17-trade2.js"
+ },
+ "Продать за": {
+  "en": "Sell for",
+  "uk": "Продати за",
+  "src": "05-game_all.js 06-hideout.js 17-trade2.js"
+ },
+ "Продолжить": {
+  "en": "Continue",
+  "uk": "Продовжити",
+  "src": "13-hire.js"
+ },
+ "Прожил": {
+  "en": "Lived",
+  "uk": "Прожив",
+  "src": "13-hire.js"
+ },
+ "ПРОИЗВОДСТВЕННЫЕ ЦЕХА": {
+  "en": "PRODUCTION HALLS",
+  "uk": "ВИРОБНИЧІ ЦЕХИ",
+  "src": "20-deep.js"
+ },
+ "Производственные цеха: конвейеры двигают всех": {
+  "en": "Production halls: conveyors move everyone",
+  "uk": "Виробничі цехи: конвеєри рухають усіх",
+  "src": "20-deep.js"
+ },
+ "Прокачка": {
+  "en": "Progression",
+  "uk": "Прокачка",
+  "src": "09-heropanel.js"
+ },
+ "ПРОКАЧКА": {
+  "en": "PROGRESSION",
+  "uk": "ПРОКАЧКА",
+  "src": "16-roster.js"
+ },
+ "промах": {
+  "en": "miss",
+  "uk": "промах",
+  "src": "05-game_all.js 07-stats.js 12-wpn.js"
+ },
+ "Промышленный принтер": {
+  "en": "Industrial printer",
+  "uk": "Промисловий принтер",
+  "src": "26-print.js"
+ },
+ "простой": {
+  "en": "simple",
+  "uk": "простий",
+  "src": "26-print.js"
+ },
+ "Процессор": {
+  "en": "Processor",
+  "uk": "Процесор",
+  "src": "03-props.js"
+ },
+ "Процессоры из серверов — для сложной электроники.": {
+  "en": "Processors from servers — for complex electronics.",
+  "uk": "Процесори із серверів — для складної електроніки.",
+  "src": "22-matinfo.js"
+ },
+ "прочность": {
+  "en": "durability",
+  "uk": "міцність",
+  "src": "12-wpn.js"
+ },
+ "Прочность": {
+  "en": "Durability",
+  "uk": "Міцність",
+  "src": "12-wpn.js"
+ },
+ "Пружины": {
+  "en": "Springs",
+  "uk": "Пружини",
+  "src": "03-props.js"
+ },
+ "прямая": {
+  "en": "straight",
+  "uk": "пряма",
+  "src": "01-core.js"
+ },
+ "пули": {
+  "en": "bullets",
+  "uk": "кулі",
+  "src": "02-items.js 05-game_all.js 06-hideout.js 09-heropanel.js 26-print.js"
+ },
+ "Пули": {
+  "en": "Bullets",
+  "uk": "Кулі",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "пуль": {
+  "en": "bullets",
+  "uk": "куль",
+  "src": "06-hideout.js"
+ },
+ "пусто": {
+  "en": "empty",
+  "uk": "порожньо",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Пусто. Принесите добычу из рейда.": {
+  "en": "Empty. Bring loot from a raid.",
+  "uk": "Порожньо. Принесіть здобич із рейду.",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Пустой слот": {
+  "en": "Empty slot",
+  "uk": "Порожній слот",
+  "src": "05-game_all.js"
+ },
+ "Пустой слот — перетащите сюда предмет": {
+  "en": "Empty slot — drag an item here",
+  "uk": "Порожній слот — перетягніть сюди предмет",
+  "src": "15-loadout2.js"
+ },
+ "Пустынный кочевник": {
+  "en": "Desert nomad",
+  "uk": "Пустельний кочівник",
+  "src": "20-deep.js"
+ },
+ "Путь перекрыт — прорыв!": {
+  "en": "Path blocked — breaking through!",
+  "uk": "Шлях перекрито — прорив!",
+  "src": "05-game_all.js"
+ },
+ "пучок": {
+  "en": "bun",
+  "uk": "пучок",
+  "src": "01-core.js"
+ },
+ "пушка": {
+  "en": "cannon",
+  "uk": "гармата",
+  "src": "08-fxgame.js"
+ },
+ "Пылесос-убийца": {
+  "en": "Killer vacuum",
+  "uk": "Пилосос-убивця",
+  "src": "20-deep.js"
+ },
+ "Пыльный пророк": {
+  "en": "Dust prophet",
+  "uk": "Пиловий пророк",
+  "src": "20-deep.js"
+ },
+ "Радиационное пятно": {
+  "en": "Radiation patch",
+  "uk": "Радіаційна пляма",
+  "src": "20-deep.js"
+ },
+ "радиус": {
+  "en": "radius",
+  "uk": "радіус",
+  "src": "08-fxgame.js"
+ },
+ "разбор": {
+  "en": "scrap",
+  "uk": "розбір",
+  "src": "11-scrap.js"
+ },
+ "Разбор": {
+  "en": "Scrap",
+  "uk": "Розбір",
+  "src": "05-game_all.js 22-matinfo.js"
+ },
+ "разбор…": {
+  "en": "scrapping…",
+  "uk": "розбір…",
+  "src": "05-game_all.js"
+ },
+ "Разворошённое гнездо выпускает тварей.": {
+  "en": "A stirred-up nest releases creatures.",
+  "uk": "Розворушене гніздо випускає тварюк.",
+  "src": "20-deep.js"
+ },
+ "разобрано": {
+  "en": "scrapped",
+  "uk": "розібрано",
+  "src": "05-game_all.js"
+ },
+ "Разобрано": {
+  "en": "Scrapped",
+  "uk": "Розібрано",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 11-scrap.js 15-loadout2.js"
+ },
+ "Разобрать": {
+  "en": "Scrap",
+  "uk": "Розібрати",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 15-loadout2.js"
+ },
+ "Разряд между контактами.": {
+  "en": "A discharge between contacts.",
+  "uk": "Розряд між контактами.",
+  "src": "20-deep.js"
+ },
+ "Разряд: оглушение и потеря энергии.": {
+  "en": "Discharge: stun and energy loss.",
+  "uk": "Розряд: оглушення й втрата енергії.",
+  "src": "20-deep.js"
+ },
+ "Ракета": {
+  "en": "Rocket",
+  "uk": "Ракета",
+  "src": "02-items.js"
+ },
+ "Ракета выпущена": {
+  "en": "Rocket launched",
+  "uk": "Ракету випущено",
+  "src": "05-game_all.js"
+ },
+ "Ракетный модуль": {
+  "en": "Rocket module",
+  "uk": "Ракетний модуль",
+  "src": "02-items.js 05-game_all.js 26-print.js"
+ },
+ "ранен": {
+  "en": "wounded",
+  "uk": "поранений",
+  "src": "14-base2.js"
+ },
+ "ранен — отдохните": {
+  "en": "wounded — rest",
+  "uk": "поранений — відпочиньте",
+  "src": "06-hideout.js"
+ },
+ "Растяжка": {
+  "en": "Tripwire",
+  "uk": "Розтяжка",
+  "src": "20-deep.js"
+ },
+ "расход": {
+  "en": "cost",
+  "uk": "витрата",
+  "src": "07-stats.js 23-fuel.js"
+ },
+ "расход и восстановление энергии; ремонт": {
+  "en": "energy cost and regen; repair",
+  "uk": "витрата й відновлення енергії; ремонт",
+  "src": "07-stats.js"
+ },
+ "Расход энергии": {
+  "en": "Energy cost",
+  "uk": "Витрата енергії",
+  "src": "24-attrui.js"
+ },
+ "расходник": {
+  "en": "consumable",
+  "uk": "витратник",
+  "src": "26-print.js"
+ },
+ "Расходники": {
+  "en": "Consumables",
+  "uk": "Витратники",
+  "src": "15-loadout2.js 26-print.js"
+ },
+ "РАСХОДНИКИ": {
+  "en": "CONSUMABLES",
+  "uk": "ВИТРАТНИКИ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "расширить до": {
+  "en": "expand to",
+  "uk": "розширити до",
+  "src": "15-loadout2.js"
+ },
+ "Расширить ящик — в «Убежище»": {
+  "en": "Expand the crate — in «Shelter»",
+  "uk": "Розширити скриню — у «Сховищі»",
+  "src": "15-loadout2.js"
+ },
+ "расшифровано — ящик был полон": {
+  "en": "decrypted — the crate was full",
+  "uk": "розшифровано — скриня була повна",
+  "src": "26-print.js"
+ },
+ "Расшифровка чертежа…": {
+  "en": "Decrypting blueprint…",
+  "uk": "Розшифрування креслення…",
+  "src": "26-print.js"
+ },
+ "расшифровка: 15 мин": {
+  "en": "decryption: 15 min",
+  "uk": "розшифрування: 15 хв",
+  "src": "26-print.js"
+ },
+ "Расшифруйте на исследовательском станке": {
+  "en": "Decrypt it at the research station",
+  "uk": "Розшифруйте на дослідницькому верстаті",
+  "src": "26-print.js"
+ },
+ "реактор в груди": {
+  "en": "chest reactor",
+  "uk": "реактор у грудях",
+  "src": "01-core.js"
+ },
+ "револьвер": {
+  "en": "revolver",
+  "uk": "револьвер",
+  "src": "02-items.js 04-world.js 05-game_all.js 13-hire.js 20-deep.js 26-print.js"
+ },
+ "реген": {
+  "en": "regen",
+  "uk": "реген",
+  "src": "07-stats.js"
+ },
+ "Реген": {
+  "en": "Regen",
+  "uk": "Реген",
+  "src": "02-items.js"
+ },
+ "Регенератор": {
+  "en": "Regenerator",
+  "uk": "Регенератор",
+  "src": "26-print.js"
+ },
+ "Регенерация": {
+  "en": "Regeneration",
+  "uk": "Регенерація",
+  "src": "24-attrui.js"
+ },
+ "редкая находка": {
+  "en": "a rare find",
+  "uk": "рідкісна знахідка",
+  "src": "26-print.js"
+ },
+ "редкий": {
+  "en": "rare",
+  "uk": "рідкісний",
+  "src": "02-items.js 03-props.js"
+ },
+ "Режет при проходе.": {
+  "en": "Cuts you as you pass.",
+  "uk": "Ріже під час проходу.",
+  "src": "20-deep.js"
+ },
+ "РЕЙД ЗАВЕРШЁН": {
+  "en": "RAID COMPLETE",
+  "uk": "РЕЙД ЗАВЕРШЕНО",
+  "src": "05-game_all.js"
+ },
+ "РЕЙД ЗАВЕРШЁН УСПЕШНО": {
+  "en": "RAID COMPLETED SUCCESSFULLY",
+  "uk": "РЕЙД ЗАВЕРШЕНО УСПІШНО",
+  "src": "06-hideout.js"
+ },
+ "РЕЙД ПРОВАЛЕН": {
+  "en": "RAID FAILED",
+  "uk": "РЕЙД ПРОВАЛЕНО",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "рейд.": {
+  "en": "raids",
+  "uk": "рейд.",
+  "src": "06-hideout.js"
+ },
+ "рейдов": {
+  "en": "raids",
+  "uk": "рейдів",
+  "src": "05-game_all.js 06-hideout.js 13-hire.js 16-roster.js"
+ },
+ "Рейдов пройдено": {
+  "en": "Raids completed",
+  "uk": "Рейдів пройдено",
+  "src": "13-hire.js"
+ },
+ "Рейзор": {
+  "en": "Razor",
+  "uk": "Рейзор",
+  "src": "01-core.js"
+ },
+ "Рейтинг": {
+  "en": "Leaderboard",
+  "uk": "Рейтинг",
+  "src": "30-title.js"
+ },
+ "РЕЙТИНГ": {
+  "en": "LEADERBOARD",
+  "uk": "РЕЙТИНГ",
+  "src": "30-title.js"
+ },
+ "Рёкан": {
+  "en": "Ryokan",
+  "uk": "Рьокан",
+  "src": "02-items.js"
+ },
+ "рекорд": {
+  "en": "record",
+  "uk": "рекорд",
+  "src": "06-hideout.js"
+ },
+ "рекорд глубины": {
+  "en": "depth record",
+  "uk": "рекорд глибини",
+  "src": "05-game_all.js 16-roster.js"
+ },
+ "Рекорд глубины": {
+  "en": "Depth record",
+  "uk": "Рекорд глибини",
+  "src": "13-hire.js"
+ },
+ "ремонт": {
+  "en": "repair",
+  "uk": "ремонт",
+  "src": "07-stats.js"
+ },
+ "Ремонт": {
+  "en": "Repair",
+  "uk": "Ремонт",
+  "src": "12-wpn.js 24-attrui.js"
+ },
+ "респиратор": {
+  "en": "respirator",
+  "uk": "респіратор",
+  "src": "01-core.js"
+ },
+ "Ресурсы": {
+  "en": "Resources",
+  "uk": "Ресурси",
+  "src": "05-game_all.js 15-loadout2.js"
+ },
+ "РЕСУРСЫ": {
+  "en": "RESOURCES",
+  "uk": "РЕСУРСИ",
+  "src": "05-game_all.js"
+ },
+ "Рефлекс-ускоритель": {
+  "en": "Reflex booster",
+  "uk": "Рефлекс-прискорювач",
+  "src": "02-items.js 05-game_all.js 26-print.js"
+ },
+ "Рецепт": {
+  "en": "Recipe",
+  "uk": "Рецепт",
+  "src": "26-print.js"
+ },
+ "рецепт стоит": {
+  "en": "recipe worth",
+  "uk": "рецепт коштує",
+  "src": "26-print.js"
+ },
+ "рецептов": {
+  "en": "recipes",
+  "uk": "рецептів",
+  "src": "26-print.js"
+ },
+ "Рецепты": {
+  "en": "Recipes",
+  "uk": "Рецепти",
+  "src": "26-print.js"
+ },
+ "решётка, скруглённый кинескоп, мерцание.": {
+  "en": "grille, rounded tube, flicker.",
+  "uk": "ґратка, заокруглений кінескоп, мерехтіння.",
+  "src": "31-crt.js"
+ },
+ "розовый": {
+  "en": "pink",
+  "uk": "рожевий",
+  "src": "01-core.js"
+ },
+ "Рой": {
+  "en": "Swarm",
+  "uk": "Рій",
+  "src": "08-fxgame.js"
+ },
+ "Рой-капсула": {
+  "en": "Swarm capsule",
+  "uk": "Рій-капсула",
+  "src": "08-fxgame.js"
+ },
+ "Ронин": {
+  "en": "Ronin",
+  "uk": "Ронін",
+  "src": "01-core.js"
+ },
+ "Роук": {
+  "en": "Rook",
+  "uk": "Роук",
+  "src": "01-core.js"
+ },
+ "Русский": {
+  "en": "Русский",
+  "uk": "Русский",
+  "src": "32-i18n.js"
+ },
+ "РУЧНОЕ": {
+  "en": "MANUAL",
+  "uk": "РУЧНЕ",
+  "src": "06-hideout.js"
+ },
+ "Ручное управление": {
+  "en": "Manual control",
+  "uk": "Ручне керування",
+  "src": "05-game_all.js"
+ },
+ "Рэкс": {
+  "en": "Rex",
+  "uk": "Рекс",
+  "src": "01-core.js"
+ },
+ "рюкзак": {
+  "en": "backpack",
+  "uk": "рюкзак",
+  "src": "05-game_all.js 06-hideout.js 07-stats.js"
+ },
+ "Рюкзак": {
+  "en": "Backpack",
+  "uk": "Рюкзак",
+  "src": "05-game_all.js 09-heropanel.js 24-attrui.js"
+ },
+ "Рюкзак +15, разбор предметов на компоненты": {
+  "en": "Backpack +15, scrap items into components",
+  "uk": "Рюкзак +15, розбір предметів на компоненти",
+  "src": "26-print.js"
+ },
+ "Рюкзак +15, разбор предметов на компоненты, крафт батарей": {
+  "en": "Backpack +15, scrap items into components, craft batteries",
+  "uk": "Рюкзак +15, розбір предметів на компоненти, крафт батарей",
+  "src": "05-game_all.js"
+ },
+ "Рюкзак +30, разбор декораций быстрее": {
+  "en": "Backpack +30, faster decor scrapping",
+  "uk": "Рюкзак +30, розбір декорацій швидше",
+  "src": "26-print.js"
+ },
+ "Рюкзак +30, разбор декораций быстрее, крафт топлива": {
+  "en": "Backpack +30, faster decor scrapping, craft fuel",
+  "uk": "Рюкзак +30, розбір декорацій швидше, крафт пального",
+  "src": "05-game_all.js"
+ },
+ "рюкзак 10+5/ед., урон в ближнем бою": {
+  "en": "backpack 10+5/pt, melee damage",
+  "uk": "рюкзак 10+5/од., шкода в ближньому бою",
+  "src": "07-stats.js"
+ },
+ "Рюкзак и разбор предметов": {
+  "en": "Backpack and item scrapping",
+  "uk": "Рюкзак і розбір предметів",
+  "src": "05-game_all.js 26-print.js"
+ },
+ "рюкзак полон": {
+  "en": "backpack full",
+  "uk": "рюкзак повний",
+  "src": "05-game_all.js"
+ },
+ "Рюкзак полон": {
+  "en": "Backpack full",
+  "uk": "Рюкзак повний",
+  "src": "05-game_all.js 09-heropanel.js"
+ },
+ "Рюкзак полон — наёмник несёт добычу на базу": {
+  "en": "Backpack full — the merc carries the loot home",
+  "uk": "Рюкзак повний — найманець несе здобич на базу",
+  "src": "19-zones.js"
+ },
+ "Рюкзак почти полон — пора выносить": {
+  "en": "Backpack almost full — time to haul out",
+  "uk": "Рюкзак майже повний — час виносити",
+  "src": "09-heropanel.js"
+ },
+ "Рюкзак почти полон — пора выносить добычу": {
+  "en": "Backpack almost full — time to haul out the loot",
+  "uk": "Рюкзак майже повний — час виносити здобич",
+  "src": "05-game_all.js"
+ },
+ "Рядом нечего делать": {
+  "en": "Nothing to do nearby",
+  "uk": "Поруч нічого робити",
+  "src": "05-game_all.js"
+ },
+ "с": {
+  "en": "s",
+  "uk": "с",
+  "src": "01-core.js 05-game_all.js 09-heropanel.js 12-wpn.js"
+ },
+ "С возвращением": {
+  "en": "Welcome back",
+  "uk": "З поверненням",
+  "src": "30-title.js"
+ },
+ "с учётом навыков)": {
+  "en": "skills included)",
+  "uk": "з урахуванням навичок)",
+  "src": "12-wpn.js"
+ },
+ "с эвакуацией": {
+  "en": "with evac",
+  "uk": "з евакуацією",
+  "src": "13-hire.js"
+ },
+ "Садовник-мутант": {
+  "en": "Mutant gardener",
+  "uk": "Садівник-мутант",
+  "src": "20-deep.js"
+ },
+ "Сай-фай": {
+  "en": "Sci-fi",
+  "uk": "Сай-фай",
+  "src": "08-fxgame.js"
+ },
+ "Сайфер": {
+  "en": "Cypher",
+  "uk": "Сайфер",
+  "src": "01-core.js"
+ },
+ "Сам промахивается в ближнем бою": {
+  "en": "Misses in melee on their own",
+  "uk": "Сам промахується в ближньому бою",
+  "src": "24-attrui.js"
+ },
+ "Самодельный тренажёр": {
+  "en": "Homemade gym",
+  "uk": "Саморобний тренажер",
+  "src": "25-base3.js"
+ },
+ "Сапорт": {
+  "en": "Support",
+  "uk": "Сапорт",
+  "src": "08-fxgame.js"
+ },
+ "Сапсан": {
+  "en": "Peregrine",
+  "uk": "Сапсан",
+  "src": "02-items.js"
+ },
+ "Сборщик": {
+  "en": "Assembler",
+  "uk": "Збирач",
+  "src": "20-deep.js"
+ },
+ "СБОРЫ": {
+  "en": "GEAR UP",
+  "uk": "ЗБОРИ",
+  "src": "index.html"
+ },
+ "СБОРЫ В РЕЙД": {
+  "en": "GEAR UP FOR RAID",
+  "uk": "ЗБОРИ В РЕЙД",
+  "src": "06-hideout.js"
+ },
+ "Сброс": {
+  "en": "Reset",
+  "uk": "Скидання",
+  "src": "05-game_all.js"
+ },
+ "Сбросить весь прогресс": {
+  "en": "Reset all progress",
+  "uk": "Скинути весь прогрес",
+  "src": "15-loadout2.js"
+ },
+ "Сбросить перевод": {
+  "en": "Reset translation",
+  "uk": "Скинути переклад",
+  "src": "32-i18n.js"
+ },
+ "Сверху падают обломки.": {
+  "en": "Debris falls from above.",
+  "uk": "Згори падають уламки.",
+  "src": "20-deep.js"
+ },
+ "Свет": {
+  "en": "Light",
+  "uk": "Світло",
+  "src": "08-fxgame.js"
+ },
+ "Свет в убежище. Нужно для майнинг-фермы": {
+  "en": "Light in the shelter. Needed for the mining farm",
+  "uk": "Світло у сховищі. Потрібне для майнінг-ферми",
+  "src": "05-game_all.js"
+ },
+ "Свет и уют": {
+  "en": "Light and comfort",
+  "uk": "Світло й затишок",
+  "src": "05-game_all.js"
+ },
+ "светлая": {
+  "en": "light",
+  "uk": "світла",
+  "src": "01-core.js"
+ },
+ "Свето": {
+  "en": "Light",
+  "uk": "Світло",
+  "src": "08-fxgame.js"
+ },
+ "Световая вспышка": {
+  "en": "Light flash",
+  "uk": "Світловий спалах",
+  "src": "20-deep.js"
+ },
+ "светящиеся": {
+  "en": "glowing",
+  "uk": "світні",
+  "src": "01-core.js 07-stats.js"
+ },
+ "Свободных очков": {
+  "en": "Free points",
+  "uk": "Вільних очок",
+  "src": "24-attrui.js"
+ },
+ "Своя граната": {
+  "en": "Own grenade",
+  "uk": "Своя граната",
+  "src": "08-fxgame.js"
+ },
+ "Сгусток мглы": {
+  "en": "Haze clot",
+  "uk": "Згусток імли",
+  "src": "20-deep.js"
+ },
+ "Сгусток плазмы по желобу.": {
+  "en": "A plasma clot along a chute.",
+  "uk": "Згусток плазми жолобом.",
+  "src": "20-deep.js"
+ },
+ "Сделать активным": {
+  "en": "Make active",
+  "uk": "Зробити активним",
+  "src": "16-roster.js"
+ },
+ "Север-Сталь": {
+  "en": "North-Steel",
+  "uk": "Північ-Сталь",
+  "src": "02-items.js"
+ },
+ "Сейбл": {
+  "en": "Sable",
+  "uk": "Сейбл",
+  "src": "01-core.js"
+ },
+ "Сейф-хранилище": {
+  "en": "Safe vault",
+  "uk": "Сейф-сховище",
+  "src": "05-game_all.js"
+ },
+ "Сейчас используется загруженный перевод.": {
+  "en": "A loaded translation is in use now.",
+  "uk": "Зараз використовується завантажений переклад.",
+  "src": "32-i18n.js"
+ },
+ "сейчас не работает": {
+  "en": "not working right now",
+  "uk": "зараз не працює",
+  "src": "06-hideout.js"
+ },
+ "Сейчас строится": {
+  "en": "Under construction",
+  "uk": "Зараз будується",
+  "src": "06-hideout.js"
+ },
+ "Сервер недоступен — попробуйте позже": {
+  "en": "Server unavailable — try later",
+  "uk": "Сервер недоступний — спробуйте пізніше",
+  "src": "30-title.js"
+ },
+ "Серверная (верх)": {
+  "en": "Server room (upper)",
+  "uk": "Серверна (верх)",
+  "src": "06-hideout.js"
+ },
+ "Серверная (низ)": {
+  "en": "Server room (lower)",
+  "uk": "Серверна (низ)",
+  "src": "06-hideout.js"
+ },
+ "Серверная стойка": {
+  "en": "Server rack",
+  "uk": "Серверна стійка",
+  "src": "03-props.js"
+ },
+ "СЕРВЕРНАЯ: ВЕРХНИЕ УРОВНИ": {
+  "en": "SERVER ROOM: UPPER LEVELS",
+  "uk": "СЕРВЕРНА: ВЕРХНІ РІВНІ",
+  "src": "04-world.js"
+ },
+ "СЕРВЕРНАЯ: НИЖНИЕ УРОВНИ": {
+  "en": "SERVER ROOM: LOWER LEVELS",
+  "uk": "СЕРВЕРНА: НИЖНІ РІВНІ",
+  "src": "04-world.js"
+ },
+ "Сервопривод": {
+  "en": "Servo",
+  "uk": "Сервопривод",
+  "src": "03-props.js"
+ },
+ "Сервоприводы — точная механика для станков и протезов.": {
+  "en": "Servos — precise mechanics for machines and prosthetics.",
+  "uk": "Сервоприводи — точна механіка для верстатів і протезів.",
+  "src": "22-matinfo.js"
+ },
+ "серебро": {
+  "en": "silver",
+  "uk": "срібло",
+  "src": "01-core.js"
+ },
+ "серые": {
+  "en": "gray",
+  "uk": "сірі",
+  "src": "01-core.js"
+ },
+ "серый": {
+  "en": "gray",
+  "uk": "сірий",
+  "src": "01-core.js"
+ },
+ "сеть": {
+  "en": "net",
+  "uk": "сітка",
+  "src": "20-deep.js"
+ },
+ "Сеть-ловушка": {
+  "en": "Net trap",
+  "uk": "Сітка-пастка",
+  "src": "20-deep.js"
+ },
+ "Сигнальная плита": {
+  "en": "Signal plate",
+  "uk": "Сигнальна плита",
+  "src": "20-deep.js"
+ },
+ "Сид": {
+  "en": "Sid",
+  "uk": "Сід",
+  "src": "01-core.js"
+ },
+ "СИЛ": {
+  "en": "STR",
+  "uk": "СИЛ",
+  "src": "07-stats.js"
+ },
+ "Сила": {
+  "en": "Strength",
+  "uk": "Сила",
+  "src": "07-stats.js"
+ },
+ "Силовая станция": {
+  "en": "Power station",
+  "uk": "Силова станція",
+  "src": "25-base3.js"
+ },
+ "силуэт": {
+  "en": "silhouette",
+  "uk": "силует",
+  "src": "01-core.js"
+ },
+ "сильно": {
+  "en": "strong",
+  "uk": "сильно",
+  "src": "24-attrui.js"
+ },
+ "синтетическая": {
+  "en": "synthetic",
+  "uk": "синтетична",
+  "src": "01-core.js"
+ },
+ "Сирена": {
+  "en": "Siren",
+  "uk": "Сирена",
+  "src": "02-items.js"
+ },
+ "Сирена и подкрепление.": {
+  "en": "Siren and reinforcements.",
+  "uk": "Сирена й підкріплення.",
+  "src": "20-deep.js"
+ },
+ "Сисадмин-изгой": {
+  "en": "Rogue sysadmin",
+  "uk": "Сисадмін-вигнанець",
+  "src": "04-world.js"
+ },
+ "Сканер": {
+  "en": "Scanner",
+  "uk": "Сканер",
+  "src": "08-fxgame.js"
+ },
+ "Сканер: найдено": {
+  "en": "Scanner: found",
+  "uk": "Сканер: знайдено",
+  "src": "08-fxgame.js"
+ },
+ "Склад": {
+  "en": "Warehouse",
+  "uk": "Склад",
+  "src": "05-game_all.js"
+ },
+ "скольжу": {
+  "en": "sliding",
+  "uk": "ковзаю",
+  "src": "20-deep.js"
+ },
+ "Скользко: замедляет.": {
+  "en": "Slippery: slows you down.",
+  "uk": "Слизько: уповільнює.",
+  "src": "20-deep.js"
+ },
+ "Скорость": {
+  "en": "Speed",
+  "uk": "Швидкість",
+  "src": "07-stats.js"
+ },
+ "Скорость действий": {
+  "en": "Action speed",
+  "uk": "Швидкість дій",
+  "src": "24-attrui.js"
+ },
+ "Скорпион": {
+  "en": "Scorpion",
+  "uk": "Скорпіон",
+  "src": "02-items.js"
+ },
+ "СКР": {
+  "en": "SPD",
+  "uk": "ШВД",
+  "src": "07-stats.js"
+ },
+ "Скрытая плита: удар грузом сверху.": {
+  "en": "Hidden plate: a weight drops from above.",
+  "uk": "Прихована плита: удар вантажем згори.",
+  "src": "20-deep.js"
+ },
+ "Скрытые ловушки замечает Внимательность (и немного Интеллект). Ловкость помогает отскочить и увернуться от циклических. Интеллект от 4 позволяет выжидать цикл и обезвреживать найденные ловушки — за это дают детали.": {
+  "en": "Perception (and a little Intelligence) spots hidden traps. Agility helps jump clear and dodge cyclic ones. Intelligence 4+ lets the merc wait out cycles and disarm found traps — which yields parts.",
+  "uk": "Приховані пастки помічає Уважність (і трохи Інтелект). Спритність допомагає відскочити й ухилитися від циклічних. Інтелект від 4 дає змогу вичікувати цикл і знешкоджувати знайдені пастки — за це дають деталі.",
+  "src": "20-deep.js"
+ },
+ "слабо": {
+  "en": "weak",
+  "uk": "слабко",
+  "src": "24-attrui.js"
+ },
+ "Слабый противник — экономлю патроны": {
+  "en": "Weak foe — saving ammo",
+  "uk": "Слабкий супротивник — економлю набої",
+  "src": "19-zones.js"
+ },
+ "След.": {
+  "en": "Next",
+  "uk": "Наст.",
+  "src": "05-game_all.js"
+ },
+ "СЛЕДУЮЩИЙ УРОВЕНЬ": {
+  "en": "NEXT LEVEL",
+  "uk": "НАСТУПНИЙ РІВЕНЬ",
+  "src": "06-hideout.js"
+ },
+ "Слепой охотник": {
+  "en": "Blind hunter",
+  "uk": "Сліпий мисливець",
+  "src": "20-deep.js"
+ },
+ "Слизень": {
+  "en": "Slug",
+  "uk": "Слизень",
+  "src": "05-game_all.js"
+ },
+ "Слишком лёгкий этаж для ур.": {
+  "en": "Floor too easy for lv",
+  "uk": "Надто легкий поверх для рів.",
+  "src": "05-game_all.js"
+ },
+ "сложный": {
+  "en": "complex",
+  "uk": "складний",
+  "src": "26-print.js"
+ },
+ "сломан": {
+  "en": "broken",
+  "uk": "зламаний",
+  "src": "05-game_all.js"
+ },
+ "сломан — нужен ремонт": {
+  "en": "broken — needs repair",
+  "uk": "зламаний — потрібен ремонт",
+  "src": "12-wpn.js"
+ },
+ "сломан!": {
+  "en": "broken!",
+  "uk": "зламаний!",
+  "src": "12-wpn.js"
+ },
+ "сломано": {
+  "en": "broken",
+  "uk": "зламано",
+  "src": "11-scrap.js 12-wpn.js"
+ },
+ "слот пуст": {
+  "en": "slot empty",
+  "uk": "слот порожній",
+  "src": "09-heropanel.js"
+ },
+ "Слоты видеокарт": {
+  "en": "GPU slots",
+  "uk": "Слоти відеокарт",
+  "src": "05-game_all.js"
+ },
+ "случайные компоненты": {
+  "en": "random components",
+  "uk": "випадкові компоненти",
+  "src": "05-game_all.js"
+ },
+ "Сменить игрока": {
+  "en": "Switch player",
+  "uk": "Змінити гравця",
+  "src": "30-title.js"
+ },
+ "смуглая": {
+  "en": "swarthy",
+  "uk": "смаглява",
+  "src": "01-core.js"
+ },
+ "Снаряды": {
+  "en": "Projectiles",
+  "uk": "Снаряди",
+  "src": "08-fxgame.js"
+ },
+ "Снаряжение": {
+  "en": "Gear",
+  "uk": "Спорядження",
+  "src": "05-game_all.js 09-heropanel.js 13-hire.js 16-roster.js"
+ },
+ "СНАРЯЖЕНИЕ": {
+  "en": "GEAR",
+  "uk": "СПОРЯДЖЕННЯ",
+  "src": "06-hideout.js 15-loadout2.js"
+ },
+ "СНАРЯЖЕНИЕ ГЕРОЯ": {
+  "en": "HERO GEAR",
+  "uk": "СПОРЯДЖЕННЯ ГЕРОЯ",
+  "src": "05-game_all.js"
+ },
+ "Снаряжение и сумка потеряны навсегда. Ящик, кредиты": {
+  "en": "Gear and bag are lost forever. Crate, credits",
+  "uk": "Спорядження й сумку втрачено назавжди. Скриня, кредити",
+  "src": "13-hire.js"
+ },
+ "Снежный краб": {
+  "en": "Snow crab",
+  "uk": "Сніжний краб",
+  "src": "20-deep.js"
+ },
+ "Снежный рейдер": {
+  "en": "Snow raider",
+  "uk": "Сніжний рейдер",
+  "src": "20-deep.js"
+ },
+ "Снять": {
+  "en": "Take off",
+  "uk": "Зняти",
+  "src": "06-hideout.js 09-heropanel.js"
+ },
+ "Снять в сумку": {
+  "en": "Unequip to bag",
+  "uk": "Зняти в сумку",
+  "src": "15-loadout2.js"
+ },
+ "Снять в ящик": {
+  "en": "Unequip to crate",
+  "uk": "Зняти у скриню",
+  "src": "06-hideout.js 15-loadout2.js"
+ },
+ "Создано": {
+  "en": "Created",
+  "uk": "Створено",
+  "src": "06-hideout.js"
+ },
+ "Создать": {
+  "en": "Create",
+  "uk": "Створити",
+  "src": "06-hideout.js"
+ },
+ "Сосульки": {
+  "en": "Icicles",
+  "uk": "Бурульки",
+  "src": "20-deep.js"
+ },
+ "Сохранение автоматическое. Хардкор: погибший наёмник не возвращается.": {
+  "en": "Saving is automatic. Hardcore: a fallen merc does not come back.",
+  "uk": "Збереження автоматичне. Хардкор: загиблий найманець не повертається.",
+  "src": "15-loadout2.js"
+ },
+ "Спарк": {
+  "en": "Spark",
+  "uk": "Спарк",
+  "src": "01-core.js"
+ },
+ "Споровик": {
+  "en": "Sporeling",
+  "uk": "Споровик",
+  "src": "20-deep.js"
+ },
+ "Споровый гриб": {
+  "en": "Spore mushroom",
+  "uk": "Споровий гриб",
+  "src": "20-deep.js"
+ },
+ "Споровый ковёр": {
+  "en": "Spore carpet",
+  "uk": "Споровий килим",
+  "src": "20-deep.js"
+ },
+ "Споровый культист": {
+  "en": "Spore cultist",
+  "uk": "Споровий культист",
+  "src": "20-deep.js"
+ },
+ "Спуск на следующий этаж": {
+  "en": "Descend to the next floor",
+  "uk": "Спуск на наступний поверх",
+  "src": "05-game_all.js"
+ },
+ "спуск ниже": {
+  "en": "descend",
+  "uk": "спуск нижче",
+  "src": "05-game_all.js"
+ },
+ "Спуск ниже…": {
+  "en": "Descending…",
+  "uk": "Спуск нижче…",
+  "src": "05-game_all.js"
+ },
+ "сразу": {
+  "en": "instant",
+  "uk": "одразу",
+  "src": "06-hideout.js"
+ },
+ "среднее": {
+  "en": "average",
+  "uk": "середня",
+  "src": "01-core.js 05-game_all.js 07-stats.js"
+ },
+ "средний": {
+  "en": "average",
+  "uk": "середній",
+  "src": "01-core.js"
+ },
+ "Средняя канистра: 10 ед. топлива. Генератор тратит 2 / 1,5 / 1 ед. в час (ур. 1 / 2 / 3).": {
+  "en": "Medium canister: 10 u of fuel. The generator burns 2 / 1.5 / 1 u per hour (lv 1 / 2 / 3).",
+  "uk": "Середня каністра: 10 од. пального. Генератор витрачає 2 / 1,5 / 1 од. на годину (рів. 1 / 2 / 3).",
+  "src": "23-fuel.js"
+ },
+ "Срываются с потолка.": {
+  "en": "Drop from the ceiling.",
+  "uk": "Зриваються зі стелі.",
+  "src": "20-deep.js"
+ },
+ "сталь": {
+  "en": "steel",
+  "uk": "сталь",
+  "src": "01-core.js"
+ },
+ "Стальные пружины из механизмов и оружия.": {
+  "en": "Steel springs from machinery and weapons.",
+  "uk": "Сталеві пружини з механізмів і зброї.",
+  "src": "22-matinfo.js"
+ },
+ "Станок": {
+  "en": "Station",
+  "uk": "Верстат",
+  "src": "05-game_all.js 26-print.js"
+ },
+ "СТАНОК": {
+  "en": "STATION",
+  "uk": "ВЕРСТАТ",
+  "src": "05-game_all.js"
+ },
+ "Станок пуст. Положите неизвестный чертёж — станок выяснит, что это за устройство, насколько оно редкое и из чего печатается.": {
+  "en": "The station is empty. Insert an unknown blueprint — it will find out what the device is, how rare it is and what it's printed from.",
+  "uk": "Верстат порожній. Покладіть невідоме креслення — верстат з'ясує, що це за пристрій, наскільки він рідкісний і з чого друкується.",
+  "src": "26-print.js"
+ },
+ "Станок расшифровывает чертёж…": {
+  "en": "The station is decrypting the blueprint…",
+  "uk": "Верстат розшифровує креслення…",
+  "src": "26-print.js"
+ },
+ "Старый терминал": {
+  "en": "Old terminal",
+  "uk": "Старий термінал",
+  "src": "03-props.js"
+ },
+ "Статик": {
+  "en": "Static",
+  "uk": "Статик",
+  "src": "01-core.js"
+ },
+ "Статическое поле": {
+  "en": "Static field",
+  "uk": "Статичне поле",
+  "src": "20-deep.js"
+ },
+ "Статус": {
+  "en": "Status",
+  "uk": "Статус",
+  "src": "08-fxgame.js"
+ },
+ "Статусы": {
+  "en": "Statuses",
+  "uk": "Статуси",
+  "src": "08-fxgame.js"
+ },
+ "Створки захлопываются по циклу.": {
+  "en": "Shutters slam on a cycle.",
+  "uk": "Стулки зачиняються за циклом.",
+  "src": "20-deep.js"
+ },
+ "Стеллажи": {
+  "en": "Shelving",
+  "uk": "Стелажі",
+  "src": "05-game_all.js"
+ },
+ "стим-шприц": {
+  "en": "stim shot",
+  "uk": "стим-шприц",
+  "src": "02-items.js 26-print.js"
+ },
+ "Страж ядра": {
+  "en": "Core warden",
+  "uk": "Страж ядра",
+  "src": "04-world.js"
+ },
+ "Страж-дрон": {
+  "en": "Sentinel drone",
+  "uk": "Страж-дрон",
+  "src": "05-game_all.js"
+ },
+ "Стрелок": {
+  "en": "Gunner",
+  "uk": "Стрілець",
+  "src": "04-world.js"
+ },
+ "строится": {
+  "en": "building",
+  "uk": "будується",
+  "src": "06-hideout.js"
+ },
+ "Строится": {
+  "en": "Building",
+  "uk": "Будується",
+  "src": "06-hideout.js"
+ },
+ "Стройка": {
+  "en": "Construction",
+  "uk": "Будівництво",
+  "src": "06-hideout.js"
+ },
+ "СТРОЙКА": {
+  "en": "CONSTRUCTION",
+  "uk": "БУДІВНИЦТВО",
+  "src": "05-game_all.js"
+ },
+ "Стройка завершена": {
+  "en": "Construction complete",
+  "uk": "Будівництво завершено",
+  "src": "06-hideout.js"
+ },
+ "Стройка начата": {
+  "en": "Construction started",
+  "uk": "Будівництво розпочато",
+  "src": "06-hideout.js"
+ },
+ "Стройматериалы": {
+  "en": "Building materials",
+  "uk": "Будматеріали",
+  "src": "03-props.js"
+ },
+ "Струя хладагента по желобу.": {
+  "en": "A coolant jet along a chute.",
+  "uk": "Струмінь холодоагенту жолобом.",
+  "src": "20-deep.js"
+ },
+ "сумка": {
+  "en": "bag",
+  "uk": "сумка",
+  "src": "16-roster.js"
+ },
+ "СУМКА": {
+  "en": "BAG",
+  "uk": "СУМКА",
+  "src": "06-hideout.js 15-loadout2.js"
+ },
+ "СУМКА — БЕРЁМ С СОБОЙ": {
+  "en": "BAG — WE TAKE IT WITH US",
+  "uk": "СУМКА — БЕРЕМО З СОБОЮ",
+  "src": "06-hideout.js"
+ },
+ "Сумка разобрана в ящик": {
+  "en": "Bag emptied into the crate",
+  "uk": "Сумку розібрано у скриню",
+  "src": "15-loadout2.js"
+ },
+ "сумка, надетое": {
+  "en": "bag, equipped",
+  "uk": "сумка, вдягнене",
+  "src": "15-loadout2.js"
+ },
+ "Сумка: аптечки": {
+  "en": "Bag: medkits",
+  "uk": "Сумка: аптечки",
+  "src": "05-game_all.js"
+ },
+ "Сумка: не хватает места": {
+  "en": "Bag: not enough room",
+  "uk": "Сумка: не вистачає місця",
+  "src": "15-loadout2.js"
+ },
+ "Сумку": {
+  "en": "Bag",
+  "uk": "Сумку",
+  "src": "15-loadout2.js"
+ },
+ "Существа": {
+  "en": "Creatures",
+  "uk": "Істоти",
+  "src": "08-fxgame.js"
+ },
+ "схемы на лице": {
+  "en": "circuits on the face",
+  "uk": "схеми на обличчі",
+  "src": "01-core.js"
+ },
+ "СЯ": {
+  "en": "GHT",
+  "uk": "СЯ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Тайник": {
+  "en": "Stash",
+  "uk": "Схованка",
+  "src": "03-props.js"
+ },
+ "Такт": {
+  "en": "Beat",
+  "uk": "Такт",
+  "src": "08-fxgame.js"
+ },
+ "Танго": {
+  "en": "Tango",
+  "uk": "Танго",
+  "src": "01-core.js"
+ },
+ "Тап — купить сразу (в ящик) · удержание — подробности": {
+  "en": "Tap — buy now (to crate) · hold — details",
+  "uk": "Тап — купити одразу (у скриню) · утримання — подробиці",
+  "src": "28-ux3.js"
+ },
+ "Тап — переложить (ящик": {
+  "en": "Tap — move (crate",
+  "uk": "Тап — перекласти (скриня",
+  "src": "15-loadout2.js"
+ },
+ "Тап — продать сразу · удержание — подробности": {
+  "en": "Tap — sell now · hold — details",
+  "uk": "Тап — продати одразу · утримання — подробиці",
+  "src": "28-ux3.js"
+ },
+ "Телепорт-сбойник": {
+  "en": "The glitch teleporter",
+  "uk": "Телепорт-збійник",
+  "src": "20-deep.js"
+ },
+ "Телосложение": {
+  "en": "Build",
+  "uk": "Статура",
+  "src": "05-game_all.js 07-stats.js 13-hire.js"
+ },
+ "тёмная": {
+  "en": "dark",
+  "uk": "темна",
+  "src": "01-core.js"
+ },
+ "тёмно-синий": {
+  "en": "navy blue",
+  "uk": "темно-синій",
+  "src": "01-core.js"
+ },
+ "тёмный металл": {
+  "en": "dark metal",
+  "uk": "темний метал",
+  "src": "01-core.js"
+ },
+ "темп действий, замах": {
+  "en": "action pace, swing",
+  "uk": "темп дій, замах",
+  "src": "07-stats.js"
+ },
+ "Тень": {
+  "en": "Shadow",
+  "uk": "Тінь",
+  "src": "02-items.js"
+ },
+ "теперь можно стартовать отсюда": {
+  "en": "you can now start from here",
+  "uk": "тепер можна стартувати звідси",
+  "src": "19-zones.js"
+ },
+ "ТЕРМИНАЛ": {
+  "en": "TERMINAL",
+  "uk": "ТЕРМІНАЛ",
+  "src": "05-game_all.js 13-hire.js 17-trade2.js index.html"
+ },
+ "Терминал найма": {
+  "en": "Hiring terminal",
+  "uk": "Термінал найму",
+  "src": "13-hire.js"
+ },
+ "теряет": {
+  "en": "loses",
+  "uk": "втрачає",
+  "src": "07-stats.js"
+ },
+ "Теряет": {
+  "en": "Loses",
+  "uk": "Втрачає",
+  "src": "24-attrui.js"
+ },
+ "Тесла": {
+  "en": "Tesla",
+  "uk": "Тесла",
+  "src": "08-fxgame.js"
+ },
+ "Тесла-Дин": {
+  "en": "Tesla-Dyne",
+  "uk": "Тесла-Дін",
+  "src": "02-items.js"
+ },
+ "Техник": {
+  "en": "Technician",
+  "uk": "Технік",
+  "src": "04-world.js"
+ },
+ "ТЕХНОПУСТЫНЯ": {
+  "en": "TECHNO DESERT",
+  "uk": "ТЕХНОПУСТЕЛЯ",
+  "src": "20-deep.js"
+ },
+ "Технопустыня, Туманные сектора, Цеха (эт. 8+)": {
+  "en": "Techno desert, Fog sectors, Production halls (fl. 8+)",
+  "uk": "Технопустеля, Туманні сектори, Цехи (пов. 8+)",
+  "src": "21-loot2.js"
+ },
+ "Технопустыня: песок вязнет под ногами": {
+  "en": "Techno desert: sand drags at your feet",
+  "uk": "Технопустеля: пісок грузне під ногами",
+  "src": "20-deep.js"
+ },
+ "Техноскорпион": {
+  "en": "Techno scorpion",
+  "uk": "Техноскорпіон",
+  "src": "20-deep.js"
+ },
+ "Ток бежит по рельсе.": {
+  "en": "Current runs along the rail.",
+  "uk": "Струм біжить рейкою.",
+  "src": "20-deep.js"
+ },
+ "Токсичное облако": {
+  "en": "Toxic cloud",
+  "uk": "Токсична хмара",
+  "src": "20-deep.js"
+ },
+ "только из рейдов": {
+  "en": "raids only",
+  "uk": "лише з рейдів",
+  "src": "05-game_all.js"
+ },
+ "Топливо": {
+  "en": "Fuel",
+  "uk": "Пальне",
+  "src": "06-hideout.js"
+ },
+ "ТОПЛИВО": {
+  "en": "FUEL",
+  "uk": "ПАЛЬНЕ",
+  "src": "23-fuel.js"
+ },
+ "Топливо кончилось": {
+  "en": "Fuel ran out",
+  "uk": "Пальне закінчилося",
+  "src": "23-fuel.js"
+ },
+ "топор": {
+  "en": "axe",
+  "uk": "сокира",
+  "src": "04-world.js 08-fxgame.js 18-audio.js 20-deep.js 26-print.js"
+ },
+ "ТОРГОВЫЙ ТЕРМИНАЛ": {
+  "en": "TRADE TERMINAL",
+  "uk": "ТОРГОВИЙ ТЕРМІНАЛ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "точек лута": {
+  "en": "loot spots",
+  "uk": "точок луту",
+  "src": "08-fxgame.js"
+ },
+ "Точка эвакуации на базу": {
+  "en": "Evac point to base",
+  "uk": "Точка евакуації на базу",
+  "src": "05-game_all.js"
+ },
+ "точн.": {
+  "en": "acc.",
+  "uk": "точн.",
+  "src": "02-items.js 12-wpn.js"
+ },
+ "Точно уволить? Нажмите ещё раз": {
+  "en": "Dismiss for sure? Tap again",
+  "uk": "Точно звільнити? Натисніть ще раз",
+  "src": "16-roster.js"
+ },
+ "Точно? Нажмите ещё раз": {
+  "en": "Sure? Tap again",
+  "uk": "Точно? Натисніть ще раз",
+  "src": "15-loadout2.js"
+ },
+ "Точность": {
+  "en": "Accuracy",
+  "uk": "Точність",
+  "src": "02-items.js"
+ },
+ "Трансформатор": {
+  "en": "Transformer",
+  "uk": "Трансформатор",
+  "src": "03-props.js"
+ },
+ "Требует питания от генератора": {
+  "en": "Needs generator power",
+  "uk": "Потребує живлення від генератора",
+  "src": "06-hideout.js"
+ },
+ "тревога!": {
+  "en": "alarm!",
+  "uk": "тривога!",
+  "src": "20-deep.js"
+ },
+ "Тренажёр": {
+  "en": "Gym",
+  "uk": "Тренажер",
+  "src": "25-base3.js"
+ },
+ "Тренировка вдвое быстрее (нужно питание)": {
+  "en": "Training twice as fast (needs power)",
+  "uk": "Тренування вдвічі швидше (потрібне живлення)",
+  "src": "25-base3.js"
+ },
+ "тренировки": {
+  "en": "training",
+  "uk": "тренування",
+  "src": "25-base3.js"
+ },
+ "ТРЕНИРОВКИ": {
+  "en": "TRAINING",
+  "uk": "ТРЕНУВАННЯ",
+  "src": "25-base3.js"
+ },
+ "ТРОФЕИ": {
+  "en": "TROPHIES",
+  "uk": "ТРОФЕЇ",
+  "src": "06-hideout.js"
+ },
+ "ТУМАННЫЕ СЕКТОРА": {
+  "en": "FOG SECTORS",
+  "uk": "ТУМАННІ СЕКТОРИ",
+  "src": "20-deep.js"
+ },
+ "Туманные сектора: видно на пару шагов — ближний бой решает": {
+  "en": "Fog sectors: you see a couple of steps — melee decides",
+  "uk": "Туманні сектори: видно на кілька кроків — ближній бій вирішує",
+  "src": "20-deep.js"
+ },
+ "Туманный жнец": {
+  "en": "Fog reaper",
+  "uk": "Туманний женець",
+  "src": "20-deep.js"
+ },
+ "Туманный сталкер": {
+  "en": "Fog stalker",
+  "uk": "Туманний сталкер",
+  "src": "20-deep.js"
+ },
+ "Турель стреляет при пересечении луча.": {
+  "en": "A turret fires when the beam is crossed.",
+  "uk": "Турель стріляє, коли перетинають промінь.",
+  "src": "20-deep.js"
+ },
+ "Тьма": {
+  "en": "Darkness",
+  "uk": "Темрява",
+  "src": "08-fxgame.js"
+ },
+ "тяжёлая броня": {
+  "en": "heavy armor",
+  "uk": "важка броня",
+  "src": "02-items.js"
+ },
+ "Тяжёлый затвор сбоит.": {
+  "en": "The heavy bolt glitches.",
+  "uk": "Важкий затвор збоїть.",
+  "src": "20-deep.js"
+ },
+ "у навыка": {
+  "en": "for the skill",
+  "uk": "у навички",
+  "src": "24-attrui.js"
+ },
+ "Убежище": {
+  "en": "Shelter",
+  "uk": "Сховище",
+  "src": "27-rooms.js"
+ },
+ "УБЕЖИЩЕ": {
+  "en": "SHELTER",
+  "uk": "СХОВИЩЕ",
+  "src": "06-hideout.js index.html"
+ },
+ "Убежище без питания — модули не работают": {
+  "en": "The shelter has no power — modules are offline",
+  "uk": "Сховище без живлення — модулі не працюють",
+  "src": "06-hideout.js"
+ },
+ "убил": {
+  "en": "killed",
+  "uk": "вбив",
+  "src": "16-roster.js"
+ },
+ "убит": {
+  "en": "killed",
+  "uk": "убитий",
+  "src": "13-hire.js"
+ },
+ "убито": {
+  "en": "killed",
+  "uk": "убито",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "убито врагов": {
+  "en": "enemies killed",
+  "uk": "убито ворогів",
+  "src": "06-hideout.js"
+ },
+ "увернулся": {
+  "en": "dodged",
+  "uk": "ухилився",
+  "src": "20-deep.js"
+ },
+ "уволен": {
+  "en": "dismissed",
+  "uk": "звільнений",
+  "src": "16-roster.js"
+ },
+ "Уволить": {
+  "en": "Dismiss",
+  "uk": "Звільнити",
+  "src": "16-roster.js"
+ },
+ "Уволить можно в меню «Наёмники».": {
+  "en": "You can dismiss them in the «Mercs» menu.",
+  "uk": "Звільнити можна в меню «Найманці».",
+  "src": "13-hire.js"
+ },
+ "угроза": {
+  "en": "threat",
+  "uk": "загроза",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js"
+ },
+ "удар": {
+  "en": "strike",
+  "uk": "удар",
+  "src": "08-fxgame.js"
+ },
+ "Удар по ближайшей цели": {
+  "en": "Hits the nearest target",
+  "uk": "Удар по найближчій цілі",
+  "src": "08-fxgame.js"
+ },
+ "Ударный модуль": {
+  "en": "Strike module",
+  "uk": "Ударний модуль",
+  "src": "08-fxgame.js"
+ },
+ "Удары": {
+  "en": "Strikes",
+  "uk": "Удари",
+  "src": "08-fxgame.js"
+ },
+ "уже известен — продать?": {
+  "en": "already known — sell?",
+  "uk": "уже відомий — продати?",
+  "src": "26-print.js"
+ },
+ "укл": {
+  "en": "dodge",
+  "uk": "ухил",
+  "src": "09-heropanel.js"
+ },
+ "уклон": {
+  "en": "dodge",
+  "uk": "ухил",
+  "src": "05-game_all.js 06-hideout.js 07-stats.js 16-roster.js"
+ },
+ "Уклонение": {
+  "en": "Dodge",
+  "uk": "Ухилення",
+  "src": "02-items.js 24-attrui.js"
+ },
+ "уклонение 2,5%/ед. выше 2; меткость": {
+  "en": "dodge 2.5%/pt above 2; accuracy",
+  "uk": "ухилення 2,5%/од. вище 2; влучність",
+  "src": "07-stats.js"
+ },
+ "Укол токсином.": {
+  "en": "Toxin jab.",
+  "uk": "Укол токсином.",
+  "src": "20-deep.js"
+ },
+ "Українська": {
+  "en": "Українська",
+  "uk": "Українська",
+  "src": "32-i18n.js"
+ },
+ "Улицы": {
+  "en": "Streets",
+  "uk": "Вулиці",
+  "src": "06-hideout.js"
+ },
+ "УЛИЦЫ": {
+  "en": "STREETS",
+  "uk": "ВУЛИЦІ",
+  "src": "04-world.js"
+ },
+ "улицы и серверная (эт. 3–4)": {
+  "en": "streets and server room (fl. 3–4)",
+  "uk": "вулиці й серверна (пов. 3–4)",
+  "src": "21-loot2.js"
+ },
+ "Уличный самурай": {
+  "en": "Street samurai",
+  "uk": "Вуличний самурай",
+  "src": "04-world.js"
+ },
+ "Улучшать можно только в убежище": {
+  "en": "Upgrades only at the shelter",
+  "uk": "Покращувати можна лише у сховищі",
+  "src": "12-wpn.js"
+ },
+ "Улучшение до": {
+  "en": "Upgrade to",
+  "uk": "Покращення до",
+  "src": "12-wpn.js"
+ },
+ "Улучшение не удалось: компоненты потрачены, износ": {
+  "en": "Upgrade failed: components spent, wear",
+  "uk": "Покращення не вдалося: компоненти витрачено, знос",
+  "src": "12-wpn.js"
+ },
+ "Улучшено": {
+  "en": "Upgraded",
+  "uk": "Покращено",
+  "src": "12-wpn.js"
+ },
+ "Улучшить": {
+  "en": "Upgrade",
+  "uk": "Покращити",
+  "src": "12-wpn.js"
+ },
+ "уничтожено": {
+  "en": "destroyed",
+  "uk": "знищено",
+  "src": "05-game_all.js"
+ },
+ "Уничтожил": {
+  "en": "Destroyed",
+  "uk": "Знищив",
+  "src": "13-hire.js"
+ },
+ "упущено": {
+  "en": "missed",
+  "uk": "пропущено",
+  "src": "05-game_all.js"
+ },
+ "ур.": {
+  "en": "lv",
+  "uk": "рів.",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 13-hire.js 15-loadout2.js 16-roster.js 29-rt.js"
+ },
+ "уровень": {
+  "en": "level",
+  "uk": "рівень",
+  "src": "06-hideout.js 13-hire.js 19-zones.js"
+ },
+ "Уровень": {
+  "en": "Level",
+  "uk": "Рівень",
+  "src": "05-game_all.js"
+ },
+ "УРОВЕНЬ": {
+  "en": "LEVEL",
+  "uk": "РІВЕНЬ",
+  "src": "05-game_all.js"
+ },
+ "уровня": {
+  "en": "levels",
+  "uk": "рівні",
+  "src": "06-hideout.js"
+ },
+ "урон": {
+  "en": "damage",
+  "uk": "шкода",
+  "src": "07-stats.js 08-fxgame.js"
+ },
+ "Урон": {
+  "en": "Damage",
+  "uk": "Шкода",
+  "src": "02-items.js 08-fxgame.js 12-wpn.js"
+ },
+ "Урон в ближнем бою": {
+  "en": "Melee damage",
+  "uk": "Шкода в ближньому бою",
+  "src": "24-attrui.js"
+ },
+ "Урон всем вокруг (радиус 2)": {
+  "en": "Damage to all around (radius 2)",
+  "uk": "Шкода всім навколо (радіус 2)",
+  "src": "08-fxgame.js"
+ },
+ "Урон и статус всем видимым врагам": {
+  "en": "Damage and status to all visible enemies",
+  "uk": "Шкода й статус усім видимим ворогам",
+  "src": "08-fxgame.js"
+ },
+ "урона, 6 ход.": {
+  "en": "damage, 6 turns",
+  "uk": "шкоди, 6 ход.",
+  "src": "02-items.js"
+ },
+ "ускорение": {
+  "en": "haste",
+  "uk": "прискорення",
+  "src": "05-game_all.js 06-hideout.js 08-fxgame.js"
+ },
+ "Ускорение": {
+  "en": "Haste",
+  "uk": "Прискорення",
+  "src": "05-game_all.js 08-fxgame.js"
+ },
+ "Ускоритель": {
+  "en": "Booster",
+  "uk": "Прискорювач",
+  "src": "08-fxgame.js"
+ },
+ "Установить видеокарту": {
+  "en": "Install GPU",
+  "uk": "Встановити відеокарту",
+  "src": "06-hideout.js"
+ },
+ "Установлено": {
+  "en": "Installed",
+  "uk": "Встановлено",
+  "src": "06-hideout.js"
+ },
+ "учёба": {
+  "en": "study",
+  "uk": "навчання",
+  "src": "25-base3.js"
+ },
+ "Учебник или справочник. Полка: 60 мин обучения.": {
+  "en": "A textbook or reference. Shelf: 60 min of study.",
+  "uk": "Підручник або довідник. Полиця: 60 хв навчання.",
+  "src": "25-base3.js"
+ },
+ "Ферма": {
+  "en": "Farm",
+  "uk": "Ферма",
+  "src": "05-game_all.js"
+ },
+ "ФЕРМА": {
+  "en": "FARM",
+  "uk": "ФЕРМА",
+  "src": "05-game_all.js"
+ },
+ "фиолет": {
+  "en": "violet",
+  "uk": "фіолет",
+  "src": "01-core.js"
+ },
+ "фиолетовые": {
+  "en": "purple",
+  "uk": "фіолетові",
+  "src": "01-core.js"
+ },
+ "Флюкс": {
+  "en": "Flux",
+  "uk": "Флюкс",
+  "src": "01-core.js"
+ },
+ "Фотоэлемент": {
+  "en": "Photocell",
+  "uk": "Фотоелемент",
+  "src": "20-deep.js"
+ },
+ "фраз) можно выгрузить в": {
+  "en": "phrases) can be exported to",
+  "uk": "фраз) можна вивантажити в",
+  "src": "32-i18n.js"
+ },
+ "футболка": {
+  "en": "t-shirt",
+  "uk": "футболка",
+  "src": "01-core.js"
+ },
+ "Хак": {
+  "en": "Hack",
+  "uk": "Хак",
+  "src": "08-fxgame.js"
+ },
+ "Хак-протокол": {
+  "en": "Hack protocol",
+  "uk": "Хак-протокол",
+  "src": "08-fxgame.js"
+ },
+ "хаки": {
+  "en": "khaki",
+  "uk": "хакі",
+  "src": "01-core.js"
+ },
+ "ХАРАКТЕРИСТИКИ": {
+  "en": "ATTRIBUTES",
+  "uk": "ХАРАКТЕРИСТИКИ",
+  "src": "05-game_all.js"
+ },
+ "Хардкор: погибший боец не возвращается, всё надетое и в сумке теряется. Ящик, кредиты и убежище остаются. Список наёмников обновляется после каждого рейда.": {
+  "en": "Hardcore: a fallen fighter does not return; everything worn and in the bag is lost. The crate, credits and shelter remain. The merc list refreshes after every raid.",
+  "uk": "Хардкор: загиблий боєць не повертається, усе вдягнене й у сумці втрачається. Скриня, кредити й сховище залишаються. Список найманців оновлюється після кожного рейду.",
+  "src": "13-hire.js"
+ },
+ "хвост": {
+  "en": "ponytail",
+  "uk": "хвіст",
+  "src": "01-core.js"
+ },
+ "Хекс": {
+  "en": "Hex",
+  "uk": "Хекс",
+  "src": "01-core.js"
+ },
+ "Хироки": {
+  "en": "Hiroki",
+  "uk": "Хірокі",
+  "src": "02-items.js"
+ },
+ "Хищный цветок": {
+  "en": "Predatory flower",
+  "uk": "Хижа квітка",
+  "src": "20-deep.js"
+ },
+ "хлам": {
+  "en": "junk",
+  "uk": "мотлох",
+  "src": "19-zones.js"
+ },
+ "Хлам": {
+  "en": "Junk",
+  "uk": "Мотлох",
+  "src": "03-props.js 05-game_all.js"
+ },
+ "Хлещут из стены.": {
+  "en": "Lash out from the wall.",
+  "uk": "Шмагають зі стіни.",
+  "src": "20-deep.js"
+ },
+ "Хлопающая дверь": {
+  "en": "Slamming door",
+  "uk": "Грюкаючі двері",
+  "src": "20-deep.js"
+ },
+ "ход.": {
+  "en": "turns",
+  "uk": "ход.",
+  "src": "02-items.js 05-game_all.js"
+ },
+ "ход. в рейдах": {
+  "en": "turns in raids",
+  "uk": "ход. у рейдах",
+  "src": "13-hire.js"
+ },
+ "хода": {
+  "en": "turns",
+  "uk": "ходи",
+  "src": "02-items.js"
+ },
+ "Холод высасывает энергию и замедляет.": {
+  "en": "The cold drains energy and slows you down.",
+  "uk": "Холод висмоктує енергію й уповільнює.",
+  "src": "20-deep.js"
+ },
+ "холодное оружие": {
+  "en": "melee weapons",
+  "uk": "холодна зброя",
+  "src": "22-matinfo.js"
+ },
+ "Холодный поток": {
+  "en": "Cold stream",
+  "uk": "Холодний потік",
+  "src": "20-deep.js"
+ },
+ "Хорошая добыча и потрёпанный герой — стоит уйти": {
+  "en": "Good loot and a battered hero — time to leave",
+  "uk": "Добра здобич і пошарпаний герой — варто піти",
+  "src": "05-game_all.js"
+ },
+ "Хорошая добыча, герой потрёпан — стоит уйти": {
+  "en": "Good loot, hero battered — time to leave",
+  "uk": "Добра здобич, герой пошарпаний — варто піти",
+  "src": "09-heropanel.js"
+ },
+ "хром": {
+  "en": "chrome",
+  "uk": "хром",
+  "src": "01-core.js"
+ },
+ "Хром": {
+  "en": "Chrome",
+  "uk": "Хром",
+  "src": "02-items.js"
+ },
+ "худи": {
+  "en": "hoodie",
+  "uk": "худі",
+  "src": "01-core.js 02-items.js"
+ },
+ "худощавое": {
+  "en": "lean",
+  "uk": "худорлява",
+  "src": "01-core.js 05-game_all.js 07-stats.js"
+ },
+ "хуже на": {
+  "en": "worse by",
+  "uk": "гірше на",
+  "src": "09-heropanel.js"
+ },
+ "целей": {
+  "en": "targets",
+  "uk": "цілей",
+  "src": "08-fxgame.js"
+ },
+ "Цемент": {
+  "en": "Cement",
+  "uk": "Цемент",
+  "src": "03-props.js"
+ },
+ "цена": {
+  "en": "price",
+  "uk": "ціна",
+  "src": "05-game_all.js 09-heropanel.js 22-matinfo.js"
+ },
+ "цена крафта": {
+  "en": "craft cost",
+  "uk": "ціна крафту",
+  "src": "07-stats.js 24-attrui.js"
+ },
+ "Ценность": {
+  "en": "Value",
+  "uk": "Цінність",
+  "src": "05-game_all.js"
+ },
+ "ценность добычи": {
+  "en": "loot value",
+  "uk": "цінність здобичі",
+  "src": "06-hideout.js"
+ },
+ "ценный": {
+  "en": "valuable",
+  "uk": "цінний",
+  "src": "03-props.js"
+ },
+ "циан": {
+  "en": "cyan",
+  "uk": "ціан",
+  "src": "01-core.js"
+ },
+ "ч": {
+  "en": "h",
+  "uk": "год",
+  "src": "13-hire.js 23-fuel.js"
+ },
+ "часто валят с ног": {
+  "en": "often knock you down",
+  "uk": "часто збивають з ніг",
+  "src": "24-attrui.js"
+ },
+ "Часть добычи не влезла в рюкзак": {
+  "en": "Part of the loot didn't fit in the backpack",
+  "uk": "Частина здобичі не влізла в рюкзак",
+  "src": "05-game_all.js"
+ },
+ "челюстной имплант": {
+  "en": "jaw implant",
+  "uk": "щелепний імплант",
+  "src": "01-core.js"
+ },
+ "чёрные": {
+  "en": "black",
+  "uk": "чорні",
+  "src": "01-core.js"
+ },
+ "чёрный": {
+  "en": "black",
+  "uk": "чорний",
+  "src": "01-core.js"
+ },
+ "Чертёж расшифрован": {
+  "en": "Blueprint decrypted",
+  "uk": "Креслення розшифровано",
+  "src": "26-print.js"
+ },
+ "чертёж!": {
+  "en": "blueprint!",
+  "uk": "креслення!",
+  "src": "26-print.js"
+ },
+ "Чертежи": {
+  "en": "Blueprints",
+  "uk": "Креслення",
+  "src": "15-loadout2.js 26-print.js"
+ },
+ "ЧЕРТЕЖИ В ЯЩИКЕ": {
+  "en": "BLUEPRINTS IN THE CRATE",
+  "uk": "КРЕСЛЕННЯ У СКРИНІ",
+  "src": "26-print.js"
+ },
+ "что это — станет ясно в конце": {
+  "en": "what it is — will be clear at the end",
+  "uk": "що це — стане ясно наприкінці",
+  "src": "26-print.js"
+ },
+ "Что это за устройство — неизвестно": {
+  "en": "What device this is — unknown",
+  "uk": "Що це за пристрій — невідомо",
+  "src": "26-print.js"
+ },
+ "Что-то": {
+  "en": "Something",
+  "uk": "Щось",
+  "src": "05-game_all.js"
+ },
+ "шаг.": {
+  "en": "steps",
+  "uk": "кр.",
+  "src": "05-game_all.js"
+ },
+ "шаг. · этаж": {
+  "en": "steps · floor",
+  "uk": "кр. · поверх",
+  "src": "09-heropanel.js"
+ },
+ "шанс": {
+  "en": "chance",
+  "uk": "шанс",
+  "src": "12-wpn.js"
+ },
+ "шанс предмета": {
+  "en": "item chance",
+  "uk": "шанс предмета",
+  "src": "05-game_all.js"
+ },
+ "шанс улучш.": {
+  "en": "upgr. chance",
+  "uk": "шанс покращ.",
+  "src": "07-stats.js"
+ },
+ "Шанс улучшения": {
+  "en": "Upgrade chance",
+  "uk": "Шанс покращення",
+  "src": "24-attrui.js"
+ },
+ "шейный разъём": {
+  "en": "neck jack",
+  "uk": "шийний роз'єм",
+  "src": "01-core.js"
+ },
+ "Шептун": {
+  "en": "Whisperer",
+  "uk": "Шептун",
+  "src": "20-deep.js"
+ },
+ "Шершень": {
+  "en": "Hornet",
+  "uk": "Шершень",
+  "src": "02-items.js"
+ },
+ "Шипастые лозы": {
+  "en": "Thorny vines",
+  "uk": "Колючі лози",
+  "src": "20-deep.js"
+ },
+ "шипы": {
+  "en": "spikes",
+  "uk": "шипи",
+  "src": "01-core.js"
+ },
+ "Шипы под напряжением.": {
+  "en": "Live spikes.",
+  "uk": "Шипи під напругою.",
+  "src": "20-deep.js"
+ },
+ "Шоковая пластина": {
+  "en": "Shock plate",
+  "uk": "Шокова пластина",
+  "src": "20-deep.js"
+ },
+ "шорты": {
+  "en": "shorts",
+  "uk": "шорти",
+  "src": "01-core.js"
+ },
+ "Шрайк": {
+  "en": "Shrike",
+  "uk": "Шрайк",
+  "src": "01-core.js"
+ },
+ "шрам": {
+  "en": "scar",
+  "uk": "шрам",
+  "src": "01-core.js"
+ },
+ "шт": {
+  "en": "pcs",
+  "uk": "шт",
+  "src": "05-game_all.js 15-loadout2.js 17-trade2.js"
+ },
+ "шт · всего": {
+  "en": "pcs · total",
+  "uk": "шт · усього",
+  "src": "09-heropanel.js"
+ },
+ "шт · на складе": {
+  "en": "pcs · in stock",
+  "uk": "шт · на складі",
+  "src": "17-trade2.js"
+ },
+ "шт.": {
+  "en": "pcs",
+  "uk": "шт.",
+  "src": "09-heropanel.js 23-fuel.js"
+ },
+ "шт.)": {
+  "en": "pcs)",
+  "uk": "шт.)",
+  "src": "05-game_all.js"
+ },
+ "Шторм": {
+  "en": "Storm",
+  "uk": "Шторм",
+  "src": "02-items.js"
+ },
+ "Шэнь-Ли": {
+  "en": "Shen-Li",
+  "uk": "Шень-Лі",
+  "src": "02-items.js"
+ },
+ "щелчок! Бежать!": {
+  "en": "click! Run!",
+  "uk": "клац! Тікай!",
+  "src": "20-deep.js"
+ },
+ "щит": {
+  "en": "shield",
+  "uk": "щит",
+  "src": "05-game_all.js 06-hideout.js 08-fxgame.js"
+ },
+ "Щит": {
+  "en": "Shield",
+  "uk": "Щит",
+  "src": "05-game_all.js 08-fxgame.js"
+ },
+ "Щит на": {
+  "en": "Shield for",
+  "uk": "Щит на",
+  "src": "02-items.js"
+ },
+ "Щит-модуль": {
+  "en": "Shield module",
+  "uk": "Щит-модуль",
+  "src": "08-fxgame.js"
+ },
+ "Щит-проектор": {
+  "en": "Shield projector",
+  "uk": "Щит-проєктор",
+  "src": "05-game_all.js 26-print.js"
+ },
+ "эвакуации": {
+  "en": "evac",
+  "uk": "евакуації",
+  "src": "05-game_all.js"
+ },
+ "Эвакуационный дрон вытащил героя на базу. Рюкзак и содержимое сумки потеряны, надетое снаряжение уцелело.": {
+  "en": "An evac drone pulled the hero back to base. The backpack and bag contents are lost; equipped gear survived.",
+  "uk": "Евакуаційний дрон витягнув героя на базу. Рюкзак і вміст сумки втрачено, вдягнене спорядження вціліло.",
+  "src": "06-hideout.js"
+ },
+ "Эвакуационный дрон вытащил героя на базу. Рюкзак потерян.": {
+  "en": "An evac drone pulled the hero back to base. The backpack is lost.",
+  "uk": "Евакуаційний дрон витягнув героя на базу. Рюкзак втрачено.",
+  "src": "05-game_all.js"
+ },
+ "эвакуация": {
+  "en": "evac",
+  "uk": "евакуація",
+  "src": "05-game_all.js"
+ },
+ "Эвакуация на базу…": {
+  "en": "Evacuating to base…",
+  "uk": "Евакуація на базу…",
+  "src": "05-game_all.js"
+ },
+ "экзоброня": {
+  "en": "exo-armor",
+  "uk": "екзоброня",
+  "src": "02-items.js"
+ },
+ "Экипировано": {
+  "en": "Equipped",
+  "uk": "Екіпіровано",
+  "src": "05-game_all.js"
+ },
+ "ЭКРАН": {
+  "en": "SCREEN",
+  "uk": "ЕКРАН",
+  "src": "31-crt.js"
+ },
+ "Экспорт": {
+  "en": "Export",
+  "uk": "Експорт",
+  "src": "32-i18n.js"
+ },
+ "Электрическая волна": {
+  "en": "Electric wave",
+  "uk": "Електрична хвиля",
+  "src": "20-deep.js"
+ },
+ "Электро-разряд": {
+  "en": "Electro-discharge",
+  "uk": "Електророзряд",
+  "src": "02-items.js 05-game_all.js 13-hire.js 26-print.js"
+ },
+ "Электро-разряд: целей": {
+  "en": "Electro-discharge: targets",
+  "uk": "Електророзряд: цілей",
+  "src": "05-game_all.js"
+ },
+ "электродубинка": {
+  "en": "stun baton",
+  "uk": "електрокийок",
+  "src": "04-world.js 08-fxgame.js 18-audio.js 20-deep.js 26-print.js"
+ },
+ "Электродуга": {
+  "en": "Electric arc",
+  "uk": "Електродуга",
+  "src": "20-deep.js"
+ },
+ "Электропол": {
+  "en": "Electric floor",
+  "uk": "Електропідлога",
+  "src": "20-deep.js"
+ },
+ "Электрошипы": {
+  "en": "Electro-spikes",
+  "uk": "Електрошипи",
+  "src": "20-deep.js"
+ },
+ "ЭМИ": {
+  "en": "EMP",
+  "uk": "ЕМІ",
+  "src": "08-fxgame.js"
+ },
+ "ЭМИ-мина": {
+  "en": "EMP mine",
+  "uk": "ЕМІ-міна",
+  "src": "20-deep.js"
+ },
+ "энергии": {
+  "en": "energy",
+  "uk": "енергії",
+  "src": "05-game_all.js"
+ },
+ "энергия": {
+  "en": "energy",
+  "uk": "енергія",
+  "src": "02-items.js 05-game_all.js 06-hideout.js 09-heropanel.js 23-fuel.js 26-print.js"
+ },
+ "Энергия": {
+  "en": "Energy",
+  "uk": "Енергія",
+  "src": "02-items.js 08-fxgame.js"
+ },
+ "Энерго-модуль": {
+  "en": "Energy module",
+  "uk": "Енергомодуль",
+  "src": "08-fxgame.js"
+ },
+ "Энерго-ядро": {
+  "en": "Energy core",
+  "uk": "Енергоядро",
+  "src": "26-print.js"
+ },
+ "Энергобатареи": {
+  "en": "Power packs",
+  "uk": "Енергобатареї",
+  "src": "23-fuel.js"
+ },
+ "энергобатарея": {
+  "en": "power pack",
+  "uk": "енергобатарея",
+  "src": "02-items.js 23-fuel.js"
+ },
+ "Энергобатарея": {
+  "en": "Power pack",
+  "uk": "Енергобатарея",
+  "src": "05-game_all.js 06-hideout.js 26-print.js"
+ },
+ "энергоклинок": {
+  "en": "energy blade",
+  "uk": "енергоклинок",
+  "src": "04-world.js 08-fxgame.js 18-audio.js 20-deep.js 26-print.js"
+ },
+ "Энергощит на 2 с": {
+  "en": "Energy shield for 2 s",
+  "uk": "Енергощит на 2 с",
+  "src": "08-fxgame.js"
+ },
+ "энергоячеек": {
+  "en": "energy cells",
+  "uk": "енергокомірок",
+  "src": "06-hideout.js"
+ },
+ "энергоячейка": {
+  "en": "energy cell",
+  "uk": "енергокомірка",
+  "src": "02-items.js"
+ },
+ "Энергоячейка": {
+  "en": "Energy cell",
+  "uk": "Енергокомірка",
+  "src": "26-print.js"
+ },
+ "энергоячейки": {
+  "en": "energy cells",
+  "uk": "енергокомірки",
+  "src": "23-fuel.js"
+ },
+ "Энергоячейки": {
+  "en": "Energy cells",
+  "uk": "Енергокомірки",
+  "src": "02-items.js 05-game_all.js 06-hideout.js 23-fuel.js"
+ },
+ "Энергоячейки (патроны)": {
+  "en": "Energy cells (ammo)",
+  "uk": "Енергокомірки (набої)",
+  "src": "26-print.js"
+ },
+ "эпический": {
+  "en": "epic",
+  "uk": "епічний",
+  "src": "02-items.js"
+ },
+ "эт.": {
+  "en": "fl.",
+  "uk": "пов.",
+  "src": "30-title.js"
+ },
+ "ЭТ.": {
+  "en": "FL.",
+  "uk": "ПОВ.",
+  "src": "30-title.js"
+ },
+ "этаж": {
+  "en": "floor",
+  "uk": "поверх",
+  "src": "13-hire.js 19-zones.js"
+ },
+ "ЭТАЖ": {
+  "en": "FLOOR",
+  "uk": "ПОВЕРХ",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "этаже": {
+  "en": "floor",
+  "uk": "поверсі",
+  "src": "13-hire.js"
+ },
+ "Это боевой имплант": {
+  "en": "This is a combat implant",
+  "uk": "Це бойовий імплант",
+  "src": "15-loadout2.js"
+ },
+ "Это ваша база: кровать для отдыха и ящик для добычи. Торговый терминал покупает хлам и продаёт припасы.": {
+  "en": "This is your base: a bed to rest and a crate for loot. The trade terminal buys junk and sells supplies.",
+  "uk": "Це ваша база: ліжко для відпочинку та скриня для здобичі. Торговий термінал купує мотлох і продає припаси.",
+  "src": "05-game_all.js"
+ },
+ "Это не надевается": {
+  "en": "This can't be equipped",
+  "uk": "Це не вдягається",
+  "src": "15-loadout2.js"
+ },
+ "Это пассивный имплант": {
+  "en": "This is a passive implant",
+  "uk": "Це пасивний імплант",
+  "src": "15-loadout2.js"
+ },
+ "Это простая игровая защита — не используйте здесь настоящий пароль от почты или банка.": {
+  "en": "This is simple game protection — don't use a real email or bank password here.",
+  "uk": "Це простий ігровий захист — не використовуйте тут справжній пароль від пошти чи банку.",
+  "src": "30-title.js"
+ },
+ "Этот логин сейчас занимают — попробуйте ещё раз": {
+  "en": "Someone is claiming this login right now — try again",
+  "uk": "Цей логін зараз займають — спробуйте ще раз",
+  "src": "30-title.js"
+ },
+ "Этот рецепт принтер уже знает — дубликат можно продать": {
+  "en": "The printer already knows this recipe — the duplicate can be sold",
+  "uk": "Цей рецепт принтер уже знає — дублікат можна продати",
+  "src": "26-print.js"
+ },
+ "Эффекты": {
+  "en": "Effects",
+  "uk": "Ефекти",
+  "src": "05-game_all.js 08-fxgame.js 15-loadout2.js 18-audio.js"
+ },
+ "ЭФФЕКТЫ": {
+  "en": "EFFECTS",
+  "uk": "ЕФЕКТИ",
+  "src": "08-fxgame.js"
+ },
+ "Эхо": {
+  "en": "Echo",
+  "uk": "Ехо",
+  "src": "01-core.js"
+ },
+ "Эш": {
+  "en": "Ash",
+  "uk": "Еш",
+  "src": "01-core.js"
+ },
+ "юбка": {
+  "en": "skirt",
+  "uk": "спідниця",
+  "src": "01-core.js"
+ },
+ "яд": {
+  "en": "poison",
+  "uk": "отрута",
+  "src": "08-fxgame.js 20-deep.js"
+ },
+ "Яд, огонь, заморозка": {
+  "en": "Poison, fire, freezing",
+  "uk": "Отрута, вогонь, заморожування",
+  "src": "24-attrui.js"
+ },
+ "Ядовитая игла": {
+  "en": "Poison needle",
+  "uk": "Отруйна голка",
+  "src": "20-deep.js"
+ },
+ "Ядовитые испарения.": {
+  "en": "Toxic fumes.",
+  "uk": "Отруйні випари.",
+  "src": "20-deep.js"
+ },
+ "ядро, Киберснег, Биолаборатория (эт. 5–7)": {
+  "en": "core, Cybersnow, Biolab (fl. 5–7)",
+  "uk": "ядро, Кіберсніг, Біолабораторія (пов. 5–7)",
+  "src": "21-loot2.js"
+ },
+ "Язык": {
+  "en": "Language",
+  "uk": "Мова",
+  "src": "32-i18n.js"
+ },
+ "ЯЗЫК": {
+  "en": "LANGUAGE",
+  "uk": "МОВА",
+  "src": "32-i18n.js"
+ },
+ "Ям": {
+  "en": "Yam",
+  "uk": "Ям",
+  "src": "01-core.js"
+ },
+ "ярость": {
+  "en": "rage",
+  "uk": "лють",
+  "src": "08-fxgame.js"
+ },
+ "ящик": {
+  "en": "crate",
+  "uk": "скриня",
+  "src": "06-hideout.js"
+ },
+ "Ящик": {
+  "en": "Crate",
+  "uk": "Скриня",
+  "src": "03-props.js 05-game_all.js 09-heropanel.js"
+ },
+ "ЯЩИК": {
+  "en": "CRATE",
+  "uk": "СКРИНЯ",
+  "src": "05-game_all.js 15-loadout2.js 17-trade2.js index.html"
+ },
+ "Ящик полон": {
+  "en": "Crate full",
+  "uk": "Скриня повна",
+  "src": "05-game_all.js 06-hideout.js 09-heropanel.js 15-loadout2.js 17-trade2.js 26-print.js"
+ },
+ "Ящик полон — заберите рецепт со станка": {
+  "en": "Crate full — take the recipe from the station",
+  "uk": "Скриня повна — заберіть рецепт із верстата",
+  "src": "26-print.js"
+ },
+ "Ящик полон — лишнее продано за": {
+  "en": "Crate full — surplus sold for",
+  "uk": "Скриня повна — зайве продано за",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Ящик полон: не поместилось": {
+  "en": "Crate full: didn't fit",
+  "uk": "Скриня повна: не вмістилося",
+  "src": "15-loadout2.js"
+ },
+ "Ящик пуст": {
+  "en": "Crate empty",
+  "uk": "Скриня порожня",
+  "src": "05-game_all.js 06-hideout.js"
+ },
+ "Ящик с полками": {
+  "en": "Shelved crate",
+  "uk": "Скриня з полицями",
+  "src": "05-game_all.js"
+ },
+ "ящик) · удержание — подробности и экипировка · перетаскивание — в нужный слот": {
+  "en": "crate) · hold — details and equipping · drag — into the right slot",
+  "uk": "скриня) · утримання — подробиці й екіпірування · перетягування — у потрібний слот",
+  "src": "15-loadout2.js"
+ },
+ "_unused": {
+  "А-Яа-яЁёІіЇїЄєҐґ": {
+   "en": "",
+   "uk": "",
+   "src": "32-i18n.js"
+  }
+ }
+}

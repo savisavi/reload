@@ -19,3 +19,7 @@
       if(p){G.forcePath=p.slice(0,16);log('Наёмник топтался на месте — иду другим путём','#8a83ab')}}}
   return r}}
 {const _nf=newFloor;newFloor=function(){const r=_nf.apply(this,arguments);if(G){G._ph=[];G._osc=0}return r}}
+// ---- XP bar in the HUD ----
+{const _uh=updateHUD;let lastLv=0;updateHUD=function(){const r=_uh.apply(this,arguments);try{if(!H)return r;const need=6+H.lvl*2,f=$('xpf');if(!f)return r;
+  f.style.width=Math.min(100,H.xp/need*100)+'%';$('xpt').textContent=`ур. ${H.lvl} · опыт ${Math.floor(H.xp)}/${need}`;
+  if(lastLv&&H.lvl>lastLv){const b=$('hudxp');b.classList.remove('up');void b.offsetWidth;b.classList.add('up')}lastLv=H.lvl}catch(e){}return r}}

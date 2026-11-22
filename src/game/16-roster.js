@@ -33,7 +33,7 @@ function fireMerc(which){ // 'active' or roster index
 let MSEL='active',MFIRE=null;
 function mercCard(h,key,active){
   const bar=(v,m,c)=>`<div class="mbar"><i style="width:${Math.max(0,v/m*100)}%;background:${c}"></i><span>${v}/${m}</span></div>`;
-  return`<button class="mcard ${MSEL===key?'on':''} ${active?'act':''}" data-m="${key}"><img src="${posed(h.spr.r).toDataURL()}"><div class="mi"><b>${h.name}</b><span>ур. ${h.lvl}${active?' · <em>АКТИВЕН</em>':''}</span>${bar(h.hp,h.st.mhp,'linear-gradient(90deg,#a82a4e,#ff4b6a)')}${bar(h.mp,h.st.mmp,'linear-gradient(90deg,#1f4fb8,#22b6ff)')}</div></button>`}
+  return`<button class="mcard ${MSEL===key?'on':''} ${active?'act':''}" data-m="${key}"><img src="${posed(h.spr.r).toDataURL()}"><div class="mi"><b>${h.name}</b><span>ур. ${h.lvl}${active?' · <em>АКТИВЕН</em>':''}</span>${bar(h.hp,h.st.mhp,'linear-gradient(90deg,#a82a4e,#ff4b6a)')}${bar(h.mp,h.st.mmp,'linear-gradient(90deg,#1f4fb8,#22b6ff)')}${bar(h.xp,6+h.lvl*2,'linear-gradient(90deg,#22e6ff,#7dff4f)')}</div></button>`}
 function mercsPanel(){
   const list=[];if(alive())list.push({key:'active',h:H,active:true});(ST.roster||[]).forEach((o,i)=>list.push({key:String(i),h:heroFromObj(o),active:false}));
   if(!list.find(x=>x.key===MSEL))MSEL=list[0]?list[0].key:null;
@@ -41,7 +41,7 @@ function mercsPanel(){
   let det='<p class="help">Наёмников нет. Нанять — в терминале, вкладка «Наём».</p>';
   if(sel){const h=sel.h,S=h.stats||{},gear=[h.eq.ranged,h.eq.melee,h.eq.armor,h.eq.clothes,...h.eq.act,...h.eq.pas].filter(Boolean);
     det=`<div class="rdet"><img class="big" src="${posed(h.spr.r).toDataURL()}"><div>
-      <div class="nm">${h.name} <span class="lvl">ур. ${h.lvl} · опыт ${Math.floor(h.xp)}/${6+h.lvl*2}</span></div>
+      <div class="nm">${h.name} <span class="lvl">ур. ${h.lvl} · опыт ${Math.floor(h.xp)}/${6+h.lvl*2}</span></div><div class="xpbar" style="margin:4px 0 6px"><i style="width:${Math.min(100,h.xp/(6+h.lvl*2)*100)}%"></i></div>
       <p>HP ${h.hp}/${h.st.mhp} · EN ${h.mp}/${h.st.mmp} · защ ${h.st.def} · уклон ${Math.round(h.st.dodge*100)}% · сумка ${h.st.cap+15*ST.base.bench}</p>
       <div class="rg">${gear.map(it=>`<img title="${it.name}" src="${iconURL(it)}" style="border-bottom:2px solid ${RAR[it.rar].c}">`).join('')}</div>
       <p class="rs">рейдов ${S.raids||0} · заработал ${S.earned||0}₵ · убил ${S.kills||0} · рекорд глубины ${S.deep||0}</p></div></div>

@@ -4,11 +4,18 @@
   "description": "RELOAD — procedural pixel-art cyberpunk dungeon with autonomous mercenaries",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "node scripts/build.mjs",
     "build:debug": "node scripts/build.mjs --debug",
     "start": "node server/index.js",
-    "dev": "node scripts/build.mjs && node server/index.js"
+    "dev": "node scripts/build.mjs && node server/index.js",
+    "i18n:extract": "node scripts/i18n-extract.mjs"
+  },
+  "devDependencies": {
+    "acorn": "^8.14.0",
+    "acorn-walk": "^8.3.4"
   }
 }

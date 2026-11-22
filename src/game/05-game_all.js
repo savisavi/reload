@@ -120,7 +120,7 @@ function enemyShoot(e){const P=G.p,w=e.weapon;if(P.x!==e.x)e.face=Math.sign(P.x-
 function tracer(a,b,col,hit,delay){a.aim={x:b.x,y:b.y,until:performance.now()+900};const ox=hit?0:(Math.random()-.5)*14,oy=hit?0:(Math.random()-.5)*14;
   G.fx.push({type:'shot',x0:a.x*TS+8+(a.face||1)*5,y0:a.y*TS+6,x1:b.x*TS+8+ox,y1:b.y*TS+6+oy,col,t:-delay*4})}
 function kill(e){
-  e.dead=true;e.fade=1;G.kills++;if(H&&H.stats)H.stats.kills++;try{deathFx(e)}catch(_){}const P=G.p;P.xp+=(P.st.xpMul||1);
+  e.dead=true;e.fade=1;G.kills++;if(H&&H.stats)H.stats.kills++;try{deathFx(e)}catch(_){}const P=G.p;P.xp+=(P.st.xpMul||1);G.xpGain=(G.xpGain||0)+(P.st.xpMul||1);
   log(`${e.name} повержен`,'#d8cdb4');
   const drops=[];
   if(e.human){if(Math.random()<(e.weapon&&e.weapon.cat==='ranged'?.1:.4))drops.push(e.weapon);if(e.armor&&Math.random()<.35)drops.push(e.armor);if(Math.random()<.35)drops.push(makeItem(rseed(),Math.random()<.18?'ammo':Math.random()<.3?'grenade':(Math.random()<.55?'med':'battery'),G.floor))}

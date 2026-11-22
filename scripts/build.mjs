@@ -14,6 +14,11 @@ const debug = process.argv.includes('--debug');
 const files = (await readdir(join(src, 'game'))).filter(f => f.endsWith('.js')).sort();
 let code = '';
 for (const f of files) code += `\n// ===== ${f} =====\n` + await readFile(join(src, 'game', f), 'utf8');
+// localization dictionary: { "русская фраза": [en, uk] }
+const dictFile = join(root, 'locales', 'strings.json');
+const dict = {};
+if (existsSync(dictFile)) { const j = JSON.parse(await readFile(dictFile, 'utf8')); for (const k in j) if (k[0] !== '_' && j[k] && (j[k].en || j[k].uk)) dict[k] = [j[k].en || '', j[k].uk || '']; }
+code = `const I18N_DICT=${JSON.stringify(dict)};\n` + code;
 if (debug) code += '\nwindow.__dbg={G:()=>G,H:()=>H,ST:()=>ST,ev:(s)=>eval(s)};\n';
 
 // syntax check before writing anything
@@ -30,4 +35,4 @@ await copyFile(join(src, 'vendor', 'fx.js'), join(dist, 'fx.js'));
 const pub = join(root, 'public');
 if (existsSync(pub)) for (const f of await readdir(pub)) await copyFile(join(pub, f), join(dist, f));
 
-console.log(`✔ dist/ built from ${files.length} modules (${(code.length / 1024).toFixed(0)} KB of game code)${debug ? ' [debug]' : ''}`);
+console.log(`✔ dist/ built from ${files.length} modules, ${Object.keys(dict).length} translated phrases (${(code.length / 1024).toFixed(0)} KB of game code)${debug ? ' [debug]' : ''}`);

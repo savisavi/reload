@@ -38,7 +38,7 @@ function modIcon(k,l){
 function buildPanel(){
   const pw=powered();
   const bInfo=ST.building?`<p class="rec" style="color:#ffb04a">Строится: ${modName(ST.building.k)} → ${UP[ST.building.k].lv[ST.building.lvl]} · осталось рейдов: ${ST.building.left}</p>`:'';
-  const rows=Object.entries(UP).map(([k,u])=>{const l=ST.base[k],maxed=l>=u.max,next=maxed?null:u.L[l+1];
+  const built=[],todo=[];Object.entries(UP).forEach(([k,u])=>{const l=ST.base[k],maxed=l>=u.max,next=maxed?null:u.L[l+1];
     let st;
     if(ST.building&&ST.building.k===k)st=`<span class="tag y">строится ${ST.building.left}</span>`;
     else if(maxed)st='<span class="tag g">макс.</span>';
@@ -46,10 +46,12 @@ function buildPanel(){
     else if(itemsOK(next.it)&&ST.credits>=next.cr)st='<span class="tag g">можно строить</span>';
     else st='<span class="tag">не хватает ресурсов</span>';
     const pwr=u.power&&l>0&&!pw?'<span class="tag r">нет питания</span>':'';
-    return`<button class="mrow" data-mod="${k}"><img src="${modIcon(k,l||1).toDataURL()}"><div><div class="nm">${u.n} <span class="lvl">${l}/${u.max}</span></div><small>${u.lv[l]}</small><div>${st}${pwr}</div></div></button>`}).join('');
+    const h=`<button class="mrow ${l>0?'':'nb'}" data-mod="${k}"><img src="${modIcon(k,l||1).toDataURL()}"><div><div class="nm">${u.n} <span class="lvl">${l}/${u.max}</span></div><small>${u.lv[l]}</small><div>${st}${pwr}</div></div></button>`;(l>0?built:todo).push(h)});
+  const rows=`<div class="bsplit"><div class="bhalf"><div class="sect">ПОСТРОЕНО · ${built.length}</div><div class="mlist">${built.join('')||'<p class="help">Пока ничего не построено.</p>'}</div></div>
+    <div class="bhalf"><div class="sect">МОЖНО ПОСТРОИТЬ · ${todo.length}</div><div class="mlist">${todo.join('')||'<p class="help">Всё построено.</p>'}</div></div></div>`;
   showOv(`<h2>УБЕЖИЩЕ</h2>
   <div class="risk"><div><small>Питание</small><b style="color:${pw?'#7dff4f':'#ff6a7a'}">${ST.base.gen?pw?'есть':'нет топлива':'нет генер.'}</b></div><div><small>Топливо</small><b>${hoursTxt(fuelHours())}</b></div><div><small>Кредиты</small><b>${ST.credits}₵</b></div><div><small>Видеокарты</small><b>${ST.gpus}/${2*ST.base.farm}</b></div></div>
-  ${bInfo}<div class="mlist">${rows}</div><div class="row"><button class="btn" id="oClose">Закрыть</button></div>`,true);
+  ${bInfo}${rows}<div class="row"><button class="btn" id="oClose">Закрыть</button></div>`,true);
   document.querySelectorAll('[data-mod]').forEach(b=>b.onclick=()=>modulePanel(b.dataset.mod));
   bindOv();
 }
@@ -182,13 +184,13 @@ function startRaid(){
   recalc(H);
   G={p:H,floor:Math.max(0,(typeof RAID_FROM!=='undefined'?RAID_FROM:1)-1),biome:null,kills:0,mode:{goal:'explore',stance:'fight'},speed:G0speed,cool:.3,turn:0,dead:false,deadT:0,paused:false,
     floats:[],fx:[],cam:{x:0,y:0},descend:0,exitTo:null,time:0,buf:null,camo:0,haste:0,shield:0,shieldT:0,uid:1,
-    pack:{items:(H.bag||[]).splice(0),mats:Object.assign({},H.bagMats||{})},idle:0,looted:0};H.bagMats={};
+    pack:{items:(H.bag||[]).splice(0),mats:Object.assign({},H.bagMats||{})},idle:0,looted:0,lvl0:H.lvl,xpGain:0};H.bagMats={};
   MODE='raid';hideOv();setModeUI();newFloor();updateHUD();updateSlots();
   if(sup.length)log('База выдала: '+sup.join(', '),'#7dff4f');
   else if(needsPower()&&!pw)log('Убежище без питания — модули не работают','#ffb04a');
 }
 function endRaid(success){
-  const P=H,pk=G.pack;MODE='base';const lines=[],base=[];
+  const P=H,pk=G.pack;MODE='base';const lines=[],base=[];const trophy={items:pk.items.slice(),mats:{...pk.mats},xp:Math.round(G.xpGain||0),lv0:G.lvl0||P.lvl,kills:G.kills,floor:G.floor,looted:G.looted};
   {const S=P.stats||(P.stats={raids:0,earned:0,kills:0,turns:0,deep:0,born:Date.now()});S.turns+=G.turn;S.deep=Math.max(S.deep,G.floor);
    if(success){S.raids++;let v=0;for(const m in pk.mats)v+=MATS[m].price*pk.mats[m];for(const it of pk.items)v+=sellPrice(it);S.earned+=v}}
   if(success){
@@ -208,10 +210,17 @@ function endRaid(success){
     else base.push(`Стройка: ${UP[ST.building.k].n}, осталось ${ST.building.left} рейд.`)}
   ST.raids++;ST.buff=null;recalc(P);ST.shopSeed=rseed();ST.shopBought=[];P.cds=[0,0];
   enterBase();
-  const head=success?'<h2>РЕЙД ЗАВЕРШЁН</h2>':'<h2>РЕЙД ПРОВАЛЕН</h2>';
+  const head=success?'<h2 class="rhead ok">РЕЙД ЗАВЕРШЁН УСПЕШНО</h2>':'<h2 class="rhead bad">РЕЙД ПРОВАЛЕН</h2>';
   if(!success&&HARDCORE){ST.raids++;ST.recSeed=rseed();ST.recTaken=[];saveGame();return deathScreen()}
-  const body=success?`<p>Глубина: ${G.floor} · уничтожено: ${G.kills} · разобрано: ${G.looted}</p><p style="font-size:8px;line-height:2.2">${lines.join('<br>')||'Ничего не вынесено'}</p>`
-    :`<p>Эвакуационный дрон вытащил героя на базу. Рюкзак и содержимое сумки потеряны, надетое снаряжение уцелело.<br>Глубина: ${G.floor} · уничтожено: ${G.kills}</p><p>${lines.join('<br>')}</p><p>Отдохните на кровати перед новым рейдом.</p>`;
+  const nItems=trophy.items.length,nMats=Object.values(trophy.mats).reduce((a,b)=>a+b,0),ups=P.lvl-trophy.lv0;
+  let val=0;for(const m in trophy.mats)val+=MATS[m].price*trophy.mats[m];for(const it of trophy.items)val+=sellPrice(it);
+  const stat=(n,l,c='')=>`<div class="rstat ${c}"><b>${n}</b><small>${l}</small></div>`;
+  const stats=`<div class="rstats">${stat(trophy.kills,'убито врагов')}${stat(nItems+nMats,'найдено предметов')}${stat('+'+trophy.xp,'получено опыта','xp')}${stat(trophy.floor,'глубина')}${success?stat(val+'₵','ценность добычи','gold'):''}</div>`;
+  const xpb=`<div class="rxp"><span>ур. ${P.lvl}${ups>0?` <em>▲ +${ups} ${ups>1?'уровня':'уровень'}</em>`:''}</span><div class="xpbar"><i style="width:${Math.min(100,P.xp/(6+P.lvl*2)*100)}%"></i></div><small>${Math.floor(P.xp)}/${6+P.lvl*2} опыта</small></div>`;
+  let k=0;const tile=(img,rc,cnt,title)=>`<div class="rtro" style="--rc:${rc};animation-delay:${(k++)*45}ms" title="${title}"><img src="${img}">${cnt?`<em>${cnt}</em>`:''}</div>`;
+  const tro=success?trophy.items.map(it=>tile(iconURL(it),RAR[it.rar].c,'',it.name)).join('')+Object.entries(trophy.mats).map(([m,n])=>tile(MAT_ICON[m].toDataURL(),MATS[m].c,'×'+n,MATS[m].n)).join(''):'';
+  const body=success?`${stats}${xpb}<div class="sect">ТРОФЕИ</div>${tro?`<div class="rtros">${tro}</div>`:'<p>Ничего не вынесено</p>'}${lines.filter(l=>/₵/.test(l)).length?`<p>${lines.filter(l=>/₵/.test(l)).join('<br>')}</p>`:''}`
+    :`${stats}${xpb}<p>Эвакуационный дрон вытащил героя на базу. Рюкзак и содержимое сумки потеряны, надетое снаряжение уцелело.</p><p>${lines.join('<br>')}</p><p>Отдохните на кровати перед новым рейдом.</p>`;
   showOv(`${head}${body}${base.length?`<div class="sect">УБЕЖИЩЕ</div><p>${base.join('<br>')}</p>`:''}<div class="row"><button class="btn" id="oClose">На базу</button></div>`);bindOv();
   saveGame();
 }

@@ -76,7 +76,7 @@ function heroPanel(){
   const wr=raid?packW()/capacity():0;
   const doll=`<div class="doll">
     <div class="dcol">${DOLL_L.map(([k,n])=>dollCell(k,n)).join('')}</div>
-    <div class="dmid"><img src="${heroCanvasURL()}"><div class="nm">${P.name.split(' ')[0]}</div><div class="lv">ур. ${P.lvl} · xp ${Math.floor(P.xp)}</div>
+    <div class="dmid"><img src="${heroCanvasURL()}"><div class="nm">${P.name.split(' ')[0]}</div><div class="lv">ур. ${P.lvl} · опыт ${Math.floor(P.xp)}/${6+P.lvl*2}</div><div class="xpbar hxp"><i style="width:${Math.min(100,P.xp/(6+P.lvl*2)*100)}%"></i></div>
       ${bar(P.hp,P.st.mhp,'linear-gradient(90deg,#a82a4e,#ff4b6a)')}${bar(P.mp,P.st.mmp,'linear-gradient(90deg,#1f4fb8,#22b6ff)')}
       <p>защ ${P.st.def} · укл ${Math.round(P.st.dodge*100)}%</p></div>
     <div class="dcol">${DOLL_R.map(([k,n])=>dollCell(k,n)).join('')}</div></div>`;
@@ -90,7 +90,7 @@ function heroPanel(){
   const sbarH='';
   const sc=$('panel').classList.contains('sheet')?$('panel').scrollTop:0;
   const ptabs=`<div class="tabs ptabs"><button class="tab ${HPT!=='attr'?'on':''}" data-pt="inv">Снаряжение</button><button class="tab ${HPT==='attr'?'on':''}" data-pt="attr">Прокачка${P.pts?` <b class="ptn">+${P.pts}</b>`:''}</button><button class="btn ptx" id="hpX">✕</button></div>`;
-  const body=HPT==='attr'?`<div class="pattr"><div class="lh"><b>${P.name}</b><span>ур. ${P.lvl} · опыт ${Math.floor(P.xp)}/${6+P.lvl*2}</span></div>${attrCards(P,true)}</div>`:`<div class="hp3">${doll}${inv}</div>${selInfo()}${risk}`;
+  const body=HPT==='attr'?`<div class="pattr"><div class="lh"><b>${P.name}</b><span>ур. ${P.lvl} · опыт ${Math.floor(P.xp)}/${6+P.lvl*2}</span></div><div class="xpbar" style="margin:0 0 8px"><i style="width:${Math.min(100,P.xp/(6+P.lvl*2)*100)}%"></i></div>${attrCards(P,true)}</div>`:`<div class="hp3">${doll}${inv}</div>${selInfo()}${risk}`;
   showOv(`${sbarH}${ptabs}${body}`,true);
   $('panel').classList.add('sheet');$('panel').classList.remove('tall');$('ov').classList.add('dock');SHEET=true;$('panel').scrollTop=sc;
   document.querySelectorAll('[data-hs]').forEach(b=>b.onclick=()=>{const k=b.dataset.hs;

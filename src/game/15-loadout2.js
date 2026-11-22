@@ -33,7 +33,7 @@ function gridHTML(side,cells,sel,rows){sel=sel===undefined?LDSEL:sel;if(LDT[side
 }
 function lDoll(){const P=H,cell=(k,n)=>{const it=slotItem(k);return`<button class="dc ${LDSEL==='eq:'+k?'on':''}" data-lk="eq:${k}" data-drop="eq:${k}" style="--rc:${it?RAR[it.rar].c:'#2e2748'}">${it?`<img src="${iconURL(it)}" draggable="false">`:`<span class="ph">${n}</span>`}</button>`};
   const bar=(v,m,c)=>`<div class="mbar"><i style="width:${Math.max(0,v/m*100)}%;background:${c}"></i><span>${v}/${m}</span></div>`;
-  return`<div class="ldoll"><div class="lhero"><img src="${heroCanvasURL()}"><div class="lhi"><b>${P.name}</b><span>ур. ${P.lvl} · защ ${P.st.def}</span>${bar(P.hp,P.st.mhp,'linear-gradient(90deg,#a82a4e,#ff4b6a)')}${bar(P.mp,P.st.mmp,'linear-gradient(90deg,#1f4fb8,#22b6ff)')}</div></div>
+  return`<div class="ldoll"><div class="lhero"><img src="${heroCanvasURL()}"><div class="lhi"><b>${P.name}</b><span>ур. ${P.lvl} · защ ${P.st.def}</span>${bar(P.hp,P.st.mhp,'linear-gradient(90deg,#a82a4e,#ff4b6a)')}${bar(P.mp,P.st.mmp,'linear-gradient(90deg,#1f4fb8,#22b6ff)')}${bar(P.xp,6+P.lvl*2,'linear-gradient(90deg,#22e6ff,#7dff4f)')}</div></div>
     <div class="lslots">${[...DOLL_R,...DOLL_L].map(([k,n])=>cell(k,n)).join('')}</div>
     <div class="lbtns"><button class="btn sm" id="lAllEq">⇧ Надетое<br>в ящик</button><button class="btn sm" id="lAllBag">⇧ Сумку<br>в ящик</button></div></div>`}
 // resolve a key into {src,get,remove,put-back}
