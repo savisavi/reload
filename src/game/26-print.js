@@ -14,18 +14,22 @@ const bpHash=k=>{let h=2166136261;for(const c of k)h=Math.imul(h^c.charCodeAt(0)
 // a sample of the target item — used for icons
 const BP_SAMPLE={};function bpSample(k){if(BP_SAMPLE[k])return BP_SAMPLE[k];const b=BP[k];const f=b.cat==='battery'?{rar:b.rar}:b.cat==='grenade'?{rar:0}:{kind:b.kind,rar:0,nofx:1};
   return BP_SAMPLE[k]=makeItem(bpHash(k),b.cat,1,f)}
-function bpIcon(k,recipe){const s=bpSample(k).icon,c=document.createElement('canvas');c.width=c.height=16;const x=c.getContext('2d');
-  x.fillStyle=recipe?'#1c2a1c':'#16325a';x.fillRect(1,1,14,14);x.fillStyle=recipe?'#3a6a3a':'#2a5a9a';for(let i=1;i<15;i+=3){x.fillRect(i,1,1,14);x.fillRect(1,i,14,1)}
-  x.fillStyle=recipe?'#7dff4f':'#cfe6ff';x.fillRect(1,1,14,1);x.fillRect(1,14,14,1);x.fillRect(1,1,1,14);x.fillRect(14,1,1,14);
-  const t=document.createElement('canvas');t.width=t.height=16;const tx=t.getContext('2d');tx.drawImage(s,0,0);const d=tx.getImageData(0,0,16,16);
-  for(let i=0;i<256;i++){const a=d.data[i*4+3];if(!a)continue;const lum=(d.data[i*4]+d.data[i*4+1]+d.data[i*4+2])/3;
-    if(recipe){/* keep colours */}else{const v=lum<40?'#0b1a33':'#eaf4ff';const r=parseInt(v.slice(1,3),16),g=parseInt(v.slice(3,5),16),b=parseInt(v.slice(5,7),16);d.data[i*4]=r;d.data[i*4+1]=g;d.data[i*4+2]=b}}
-  tx.putImageData(d,0,0);x.save();x.translate(2,2);x.scale(.75,.75);x.drawImage(t,0,0);x.restore();
-  if(recipe){x.fillStyle='#f9f871';x.fillRect(11,11,3,3);x.fillStyle='#1c2a1c';x.fillRect(12,12,1,1)}return c}
-let BP_ANON=null;function bpAnonIcon(){if(BP_ANON)return BP_ANON;const c=document.createElement('canvas');c.width=c.height=16;const x=c.getContext('2d');
-  x.fillStyle='#16325a';x.fillRect(1,2,14,12);x.fillStyle='#2a5a9a';for(let i=1;i<15;i+=3){x.fillRect(i,2,1,12)}for(let i=2;i<14;i+=3)x.fillRect(1,i,14,1);
-  x.fillStyle='#cfe6ff';x.fillRect(1,2,14,1);x.fillRect(1,13,14,1);x.fillRect(1,2,1,12);x.fillRect(14,2,1,12);x.fillStyle='#0b1a33';x.fillRect(12,2,3,3);
-  x.fillStyle='#f9f871';[[6,5],[7,4],[8,4],[9,5],[9,6],[8,7],[7,8],[7,9],[7,11]].forEach(([a,b])=>x.fillRect(a,b,1,1));return BP_ANON=c}
+// blueprint sheets are drawn natively at 32×32: thin 1-px grid, folded corner, the item as a white line-print
+function bpIcon(k,recipe){const s=bpSample(k).icon,c=document.createElement('canvas');c.width=c.height=32;const x=c.getContext('2d');
+  const bg=recipe?'#1c2a1c':'#16325a',gr=recipe?'#2c4a2c':'#24508a',ed=recipe?'#7dff4f':'#cfe6ff';
+  x.fillStyle='#0a0612';x.fillRect(1,1,30,30);x.fillStyle=bg;x.fillRect(2,2,28,28);x.fillStyle=gr;for(let i=2;i<30;i+=4){x.fillRect(i,2,1,28);x.fillRect(2,i,28,1)}
+  x.fillStyle=ed;x.fillRect(2,2,28,1);x.fillRect(2,29,28,1);x.fillRect(2,2,1,28);x.fillRect(29,2,1,28);x.fillStyle=recipe?'#3a6a3a':'#5a8aca';x.fillRect(3,3,26,1);
+  const t=document.createElement('canvas');t.width=t.height=32;const tx=t.getContext('2d');tx.drawImage(s,0,0);const d=tx.getImageData(0,0,32,32);
+  for(let i=0;i<1024;i++){const a=d.data[i*4+3];if(!a)continue;const lum=(d.data[i*4]+d.data[i*4+1]+d.data[i*4+2])/3;
+    if(recipe){/* keep colours */}else{const v=lum<40?'#0b1a33':lum<110?'#9cc4f0':'#eaf4ff';d.data[i*4]=parseInt(v.slice(1,3),16);d.data[i*4+1]=parseInt(v.slice(3,5),16);d.data[i*4+2]=parseInt(v.slice(5,7),16)}}
+  tx.putImageData(d,0,0);x.drawImage(t,0,0);
+  if(recipe){x.fillStyle='#0a0612';x.fillRect(20,20,9,9);x.fillStyle='#f9f871';x.fillRect(21,21,7,7);x.fillStyle='#fffbd0';x.fillRect(21,21,7,1);x.fillStyle='#1c2a1c';x.fillRect(23,23,3,3);x.fillStyle='#7dff4f';x.fillRect(24,24,1,1)}return c}
+let BP_ANON=null;function bpAnonIcon(){if(BP_ANON)return BP_ANON;const c=document.createElement('canvas');c.width=c.height=32;const x=c.getContext('2d');
+  x.fillStyle='#0a0612';x.fillRect(1,3,30,26);x.fillStyle='#16325a';x.fillRect(2,4,28,24);x.fillStyle='#24508a';for(let i=2;i<30;i+=4)x.fillRect(i,4,1,24);for(let i=4;i<28;i+=4)x.fillRect(2,i,28,1);
+  x.fillStyle='#cfe6ff';x.fillRect(2,4,28,1);x.fillRect(2,27,28,1);x.fillRect(2,4,1,24);x.fillRect(29,4,1,24);
+  x.fillStyle='#0a0612';x.fillRect(23,4,7,7);x.fillStyle='#9cc4f0';for(let k=0;k<6;k++)x.fillRect(23+k,4+k,6-k,1); // folded corner
+  const q=[[12,10],[13,9],[14,8],[15,8],[16,8],[17,8],[18,9],[19,10],[19,11],[19,12],[18,13],[17,14],[16,15],[15,16],[15,17],[15,18],[15,22],[15,23]];
+  x.fillStyle='#8a7a20';q.forEach(([a,b])=>x.fillRect(a+1,b+1,2,2));x.fillStyle='#f9f871';q.forEach(([a,b])=>x.fillRect(a,b,2,2));x.fillStyle='#fffbd0';x.fillRect(13,9,1,1);return BP_ANON=c}
 ITEMGEN.bp=function(it,r,f){const k=BP[f.kind]?f.kind:BP_KEYS[(r.f()*BP_KEYS.length)|0];it.kind=k;it.rar=0;it.lvl=1;
   it.name='Неизвестный чертёж';it.lines=['Что это за устройство — неизвестно','Расшифруйте на исследовательском станке'];it.icon=bpAnonIcon()};
 ITEMGEN.rcp=function(it,r,f){const k=BP[f.kind]?f.kind:BP_KEYS[0],b=BP[k];it.kind=k;it.rar=b.t;it.lvl=1;
@@ -121,5 +125,5 @@ UP.bench.eff=l=>l>=2?'Рюкзак +30, разбор декораций быст
   return _bs(kind,lv)}}
 {const _rb=renderBase;renderBase=function(time){_rb(time);const B=BS;if(!B||!B.objs||!powered())return;const[ox,oy]=camOrigin(),s=curS();ctx.setTransform(s,0,0,s,ox,oy);
   for(const o of B.objs){if(o.site)continue;const cx=o.x*TS+8,cy=o.y*TS;
-    if(o.kind==='research'&&ST.res&&!ST.res.done){ctx.globalCompositeOperation='lighter';ctx.fillStyle=`rgba(34,230,255,${.25+.2*Math.sin(time*6)})`;ctx.fillRect(cx-5,cy-2+((time*8|0)%7),10,1);ctx.globalCompositeOperation='source-over'}
-    if(o.kind==='printer'){const p=(time*3)%1;ctx.fillStyle='#ffd23f';ctx.fillRect(cx-4+Math.round(p*8),cy+3,1,1)}}}}
+    if(o.kind==='research'&&ST.res&&!ST.res.done){ctx.globalCompositeOperation='lighter';ctx.fillStyle=`rgba(34,230,255,${.25+.2*Math.sin(time*6)})`;ctx.fillRect(cx-5,cy-2+((time*16|0)%14)/2,10,.5);ctx.globalCompositeOperation='source-over'}
+    if(o.kind==='printer'){const p=(time*3)%1;ctx.fillStyle='#ffd23f';ctx.fillRect(cx-4+Math.round(p*16)/2,cy+3,.5,.5);ctx.fillStyle='rgba(255,138,31,.6)';ctx.fillRect(cx-4+Math.round(p*16)/2,cy+3.5,.5,.5)}}}}

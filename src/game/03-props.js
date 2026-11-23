@@ -28,16 +28,13 @@ const MATS={
   disk:{n:'Дата-диск',t:2,w:1,price:40,c:'#22e6ff',lib:1,min:180,holo:1}};
 const MAT_KEYS=Object.keys(MATS);
 const TIER_N=['обычный','ценный','редкий','особо ценный'];
-function pixGrid(W,H,draw){
+function pixGrid(W,H,draw,o={}){
+  // props/decor are authored on a world-unit grid "plan" (W×H) and re-detailed to a real RES× bitmap with a 1-px outline
   const px=new Array(W*H).fill(null);
   const P=(x,y,c)=>{x|=0;y|=0;if(x<0||y<0||x>=W||y>=H||!c)return;px[y*W+x]=c};
   draw(P);
-  const o=px.slice();
-  for(let y=0;y<H;y++)for(let x=0;x<W;x++){if(px[y*W+x])continue;
-    if((x>0&&px[y*W+x-1])||(x<W-1&&px[y*W+x+1])||(y>0&&px[(y-1)*W+x])||(y<H-1&&px[(y+1)*W+x]))o[y*W+x]=OUT}
-  const c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d'),id=x.createImageData(W,H);
-  for(let i=0;i<o.length;i++){if(!o[i])continue;const[r,g,b]=hx(o[i]);id.data[i*4]=r;id.data[i*4+1]=g;id.data[i*4+2]=b;id.data[i*4+3]=255}
-  x.putImageData(id,0,0);return c;
+  const q=hd2x(px,W,H,{bevel:true,tex:o.tex!=null?o.tex:.16,seed:W*131+H});
+  return gridCanvas(outline1(q,W*2,H*2,OUT),W*2,H*2);
 }
 const MAT_ICON={};
 function buildMatIcons(){

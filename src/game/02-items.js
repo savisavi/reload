@@ -10,14 +10,13 @@ const CAT_N={melee:'Ближний бой',ranged:'Дальний бой',armor:
 const mul=it=>(1+.14*(it.lvl-1))*(1+.22*it.rar);
 const sc=(v,it)=>Math.max(1,Math.round(v*mul(it)));
 
-function pixIcon(draw){
+function pixIcon(draw,o={}){
+  // icons are authored on a 16-grid "plan" and re-detailed to a real 32×32 bitmap with a 1-px outline
   const px=new Array(256).fill(null);
-  const P=(x,y,c)=>{if(x<0||x>15||y<0||y>15||!c)return;px[y*16+x]=c};
+  const P=(x,y,c)=>{x|=0;y|=0;if(x<0||x>15||y<0||y>15||!c)return;px[y*16+x]=c};
   draw(P);
-  const o=px.slice();
-  for(let y=0;y<16;y++)for(let x=0;x<16;x++){if(px[y*16+x])continue;
-    if((x>0&&px[y*16+x-1])||(x<15&&px[y*16+x+1])||(y>0&&px[(y-1)*16+x])||(y<15&&px[(y+1)*16+x]))o[y*16+x]=OUT}
-  const c=document.createElement('canvas');c.width=c.height=16;c.getContext('2d').putImageData(toImageData({px:o}),0,0);return c;
+  const q=hd2x(px,16,16,{bevel:true,tex:o.tex!=null?o.tex:.14,seed:o.seed||px.length});
+  return gridCanvas(outline1(q,32,32,OUT),32,32);
 }
 const iconURL=it=>it.url||(it.url=it.icon.toDataURL());
 
@@ -273,26 +272,16 @@ function makeItem(seed,cat,lvl,force={}){
 const rseed=()=>Math.floor(Math.random()*4294967296)>>>0;
 
 // ---------- actor composite: character + weapon in hand ----------
-const CW_=28,CH_=22,OX=6,OY=5;
+// composite canvas in SPRITE pixels (RES× the world unit): the 32×32 body sits at (OX,OY)
+const CW_=28*RES,CH_=22*RES,OX=6*RES,OY=5*RES;
 function actorSprites(ch,weapon){
-  const out={fr:[],w:[],weapon:weapon&&weapon.icon?weapon:null,hand:(()=>{const h=(ch.g.hands&&ch.g.hands.R)||[12,ch.g.legTop];return[h[0]+OX,h[1]+OY]})()};weapon=null; // weapon is drawn separately, rotated
+  const N=ch.g.N||16,dflt=[N*3/4,ch.g.legTop];
+  const out={fr:[],w:[],weapon:weapon&&weapon.icon?weapon:null,hand:(()=>{const h=(ch.g.hands&&ch.g.hands.R)||dflt;return[h[0]+OX,h[1]+OY]})()}; // weapon is drawn separately, rotated
   for(let f=0;f<6;f++){
     const fr=frame(ch,f,true);
     const px=new Array(CW_*CH_).fill(null);
-    for(let i=0;i<256;i++)if(fr.px[i])px[((i>>4)+OY)*CW_+(i&15)+OX]=fr.px[i];
-    if(weapon&&weapon.held){
-      const wp=new Array(CW_*CH_).fill(null);
-      const P=(x,y,c)=>{if(x<0||y<0||x>=CW_||y>=CH_||!c)return;wp[y*CW_+x]=c};
-      const h=(ch.g.hands&&ch.g.hands.R)||[12,ch.g.legTop];
-      weapon.held(P,h[0]+OX,h[1]+OY);
-      for(let i=0;i<wp.length;i++)if(wp[i])px[i]=wp[i];
-      for(let y=0;y<CH_;y++)for(let x=0;x<CW_;x++){const i=y*CW_+x;if(px[i])continue;
-        const n=[[1,0],[-1,0],[0,1],[0,-1]].some(([dx,dy])=>{const xx=x+dx,yy=y+dy;return xx>=0&&yy>=0&&xx<CW_&&yy<CH_&&wp[yy*CW_+xx]});
-        if(n)px[i]=OUT}
-    }
-    const c=document.createElement('canvas');c.width=CW_;c.height=CH_;const x=c.getContext('2d'),id=x.createImageData(CW_,CH_);
-    for(let i=0;i<px.length;i++){if(!px[i])continue;const[r,g,b]=hx(px[i]);id.data[i*4]=r;id.data[i*4+1]=g;id.data[i*4+2]=b;id.data[i*4+3]=255}
-    x.putImageData(id,0,0);out.fr.push(c);out.w.push(whiteOf(c));
+    for(let i=0;i<N*N;i++)if(fr.px[i])px[(((i/N)|0)+OY)*CW_+(i%N)+OX]=fr.px[i];
+    const c=gridCanvas(px,CW_,CH_);out.fr.push(c);out.w.push(whiteOf(c));
   }
   return out;
 }

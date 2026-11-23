@@ -29,7 +29,7 @@ function enterBase(){
   if(candle){lights.push({x:L.crate[0]+.6,y:L.crate[1]+.1,c:[255,170,90],rad:3.4,int:.9,kind:'candle'})}
   else{lights.push({x:cx,y:Hh/2,c:[255,190,120],rad:Math.max(W,Hh)*.6,int:.75,kind:'win'});
     if(b.light>=1){lights.push({x:2.5,y:3,c:[255,210,140],rad:5,int:.5,kind:'win'},{x:W-2.5,y:3,c:[255,210,140],rad:5,int:.5,kind:'win'})}
-    if(b.light>=2&&L.size==='large'){const pts=[];[[0,0],[0,1],[0,2],[1,0],[2,0],[2,1],[2,2],[4,0],[4,1],[4,2],[5,2],[6,0],[6,1],[6,2],[8,0],[8,1],[8,2],[9,1],[10,0],[10,1],[10,2]].forEach(([x,y])=>pts.push([3+x,5+y]));
+    if(b.light>=2&&L.size==='large'){const pts=[];[[0,0],[0,1],[0,2],[1,0],[2,0],[2,1],[2,2],[4,0],[4,1],[4,2],[5,2],[6,0],[6,1],[6,2],[8,0],[8,1],[8,2],[9,1],[10,0],[10,1],[10,2]].forEach(([x,y])=>pts.push([3+x,5+y]));pts.splice(0,pts.length,...neonPts(pts));
       neons.push({x:5,y:1,col:'#ff2fa8',pts,ph:1},{x:9,y:1,col:'#22e6ff',pts:makeSign(RNG(5)),ph:4});
       lights.push({x:5.5,y:2.3,c:[255,47,168],rad:5,int:.8,kind:'neon',ref:neons[0]},{x:9.5,y:2.3,c:[34,230,255],rad:5,int:.7,kind:'neon',ref:neons[1]})}}
   lights.push({x:L.terminal[0]+.5,y:L.terminal[1]+.2,c:[255,47,168],rad:candle?1.6:3,int:candle?.6:.5,kind:'win'});
@@ -41,27 +41,27 @@ function enterBase(){
   setModeUI();updateHUD();
 }
 let _dark=null;
-function crateTop(spr){if(spr._top!=null)return spr._top;const d=spr.getContext('2d').getImageData(0,0,spr.width,spr.height).data;let t=spr.height;for(let y=0;y<spr.height&&t===spr.height;y++)for(let x=8;x<13;x++)if(d[(y*spr.width+x)*4+3]>100){t=y;break}spr._top=t;return t}
+function crateTop(spr){if(spr._top!=null)return spr._top;const d=spr.getContext('2d').getImageData(0,0,spr.width,spr.height).data;let t=spr.height;for(let y=0;y<spr.height&&t===spr.height;y++)for(let x=8*RES;x<13*RES;x++)if(d[(y*spr.width+x)*4+3]>100){t=y;break}spr._top=t/RES;return t/RES}
 function renderBase(time){
   const B=BS,M=B.M;const[ox,oy]=camOrigin();const s=curS();
-  ctx.setTransform(s,0,0,s,ox,oy);ctx.imageSmoothingEnabled=false;ctx.drawImage(B.mapC,0,0);
+  ctx.setTransform(s,0,0,s,ox,oy);ctx.imageSmoothingEnabled=false;ctx.drawImage(B.mapC,0,0,M.W*TS,M.H*TS);
   const list=B.objs.map(o=>({obj:o,ry:o.y-.01}));list.push(H);list.sort((a,b)=>a.ry-b.ry);
   let cand=null;
-  for(const e of list){if(e.obj){const o=e.obj;ctx.fillStyle='rgba(0,0,0,.35)';ctx.fillRect(o.x*TS+1,o.y*TS+13,14,3);ctx.drawImage(o.spr,o.x*TS,o.y*TS-4);
-      if(B.candle&&o.kind==='crate'){const top=o.y*TS-4+crateTop(o.spr),cx=o.x*TS+10;ctx.fillStyle='#d8cfb4';ctx.fillRect(cx,top-4,2,4);ctx.fillStyle='#a89a7a';ctx.fillRect(cx+1,top-4,1,4);ctx.fillStyle='#000';ctx.fillRect(cx,top-1,3,1);
-        const fl=Math.sin(time*13)+Math.sin(time*7.3)*.6;ctx.fillStyle='#ff8a1f';ctx.fillRect(cx,top-6,2,2);ctx.fillStyle='#ffe9a0';ctx.fillRect(cx+(fl>.4?1:0),top-7-(fl>1?1:0),1,2);cand={x:cx+1,y:top-6,f:fl}}}
+  for(const e of list){if(e.obj){const o=e.obj;ctx.fillStyle='rgba(0,0,0,.35)';ctx.fillRect(o.x*TS+1,o.y*TS+13,14,3);ctx.drawImage(o.spr,o.x*TS,o.y*TS-4,o.spr.width/RES,o.spr.height/RES);
+      if(B.candle&&o.kind==='crate'){const top=o.y*TS-4+crateTop(o.spr),cx=o.x*TS+10;ctx.fillStyle='#e8dfc4';ctx.fillRect(cx,top-4,2,4);ctx.fillStyle='#b8aa8a';ctx.fillRect(cx+1.5,top-4,.5,4);ctx.fillStyle='#fff8e0';ctx.fillRect(cx,top-4,.5,3);ctx.fillStyle='#2a2430';ctx.fillRect(cx-.5,top-.5,3,.5);ctx.fillStyle='#14101c';ctx.fillRect(cx+.5,top-4.5,.5,.5);
+        const fl=Math.sin(time*13)+Math.sin(time*7.3)*.6,fo=fl>.4?.5:0;ctx.fillStyle='#ff6a1f';ctx.fillRect(cx+fo,top-6,1.5,1.5);ctx.fillStyle='#ffb02e';ctx.fillRect(cx+.5+fo*.5,top-6.5,1,1.5);ctx.fillStyle='#fff3c0';ctx.fillRect(cx+.5+fo,top-7-(fl>1?.5:0),.5,1.5);cand={x:cx+1,y:top-6,f:fl}}}
     else if(!H.dead)drawActor(H,time)}
   ctx.imageSmoothingEnabled=true;
   if(B.candle){
     // darkness with a flickering circle of candle light
-    const w=M.W*TS,h=M.H*TS;if(!_dark||_dark.width!==w||_dark.height!==h){_dark=document.createElement('canvas');_dark.width=w;_dark.height=h}
-    const d=_dark.getContext('2d');d.globalCompositeOperation='source-over';d.clearRect(0,0,w,h);d.fillStyle='rgba(3,2,10,.93)';d.fillRect(0,0,w,h);
+    const w=M.W*TS,h=M.H*TS;if(!_dark||_dark.width!==w*RES||_dark.height!==h*RES){_dark=document.createElement('canvas');_dark.width=w*RES;_dark.height=h*RES}
+    const d=_dark.getContext('2d');d.setTransform(RES,0,0,RES,0,0);d.globalCompositeOperation='source-over';d.clearRect(0,0,w,h);d.fillStyle='rgba(3,2,10,.93)';d.fillRect(0,0,w,h);
     d.globalCompositeOperation='destination-out';
     const hole=(x,y,r,a)=>{const g=d.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,`rgba(0,0,0,${a})`);g.addColorStop(.5,`rgba(0,0,0,${a*.7})`);g.addColorStop(1,'rgba(0,0,0,0)');d.fillStyle=g;d.fillRect(x-r,y-r,r*2,r*2)};
     if(cand)hole(cand.x,cand.y+6,(3.3+.12*cand.f)*TS,1);
     const tl=B.objs.find(o=>o.kind==='terminal');if(tl)hole(tl.x*TS+8,tl.y*TS+4,1.4*TS,.55);
     hole(M.exit.x*TS+8,M.exit.y*TS+4,1.1*TS,.45);
-    ctx.drawImage(_dark,0,0);
+    ctx.drawImage(_dark,0,0,w,h);
     ctx.globalCompositeOperation='lighter';
     if(cand){const r=(2.6+.1*cand.f)*TS,g=ctx.createRadialGradient(cand.x,cand.y,0,cand.x,cand.y,r);g.addColorStop(0,'rgba(255,170,80,.28)');g.addColorStop(1,'rgba(255,120,40,0)');ctx.fillStyle=g;ctx.fillRect(cand.x-r,cand.y-r,r*2,r*2)}
     if(tl){const g=ctx.createRadialGradient(tl.x*TS+8,tl.y*TS+4,0,tl.x*TS+8,tl.y*TS+4,TS*1.3);g.addColorStop(0,'rgba(255,47,168,.22)');g.addColorStop(1,'rgba(255,47,168,0)');ctx.fillStyle=g;ctx.fillRect(tl.x*TS-14,tl.y*TS-18,44,44)}
@@ -70,9 +70,9 @@ function renderBase(time){
     for(const l of B.lights){const cx=l.x*TS,cy=l.y*TS,r=l.rad*TS;let f=l.int;if(l.kind==='neon')f*=neonOn(l.ref,time)?1:.2;const g=ctx.createRadialGradient(cx,cy,0,cx,cy,r);g.addColorStop(0,`rgba(${l.c.join(',')},${.18*f})`);g.addColorStop(1,`rgba(${l.c.join(',')},0)`);ctx.fillStyle=g;ctx.fillRect(cx-r,cy-r,r*2,r*2)}
     drawEmissive({neons:B.neons,seen:null,M},time);
     if(B.dark){ctx.globalCompositeOperation='source-over';ctx.fillStyle='rgba(0,0,10,.35)';ctx.fillRect(0,0,M.W*TS,M.H*TS);ctx.globalCompositeOperation='lighter'}
-    for(const o of B.objs)if(o.kind==='farm'&&!B.dark){for(let k=0;k<4;k++){if(Math.sin(time*3+k*2+o.x)>0){ctx.fillStyle=['#3aff6a','#22e6ff','#ffb02e','#3aff6a'][k];ctx.fillRect(o.x*TS+5+k,o.y*TS-2+k*3,1,1)}}}
+    for(const o of B.objs)if(o.kind==='farm'&&!B.dark){for(let k=0;k<4;k++){if(Math.sin(time*3+k*2+o.x)>0){ctx.fillStyle=['#3aff6a','#22e6ff','#ffb02e','#3aff6a'][k];ctx.fillRect(o.x*TS+5+k,o.y*TS-2+k*3,.5,.5)}}}
   }
-  if(!H.dead){const a=.5+.5*Math.sin(time*3),ex=M.exit.x*TS,ey=M.exit.y*TS;ctx.fillStyle=`rgba(80,255,140,${.4+.4*a})`;ctx.fillRect(ex+6,ey-7-Math.round(a*2),4,1);ctx.fillRect(ex+7,ey-6-Math.round(a*2),2,1)}
+  if(!H.dead){const a=.5+.5*Math.sin(time*3),ex=M.exit.x*TS,ey=M.exit.y*TS;ctx.fillStyle=`rgba(80,255,140,${.4+.4*a})`;const by=ey-7-Math.round(a*4)/2;ctx.fillRect(ex+7.5,by,1,.5);ctx.fillRect(ex+7,by+.5,2,.5);ctx.fillRect(ex+6.5,by+1,3,.5);ctx.fillRect(ex+6,by+1.5,4,.5)}
   ctx.globalCompositeOperation='source-over';ctx.imageSmoothingEnabled=false;
   heroMarker(H,time);
 }

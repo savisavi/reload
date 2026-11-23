@@ -75,13 +75,18 @@ function genMap(seed,floor,biome){
 }
 
 // ---------- map baking ----------
-function makeSign(R){
+function makeSignCells(R){
   const w=R.int(8,12),h=R.int(4,5),x0=(16-w)>>1,y0=R.int(3,5),pts=[];
   const style=R.int(0,2);
   if(style<2){for(let x=x0;x<x0+w;x++){pts.push([x,y0]);pts.push([x,y0+h-1])}for(let y=y0+1;y<y0+h-1;y++){pts.push([x0,y]);pts.push([x0+w-1,y])}}
   for(let x=x0+2;x<x0+w-2;x++)for(let y=y0+1;y<y0+h-1;y++)if(R.chance(style===2?.6:.45))pts.push([x,y]);
   if(style===2)for(let x=x0;x<x0+w;x++)if(R.chance(.5))pts.push([x,y0+h-1]);
   return pts;
+}
+// neon tubes in SPRITE pixels: cells of a world-unit design become 1-px strokes at RES× (tube joins kept)
+function neonPts(cells,ox=0,oy=0){const set=new Set(cells.map(([x,y])=>(x+ox)+','+(y+oy))),out=[];
+  for(const[x0,y0]of cells){const x=x0+ox,y=y0+oy;out.push([x*RES,y*RES]);if(set.has((x+1)+','+y))out.push([x*RES+1,y*RES]);if(set.has(x+','+(y+1)))out.push([x*RES,y*RES+1])}return out}
+function makeSign(R){return neonPts(makeSignCells(R))
 }
 const NEONC=['#ff2fa8','#22e6ff','#f9f871','#7dff4f','#b45cff','#ff8a1f','#ff3355'];
 function renderMap(M){

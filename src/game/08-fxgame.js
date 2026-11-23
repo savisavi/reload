@@ -111,18 +111,18 @@ CAT_N.grenade='Гранаты';ITEM_W.grenade=0;BASEV.grenade=14;
 
 // ---------- runtime: playing effects in the world ----------
 let FXL=[];
-// build a pixelfx 'actor' (mask + pixels, feet at 0,0) from one of our sprites, upscaled 2x
-const _ac=document.createElement('canvas');_ac.width=40;_ac.height=32;const _ax=_ac.getContext('2d',{willReadFrequently:true});
+// build a pixelfx 'actor' (mask + pixels, feet at 0,0) from one of our sprites; sprites are already RES× so 1 sprite px = 1 fx px
+const _ac=document.createElement('canvas');_ac.width=CW_;_ac.height=CH_;const _ax=_ac.getContext('2d',{willReadFrequently:true});
 function actorFor(e){
-  if(!e)return null;_ax.clearRect(0,0,40,32);let fx0;
-  if(e.isHero||e.human){const set=e.isHero?e.spr[e.showW]:e.spr;if(!set)return null;const flip=e.face<0;_ax.save();if(flip){_ax.translate(CW_,0);_ax.scale(-1,1)}_ax.drawImage(set.fr[0],0,0);_ax.restore();fx0=flip?CW_-OX-8:OX+8}
-  else if(SP[e.type]){const flip=e.face>0;_ax.save();if(flip){_ax.translate(16,0);_ax.scale(-1,1)}_ax.drawImage(SP[e.type],0,0);_ax.restore();fx0=8}
+  if(!e)return null;const AW=_ac.width,AH=_ac.height;_ax.clearRect(0,0,AW,AH);let fx0;
+  if(e.isHero||e.human){const set=e.isHero?e.spr[e.showW]:e.spr;if(!set)return null;const flip=e.face<0;_ax.save();if(flip){_ax.translate(CW_,0);_ax.scale(-1,1)}_ax.drawImage(set.fr[0],0,0);_ax.restore();fx0=flip?CW_-OX-SPX/2:OX+SPX/2}
+  else if(SP[e.type]){const flip=e.face>0;_ax.save();if(flip){_ax.translate(SPX,0);_ax.scale(-1,1)}_ax.drawImage(SP[e.type],0,0);_ax.restore();fx0=SPX/2}
   else return null;
-  const d=_ax.getImageData(0,0,40,32).data;let x0=99,y0=99,x1=-1,y1=-1;
-  for(let y=0;y<32;y++)for(let x=0;x<40;x++)if(d[(y*40+x)*4+3]>127){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y}
-  if(x1<0)return null;const K=2,w=(x1-x0+1)*K,h=(y1-y0+1)*K,mask=new Uint8Array(w*h),px=new Uint32Array(w*h);
-  for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=((y0+(y/K|0))*40+x0+(x/K|0))*4;if(d[i+3]>127){mask[y*w+x]=1;px[y*w+x]=(255<<24)|(d[i+2]<<16)|(d[i+1]<<8)|d[i]}}
-  const ax=(x0-fx0)*K,ay=-h;
+  const d=_ax.getImageData(0,0,AW,AH).data;let x0=1e9,y0=1e9,x1=-1,y1=-1;
+  for(let y=0;y<AH;y++)for(let x=0;x<AW;x++)if(d[(y*AW+x)*4+3]>127){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y}
+  if(x1<0)return null;const K=2/RES,w=Math.round((x1-x0+1)*K),h=Math.round((y1-y0+1)*K),mask=new Uint8Array(w*h),px=new Uint32Array(w*h);
+  for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=((y0+(y/K|0))*AW+x0+(x/K|0))*4;if(d[i+3]>127){mask[y*w+x]=1;px[y*w+x]=(255<<24)|(d[i+2]<<16)|(d[i+1]<<8)|d[i]}}
+  const ax=Math.round((x0-fx0)*K),ay=-h;
   return{mask:{w,h,data:mask},pixels:px,x:ax,y:ay,w,h,k:1,head:[0,ay],chest:[0,ay+Math.round(h*.45)]};
 }
 const FX_DEFAULT_K=.55;
@@ -285,28 +285,28 @@ function startPreview(id){
 const SKY_RE=/pillar|beam|smite|lightning-strike|lightning-call|soul-rise|god-rays|teleport|meteor|holy-pillar|summon-rise|spawn-portal/;
 const DEATH_MAT={rat:'blood',dog:'blood',slime:'goo',drone:'mech',sentry:'mech'};
 const MAT_COL={blood:['#7a0f1c','#a3162a','#5a0a14'],goo:['#3fae2a','#6fe04a','#2a7a1c'],mech:['#16141f','#2a2733','#0d0c12']};
-const _dc=document.createElement('canvas');_dc.width=40;_dc.height=32;const _dx=_dc.getContext('2d',{willReadFrequently:true});
+const _dc=document.createElement('canvas');_dc.width=CW_+8*RES;_dc.height=CH_;const _dx=_dc.getContext('2d',{willReadFrequently:true});
 function deathFx(e){
   if(!G)return;const P=G.p,dir=Math.sign(e.x-P.x)||(e.face>0?1:-1);
   const mat=e.human?'blood':(DEATH_MAT[e.type]||'blood');
-  // grab the current sprite
-  _dx.clearRect(0,0,40,32);let ox,oy;
-  if(e.isHero){const set=e.spr[e.showW],dir0=G.deadFace>0?-1:1;_dx.save();_dx.translate(20,28);_dx.rotate((Math.PI/2)*dir0);if(e.face<0)_dx.scale(-1,1);_dx.translate(-(OX+8),-(OY+16));_dx.drawImage(set.fr[0],0,0);_dx.restore();ox=e.x*TS+8-20;oy=e.y*TS+14-28}
-  else if(e.human&&e.spr){const flip=e.face<0;_dx.save();if(flip){_dx.translate(CW_,0);_dx.scale(-1,1)}_dx.drawImage(e.spr.fr[0],0,0);_dx.restore();ox=e.x*TS-OX;oy=e.y*TS-2-OY}
-  else if(SP[e.type]){const flip=e.face>0;_dx.save();if(flip){_dx.translate(16,0);_dx.scale(-1,1)}_dx.drawImage(SP[e.type],0,0);_dx.restore();ox=e.x*TS;oy=e.y*TS+(e.hover?-3:0)}
+  // grab the current sprite (sprite pixels); (ox,oy) = world position of the canvas' top-left
+  const DW=_dc.width,DH=_dc.height;_dx.clearRect(0,0,DW,DH);let ox,oy;
+  if(e.isHero){const set=e.spr[e.showW],dir0=G.deadFace>0?-1:1;_dx.save();_dx.translate(DW/2,DH-4*RES);_dx.rotate((Math.PI/2)*dir0);if(e.face<0)_dx.scale(-1,1);_dx.translate(-(OX+8*RES),-(OY+16*RES));_dx.drawImage(set.fr[0],0,0);_dx.restore();ox=e.x*TS+8-DW/2/RES;oy=e.y*TS+14-(DH-4*RES)/RES}
+  else if(e.human&&e.spr){const flip=e.face<0;_dx.save();if(flip){_dx.translate(CW_,0);_dx.scale(-1,1)}_dx.drawImage(e.spr.fr[0],0,0);_dx.restore();ox=e.x*TS-OX/RES;oy=e.y*TS-2-OY/RES}
+  else if(SP[e.type]){const flip=e.face>0;_dx.save();if(flip){_dx.translate(SPX,0);_dx.scale(-1,1)}_dx.drawImage(SP[e.type],0,0);_dx.restore();ox=e.x*TS;oy=e.y*TS+(e.hover?-3:0)}
   else return;
-  const d=_dx.getImageData(0,0,40,32).data,floorY=e.y*TS+14,cx=e.x*TS+8;
+  const d=_dx.getImageData(0,0,DW,DH).data,floorY=e.y*TS+14,cx=e.x*TS+8;
   G.gibs=G.gibs||[];
-  for(let y=0;y<32;y++)for(let x=0;x<40;x++){const i=(y*40+x)*4;if(d[i+3]<128)continue;
-    const wx=ox+x,wy=oy+y,hi=(floorY-wy)/16;
+  for(let y=0;y<DH;y++)for(let x=0;x<DW;x++){const i=(y*DW+x)*4;if(d[i+3]<128)continue;
+    const wx=ox+x/RES,wy=oy+y/RES,hi=(floorY-wy)/16;
     G.gibs.push({x:wx,y:wy,vx:dir*(8+Math.random()*38)*(.4+hi)+(wx-cx)*1.6+(Math.random()-.5)*14,vy:-(10+Math.random()*55)*(.5+hi),
       c:`rgb(${d[i]},${d[i+1]},${d[i+2]})`,fl:floorY-1+Math.random()*4,t:0,life:1.4+Math.random()*1.4,rest:false});}
   if(mat==='mech'){for(let k=0;k<14;k++)G.gibs.push({x:cx,y:floorY-8,vx:(Math.random()-.5)*120,vy:-30-Math.random()*80,c:Math.random()<.5?'#ffd23f':'#fff6c0',fl:floorY+2,t:0,life:.5+Math.random()*.5,spark:1});
     spawnFx('explosions/plasma-explosion',cx,floorY,{k:.16,maxLife:1.2})}
   // splat decal
   G.decals=G.decals||[];const C=MAT_COL[mat],px=[];const n=mat==='mech'?18:26;
-  for(let k=0;k<n;k++){const a=Math.random()*Math.PI*2,r=Math.sqrt(Math.random())*(mat==='goo'?6:5);px.push([Math.round(cx+Math.cos(a)*r*1.4+dir*2),Math.round(floorY-1+Math.sin(a)*r*.55),C[(Math.random()*C.length)|0]])}
-  for(let k=0;k<(mat==='mech'?2:5);k++){const L=2+Math.random()*7;for(let s=0;s<L;s++)px.push([Math.round(cx+dir*(4+s)),Math.round(floorY-1+(Math.random()-.5)*3+s*.2*(k-2)),C[0]])}
+  const q=v=>Math.round(v*RES)/RES;for(let k=0;k<n*RES*RES;k++){const a=Math.random()*Math.PI*2,r=Math.sqrt(Math.random())*(mat==='goo'?6:5);px.push([q(cx+Math.cos(a)*r*1.4+dir*2),q(floorY-1+Math.sin(a)*r*.55),C[(Math.random()*C.length)|0]])}
+  for(let k=0;k<(mat==='mech'?2:5);k++){const L=2+Math.random()*7;for(let s=0;s<L*RES;s+=1){const t=s/RES;px.push([q(cx+dir*(4+t)),q(floorY-1+(Math.random()-.5)*1.5+t*.2*(k-2)),C[0]])}}
   G.decals.push({px,x:e.x,y:e.y,t:0});if(G.decals.length>70)G.decals.shift();
   // no beams from the sky over a corpse
   const fx=cx,fy=floorY;FXL=FXL.filter(f=>!((SKY_RE.test(f.id)||f.tgt===e)&&(f.tgt===e||(f.t<.06&&Math.abs(f.x-fx)<14&&Math.abs(f.y-fy)<14))));
@@ -317,5 +317,5 @@ function gibsUpdate(dt){const L=G&&G.gibs;if(!L||!L.length)return;
   for(const g of L){g.t+=dt;if(g.rest)continue;g.vy+=260*dt;g.x+=g.vx*dt;g.y+=g.vy*dt;
     if(g.y>=g.fl){g.y=g.fl;if(g.spark){g.t=g.life;continue}if(Math.abs(g.vy)<30){g.rest=true;g.vx=0;g.vy=0}else{g.vy*=-.32;g.vx*=.55}}}
   G.gibs=L.filter(g=>g.t<g.life+.6);}
-function decalsDraw(){const L=G&&G.decals;if(!L)return;for(const d of L){if(!G.seen[idx(d.x,d.y)])continue;for(const[x,y,c]of d.px){ctx.fillStyle=c;ctx.fillRect(x,y,1,1)}}}
-function gibsDraw(){const L=G&&G.gibs;if(!L||!L.length)return;for(const g of L){ctx.globalAlpha=g.t>g.life?Math.max(0,1-(g.t-g.life)/.6):1;ctx.fillStyle=g.c;ctx.fillRect(Math.round(g.x),Math.round(g.y),1,1)}ctx.globalAlpha=1}
+function decalsDraw(){const L=G&&G.decals;if(!L)return;for(const d of L){if(!G.seen[idx(d.x,d.y)])continue;for(const[x,y,c]of d.px){ctx.fillStyle=c;ctx.fillRect(x,y,1/RES,1/RES)}}}
+function gibsDraw(){const L=G&&G.gibs;if(!L||!L.length)return;for(const g of L){ctx.globalAlpha=g.t>g.life?Math.max(0,1-(g.t-g.life)/.6):1;ctx.fillStyle=g.c;ctx.fillRect(Math.round(g.x*RES)/RES,Math.round(g.y*RES)/RES,1/RES,1/RES)}ctx.globalAlpha=1}

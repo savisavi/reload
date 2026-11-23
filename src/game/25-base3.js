@@ -69,15 +69,15 @@ function trainHTML(k){const lib=k==='lib',l=ST.base[k],pw=powered(),list=lib?TR_
 const B3={puffs:[]};
 {const _rb=renderBase;renderBase=function(time){_rb(time);const B=BS;if(!B||!B.L)return;const[ox,oy]=camOrigin(),s=curS();ctx.setTransform(s,0,0,s,ox,oy);ctx.imageSmoothingEnabled=false;
   const L=B.L,b=ST.base,pw=powered(),lit=!B.candle;
-  if(b.light>=1){const y0=L.in[1]*TS-12;for(let x=L.in[0]+1;x<L.in[2];x+=3){const px=x*TS+8;ctx.fillStyle='#3a3f4e';ctx.fillRect(px,y0-6,1,5);ctx.fillStyle=lit?'#fff6c0':'#4a4636';ctx.fillRect(px-1,y0-1,3,2);
+  if(b.light>=1){const y0=L.in[1]*TS-12;for(let x=L.in[0]+1;x<L.in[2];x+=3){const px=x*TS+8;ctx.fillStyle='#3a3f4e';ctx.fillRect(px,y0-6,.5,5);ctx.fillStyle='#5a6070';ctx.fillRect(px-1.5,y0-1.5,3.5,.5);ctx.fillStyle=lit?'#fff6c0':'#4a4636';ctx.fillRect(px-1.5,y0-1,3.5,1.5);ctx.fillStyle=lit?'#ffffff':'#3a3628';ctx.fillRect(px-.5,y0-.5,1,.5);
       if(lit){ctx.globalCompositeOperation='lighter';const g=ctx.createRadialGradient(px,y0,0,px,y0,22);g.addColorStop(0,'rgba(255,230,160,.35)');g.addColorStop(1,'rgba(255,200,120,0)');ctx.fillStyle=g;ctx.fillRect(px-22,y0-22,44,44);ctx.globalCompositeOperation='source-over'}}}
-  if(b.light>=2&&lit){ctx.globalCompositeOperation='lighter';const y=L.in[1]*TS-3;for(let x=L.in[0]*TS;x<(L.in[2]+1)*TS;x+=2){const on=Math.sin(time*2+x*.05)>-.6;ctx.fillStyle=on?((x>>4)%2?'rgba(255,47,168,.9)':'rgba(34,230,255,.9)'):'rgba(60,20,60,.5)';ctx.fillRect(x,y,2,1)}ctx.globalCompositeOperation='source-over'}
+  if(b.light>=2&&lit){ctx.globalCompositeOperation='lighter';const y=L.in[1]*TS-3;for(let x=L.in[0]*TS;x<(L.in[2]+1)*TS;x+=2){const on=Math.sin(time*2+x*.05)>-.6;ctx.fillStyle=on?((x>>4)%2?'rgba(255,47,168,.9)':'rgba(34,230,255,.9)'):'rgba(60,20,60,.5)';ctx.fillRect(x,y,1.5,.5);ctx.fillStyle=on?'rgba(255,255,255,.5)':'rgba(0,0,0,0)';ctx.fillRect(x+.5,y,.5,.5)}ctx.globalCompositeOperation='source-over'}
   for(const o of B.objs){if(o.site)continue;const cx=o.x*TS+8,cy=o.y*TS;
     if(o.kind==='gen'&&pw){if(Math.random()<.06*(o.lv>=3?0:1))B3.puffs.push({x:cx-4+(o.lv>=2?0:0)+(o.lv>=2?-1:0),y:cy-(o.lv>=2?4:-2),t:0});
       if(o.lv>=3){ctx.globalCompositeOperation='lighter';const a=.25+.15*Math.sin(time*5),g=ctx.createRadialGradient(cx,cy+7,0,cx,cy+7,14);g.addColorStop(0,`rgba(34,230,255,${a})`);g.addColorStop(1,'rgba(34,230,255,0)');ctx.fillStyle=g;ctx.fillRect(cx-14,cy-7,28,28);ctx.globalCompositeOperation='source-over'}
-      else{const j=(Math.floor(time*20)&1);ctx.fillStyle='rgba(0,0,0,0)';if(j){ctx.fillStyle='#3aff6a';ctx.fillRect(cx+4,cy+(o.lv>=2?13:12),1,1)}}}
+      else{const j=(Math.floor(time*20)&1);ctx.fillStyle='rgba(0,0,0,0)';if(j){ctx.fillStyle='#3aff6a';ctx.fillRect(cx+4,cy+(o.lv>=2?13:12),.5,.5)}}}
     if(o.kind==='lib'&&o.lv>=2&&pw){ctx.globalCompositeOperation='lighter';const f=.5+.5*Math.sin(time*7)*Math.sin(time*2.3);ctx.fillStyle=`rgba(34,230,255,${.12+.12*f})`;ctx.beginPath();ctx.moveTo(cx-.5,cy+8);ctx.lineTo(cx-6,cy-6);ctx.lineTo(cx+6,cy-6);ctx.closePath();ctx.fill();
-      ctx.fillStyle=`rgba(180,255,255,${.5+.4*f})`;for(let k=0;k<5;k++)ctx.fillRect(cx-4+k*2,cy-6+((k+Math.floor(time*6))%3),1,1);ctx.globalCompositeOperation='source-over'}
-    if(o.kind==='gym'&&alive()&&ST.base.gym>0&&(Math.floor(time*1.5)%2)){ctx.fillStyle='#ffd23f';ctx.fillRect(cx+5,cy-6,1,2)}}
-  const dt=1/60;B3.puffs=B3.puffs.filter(p=>(p.t+=dt)<1.6);for(const p of B3.puffs){const a=.45*(1-p.t/1.6);ctx.fillStyle=`rgba(140,140,150,${a})`;const r=1+p.t*2;ctx.fillRect(Math.round(p.x+Math.sin(p.t*3)*2-r/2),Math.round(p.y-p.t*10-r/2),Math.ceil(r),Math.ceil(r))}
+      ctx.fillStyle=`rgba(180,255,255,${.5+.4*f})`;for(let k=0;k<9;k++)ctx.fillRect(cx-4+k,cy-6+((k+Math.floor(time*6))%5)*.5,.5,.5);ctx.globalCompositeOperation='source-over'}
+    if(o.kind==='gym'&&alive()&&ST.base.gym>0&&(Math.floor(time*1.5)%2)){ctx.fillStyle='#ffd23f';ctx.fillRect(cx+5,cy-6,.5,1.5);ctx.fillRect(cx+5,cy-4,.5,.5)}}
+  const dt=1/60;B3.puffs=B3.puffs.filter(p=>(p.t+=dt)<1.6);for(const p of B3.puffs){const a=.45*(1-p.t/1.6);ctx.fillStyle=`rgba(140,140,150,${a})`;const r=1+p.t*2,q=v=>Math.round(v*RES)/RES;ctx.fillRect(q(p.x+Math.sin(p.t*3)*2-r/2),q(p.y-p.t*10-r/2),q(r),q(r));ctx.fillRect(q(p.x+Math.sin(p.t*3)*2-r/2)+.5,q(p.y-p.t*10-r/2)-.5,q(r)-1,.5)}
 }}

@@ -242,7 +242,7 @@ function enterBase(){
     objs.push({kind:ST.building.k,x:p[0],y:p[1],spr:pixGrid(16,20,P=>{for(let y=8;y<20;y++)for(let x=1;x<15;x++)if((x+y)%4===0||y===8||y===19)P(x,y,(x+y)%8<4?'#f9d030':'#14161c')}),lv:0,site:1});t[p[1]*W+p[0]]=4}
   const neons=[],lights=[{x:7.5,y:5,c:[255,190,120],rad:9,int:b.light&&pw?.75:.45,kind:'win'}];
   if(b.light>=1&&pw){lights.push({x:3,y:3,c:[255,210,140],rad:5,int:.5,kind:'win'},{x:12,y:3,c:[255,210,140],rad:5,int:.5,kind:'win'})}
-  if(b.light>=2&&pw){const pts=[];[[0,0],[0,1],[0,2],[1,0],[2,0],[2,1],[2,2],[4,0],[4,1],[4,2],[5,2],[6,0],[6,1],[6,2],[8,0],[8,1],[8,2],[9,1],[10,0],[10,1],[10,2]].forEach(([x,y])=>pts.push([3+x,5+y]));
+  if(b.light>=2&&pw){const pts=[];[[0,0],[0,1],[0,2],[1,0],[2,0],[2,1],[2,2],[4,0],[4,1],[4,2],[5,2],[6,0],[6,1],[6,2],[8,0],[8,1],[8,2],[9,1],[10,0],[10,1],[10,2]].forEach(([x,y])=>pts.push([3+x,5+y]));pts.splice(0,pts.length,...neonPts(pts));
     neons.push({x:5,y:1,col:'#ff2fa8',pts,ph:1},{x:9,y:1,col:'#22e6ff',pts:makeSign(RNG(5)),ph:4});
     lights.push({x:5.5,y:2.3,c:[255,47,168],rad:5,int:.8,kind:'neon',ref:neons[0]},{x:9.5,y:2.3,c:[34,230,255],rad:5,int:.7,kind:'neon',ref:neons[1]})}
   lights.push({x:7.5,y:3,c:[255,47,168],rad:3,int:.5,kind:'win'});

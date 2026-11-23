@@ -3,12 +3,12 @@ const _piv=new WeakMap(),_wht=new WeakMap();
 function iconPivot(it){
   const c=it.icon;if(_piv.has(c))return _piv.get(c);
   const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data,W=c.width,Hh=c.height;let pv;
-  const op=(x,y)=>d[(y*W+x)*4+3]>100;
+  const op=(x,y)=>d[(y*W+x)*4+3]>100,k=W/16; // offsets below are in 16ths of the icon
   if(it.cat==='ranged'){ // grip: lowest opaque row, its leftmost run
     let gy=-1;for(let y=Hh-1;y>=0&&gy<0;y--)for(let x=0;x<W;x++)if(op(x,y)){gy=y;break}
-    let gx=0,n=0;for(let x=0;x<W;x++)if(op(x,gy)){gx+=x;n++}pv=[n?gx/n:4,Math.max(0,gy-2)];
+    let gx=0,n=0;for(let x=0;x<W;x++)if(op(x,gy)){gx+=x;n++}pv=[n?gx/n:4*k,Math.max(0,gy-2*k)];
   } else { // melee: the end of the handle = opaque pixel closest to the bottom-left corner
-    let best=1e9;pv=[2,13];for(let y=0;y<Hh;y++)for(let x=0;x<W;x++)if(op(x,y)){const s=x-y*1.0;if(s<best){best=s;pv=[x+1.5,y-1.5]}}
+    let best=1e9;pv=[2*k,13*k];for(let y=0;y<Hh;y++)for(let x=0;x<W;x++)if(op(x,y)){const s=x-y*1.0;if(s<best){best=s;pv=[x+1.5*k,y-1.5*k]}}
   }
   _piv.set(c,pv);return pv;
 }
@@ -36,17 +36,17 @@ function drawWeapon(e,set,time){
     a=Math.round(a/WSNAP)*WSNAP;
   }
   // recoil
-  let rx=0;if(W.cat==='ranged'&&e.aim&&e.aim.until-now>780)rx=-1;
+  let rx=0;if(W.cat==='ranged'&&e.aim&&e.aim.until-now>780)rx=-RES; // sprite pixels
   ctx.save();ctx.translate(hx+.5+rx,hy+.5);ctx.rotate(a);ctx.scale(WSCALE,WSCALE);
   ctx.drawImage(W.icon,-pv[0],-pv[1]);
   if(e.flash>0){ctx.globalAlpha*=e.flash;ctx.drawImage(whiteIcon(W.icon),-pv[0],-pv[1])}
   ctx.restore();
 }
-// static posed sprite (body + weapon) for UI previews, drawn at 2x so the weapon keeps its detail
+// static posed sprite (body + weapon) for UI previews, at sprite resolution (the weapon icon is as detailed as the body)
 const _posed=new WeakMap();
 function posed(set){
   if(_posed.has(set))return _posed.get(set);
-  const K=2,c=document.createElement('canvas');c.width=CW_*K;c.height=CH_*K;const x=c.getContext('2d');x.imageSmoothingEnabled=false;
+  const K=1,c=document.createElement('canvas');c.width=CW_*K;c.height=CH_*K;const x=c.getContext('2d');x.imageSmoothingEnabled=false;
   x.drawImage(set.fr[0],0,0,CW_*K,CH_*K);
   const W=set.weapon;if(W&&W.icon){const pv=iconPivot(W),[hx,hy]=set.hand,a=W.cat==='ranged'?.2:-.2;
     x.save();x.scale(K,K);x.translate(hx+.5,hy+.5);x.rotate(Math.round(a/WSNAP)*WSNAP);x.scale(WSCALE,WSCALE);x.drawImage(W.icon,-pv[0],-pv[1]);x.restore()}
