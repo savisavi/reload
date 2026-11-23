@@ -38,34 +38,57 @@ function pixGrid(W,H,draw,o={}){
 }
 const MAT_ICON={};
 function buildMatIcons(){
-  const circ=(P,cx,cy,r1,r0,f)=>{for(let y=0;y<16;y++)for(let x=0;x<16;x++){const d=Math.hypot(x-cx,y-cy);if(d<=r1&&d>=r0)P(x,y,f(x,y,d))}};
+  // resource icons, drawn natively at 32×32 (see pixIcon for the painter helpers)
+  const R=c=>ramp(c),ring=(P,cx,cy,r1,r0,f)=>{for(let y=0;y<32;y++)for(let x=0;x<32;x++){const d=Math.hypot(x-cx,y-cy);if(d<=r1&&d>=r0)P(x,y,f(x,y,d))}};
+  const STEEL=R('#9aa3b5'),CHR=R('#c0c7d4'),DK='#14161c';
   const D={
-    junk:P=>{for(let x=3;x<=8;x++){P(x,10,'#8a8f9a');P(x,11,'#5a5e68')}P(9,9,'#8a8f9a');P(10,8,'#8a8f9a');for(let y=5;y<=9;y++){P(11,y,'#c43a3a');P(12,y,'#8a2a2a')}P(11,4,'#d0d0d8');[[3,6],[4,5],[5,5],[6,6],[7,7]].forEach(([x,y])=>P(x,y,'#d6b02f'));for(let x=4;x<=10;x++)P(x,13,'#6a4a2c');P(13,12,'#3a8ac4')},
-    bolts:P=>{circ(P,5.5,6.5,3.6,1.2,(x,y)=>x+y<12?'#d0d6e2':'#8f9bb0');for(let y=6;y<=13;y++){P(11,y,y%2?'#b8bfcc':'#7a8292');P(12,y,'#5a6070')}for(let x=9;x<=14;x++){P(x,4,'#d0d6e2');P(x,5,'#8f9bb0')}},
-    spring:P=>{for(let k=0;k<6;k++){const y=3+k*2;for(let x=4;x<=11;x++)P(x,y+((x-4)>3?1:0),k%2?'#8f9bb0':'#c0c7d4')}},
-    tape:P=>circ(P,7.5,7.5,5.5,2.4,(x,y,d)=>d>4.6?'#2a5a9a':d<3.2?'#1a3a6a':'#3a8ac4'),
-    wire:P=>{circ(P,7.5,7.5,5.6,3.4,(x,y,d)=>((x+y)%3===0)?'#a03a2a':'#ff6a4a');for(let x=11;x<=14;x++)P(x,12,'#ff6a4a');P(14,13,'#d0a040')},
-    bulb:P=>{circ(P,7.5,6,4.2,0,(x,y,d)=>d<1.5?'#ffffff':'#f9f871');for(let y=10;y<=13;y++)for(let x=6;x<=9;x++)P(x,y,y%2?'#8f9bb0':'#c0c7d4');P(7,14,'#3a3a46');P(8,14,'#3a3a46')},
-    boards:P=>{for(let k=0;k<3;k++){const y=5+k*3;for(let x=1+k;x<=13-k+1;x++){P(x,y,'#c89a5a');P(x,y+1,'#8a6a3a')}P(1+k,y+1,'#5a3a1a')}},
-    bricks:P=>{const B=(x0,y0,c)=>{for(let y=y0;y<y0+3;y++)for(let x=x0;x<x0+6;x++)P(x,y,y===y0?mix(c,'#ffffff',.25):x===x0+5?mix(c,'#000000',.3):c)};B(2,11,'#b0583a');B(8,11,'#a4502f');B(5,8,'#b8603f');B(3,5,'#b0583a')},
-    bandage:P=>{circ(P,6.5,8.5,5,0,(x,y,d)=>d<1.5?'#c8c4b8':'#f0ece4');for(let x=10;x<=14;x++){P(x,12,'#f0ece4');P(x,13,'#c8c4b8')}P(6,6,'#d8303f');P(5,7,'#d8303f');P(6,7,'#d8303f');P(7,7,'#d8303f');P(6,8,'#d8303f')},
-    cement:P=>{for(let y=4;y<=13;y++)for(let x=3;x<=12;x++){if((y===4||y===13)&&(x===3||x===12))continue;P(x,y,y===4?'#d0ccc0':x===12?'#8a8678':'#b0aca0')}for(let x=5;x<=10;x++)P(x,8,'#c43a3a');P(6,10,'#5a5650');P(9,10,'#5a5650')},
-    antisep:P=>{for(let y=6;y<=13;y++)for(let x=5;x<=10;x++)P(x,y,x===5?'#a0d080':x===10?'#3a7a2a':'#5aa040');for(let y=3;y<=5;y++){P(7,y,'#e6e2ea');P(8,y,'#b8b4c4')}for(let y=8;y<=10;y++)for(let x=6;x<=9;x++)P(x,y,'#e6e2ea');P(7,9,'#d8303f');P(8,9,'#d8303f')},
-    fuel:P=>{for(let y=4;y<=13;y++)for(let x=3;x<=12;x++)P(x,y,y===4?'#ff6a7a':x===12?'#8a1a2a':'#d8303f');for(let x=5;x<=9;x++)P(x,2,'#3a3a46');P(5,3,'#3a3a46');P(9,3,'#3a3a46');P(11,3,'#d0b040');P(11,2,'#d0b040');for(let k=0;k<6;k++){P(5+k,6+k,'#8a1a2a');P(10-k,6+k,'#8a1a2a')}},
-    rebar:P=>{for(let k=0;k<3;k++)for(let i=0;i<12;i++){P(2+i,12-i+k*2-2,i%2?'#a0663a':'#7a4a2a')}P(7,7,'#c0c7d4');P(8,8,'#c0c7d4')},
-    sheet:P=>{for(let y=4;y<=12;y++)for(let x=2;x<=13;x++)P(x,y,(x-y===2||x-y===3)?'#e0e6f0':y===12||x===13?'#6a7282':'#9aa3b5');P(3,5,'#6a7282');P(12,5,'#6a7282');P(3,11,'#6a7282')},
-    cap:P=>{for(const cx of[4,8,12]){for(let y=4;y<=10;y++){P(cx-1,y,'#5ab0ff');P(cx,y,'#2a70c0')}P(cx-1,4,'#c0c7d4');P(cx,4,'#c0c7d4');P(cx-1,12,'#c0c7d4');P(cx,12,'#c0c7d4');P(cx-1,11,'#c0c7d4');P(cx,13,'#c0c7d4')}},
-    chip:P=>{for(let y=4;y<=11;y++)for(let x=4;x<=11;x++)P(x,y,y===4?'#3a3d48':'#15171c');for(const i of[5,7,9,10]){P(i,3,'#c0c7d4');P(i,12,'#c0c7d4');P(3,i,'#c0c7d4');P(12,i,'#c0c7d4')}P(6,6,'#5fd35f');P(9,9,'#2a2d36')},
-    battery:P=>{for(let y=5;y<=13;y++)for(let x=2;x<=13;x++)P(x,y,y===5?'#4a4e58':x===13?'#14161c':'#2a2d36');for(let x=2;x<=13;x++)P(x,8,'#ffb02e');P(4,4,'#c43a3a');P(5,4,'#c43a3a');P(10,4,'#3a3d48');P(11,4,'#3a3d48');P(4,3,'#c43a3a');P(11,3,'#3a3d48');P(5,11,'#e0e0e0');P(10,11,'#e0e0e0');P(4,11,'#e0e0e0');P(6,11,'#e0e0e0')},
-    servo:P=>{for(let y=5;y<=13;y++)for(let x=2;x<=10;x++)P(x,y,y===5?'#d090ff':x===10?'#5a2a7a':'#8a4dbf');circ(P,7,9,2.5,0,(x,y,d)=>d<1?'#14161c':'#c0c7d4');for(let x=11;x<=14;x++){P(x,9,'#c0c7d4');P(x,10,'#8f9bb0')}for(let x=3;x<=9;x++)P(x,13,'#3a1a4a')},
-    cpu:P=>{for(let y=2;y<=13;y++)for(let x=2;x<=13;x++)P(x,y,(x===2||y===2||x===13||y===13)?'#d0b040':'#2a5a3a');for(let y=5;y<=10;y++)for(let x=5;x<=10;x++)P(x,y,y===5?'#c0c7d4':'#8f9bb0');P(7,7,'#22e6ff');P(8,8,'#22e6ff')},
-    gpu:P=>{for(let y=4;y<=11;y++)for(let x=1;x<=14;x++)P(x,y,y===4?'#4a4e58':'#1c1f28');circ(P,5,7.5,2.6,0,(x,y,d)=>d<1?'#ff9a1f':((x+y)%2?'#3a3f4e':'#5a6070'));circ(P,11,7.5,2.6,0,(x,y,d)=>d<1?'#ff9a1f':((x+y)%2?'#3a3f4e':'#5a6070'));for(let x=3;x<=12;x+=2)P(x,12,'#d0b040');P(14,5,'#ff9a1f')}};
-  D.mag=P=>{for(let y=2;y<=13;y++)for(let x=3;x<=12;x++)P(x,y,x===3?'#b03a8a':y<=5?'#ff7ad0':'#f0e6f2');for(let x=4;x<=11;x++)P(x,4,'#ffffff');for(let y=7;y<=11;y+=2)for(let x=5;x<=10;x++)P(x,y,x%3===0?'#c8b8d0':'#8a7a9a');for(let y=6;y<=9;y++)P(11,y,'#22e6ff')};
-  D.book=P=>{for(let y=3;y<=13;y++)for(let x=3;x<=12;x++)P(x,y,x<=4?'#5a2a1a':y===3||y===13?'#7a3a22':'#a0522d');for(let y=4;y<=12;y++)P(12,y,'#f0e6d0');for(let x=6;x<=10;x++){P(x,6,'#e0b070');P(x,8,'#e0b070')}P(8,10,'#ffd23f')};
-  D.disk=P=>{circ(P,7.5,7.5,6,0,(x,y,d)=>d<1.2?'#14161c':d<2?'#c0c7d4':((x*3+y)%7<2?'#ffffff':d>5.2?'#2a7a9a':'#22e6ff'));P(4,5,'#ff2fa8');P(5,4,'#ff2fa8')};
-  D.fuelS=P=>{for(let y=7;y<=13;y++)for(let x=5;x<=10;x++)P(x,y,y===7?'#ffb07a':x===10?'#9a3a10':'#ff7a2a');for(let x=6;x<=8;x++)P(x,5,'#3a3a46');P(6,6,'#3a3a46');P(8,6,'#3a3a46');P(10,6,'#d0b040');for(let x=6;x<=9;x++)P(x,10,'#ffd8a0')};
-  D.fuelL=P=>{for(let y=3;y<=14;y++)for(let x=1;x<=14;x++)P(x,y,y===3?'#ffe27a':x===14?'#8a6a10':(x+y)%7===0?'#e0b030':'#f0c030');for(let x=4;x<=10;x++)P(x,1,'#3a3a46');P(4,2,'#3a3a46');P(10,2,'#3a3a46');P(13,2,'#c0c7d4');
-    for(let y=6;y<=11;y++){P(4,y,'#2a2d36');P(11,y,'#2a2d36')}for(let x=4;x<=11;x++){P(x,6,'#2a2d36');P(x,11,'#2a2d36')}for(let i=5;i<=10;i++){P(i,i+1>11?11:i+1,'#2a2d36')}};
+    junk:P=>{P.l(5,22,17,22,'#8a8f9a');P.l(5,23,17,23,'#5a5e68');P.l(17,21,21,16,'#8a8f9a');P.l(18,22,22,17,'#5a5e68');
+      P.box(21,8,5,12,R('#c43a3a'));P.r(22,6,3,2,'#d0d0d8');P(23,5,'#ffffff');
+      for(const[x,y]of[[6,13],[8,11],[10,10],[12,11],[14,13],[15,15]])P.r(x,y,2,2,'#d6b02f');P(8,11,'#fff0a0');
+      P.box(7,25,16,3,R('#6a4a2c'));P.ball(26,24,2.5,2.5,R('#3a8ac4'));P.l(3,27,6,25,'#c0c7d4')},
+    bolts:P=>{ring(P,11,12,7,2.6,(x,y,d)=>Math.abs(((Math.atan2(y-12,x-11)*3/Math.PI)%1+1)%1-.5)<.08?STEEL.d:x+y<23?CHR.l:d>6?STEEL.d:CHR.b);
+      for(let y=12;y<=28;y++){P(22,y,y%2?'#d0d6e2':'#8f9bb0');P(23,y,y%2?'#b8bfcc':'#7a8292');P(24,y,'#5a6070')}P.box(18,8,11,4,STEEL);P(23,29,'#5a6070')},
+    spring:P=>{for(let k=0;k<7;k++){const y=4+k*4;P.l(8,y,24,y+2,k%2?'#8f9bb0':'#e0e6f0');P.l(8,y+1,24,y+3,k%2?'#5a6070':'#9aa3b5')}P.r(7,3,3,2,'#c0c7d4');P.r(22,29,3,2,'#62667a')},
+    tape:P=>{ring(P,15.5,15.5,12,4.5,(x,y,d)=>d>11?'#1a3a6a':d>10?'#3a8ac4':d<6?'#c8c0b0':(Math.round(d)%2?'#2a6aaa':'#3a8ac4'));ring(P,15.5,15.5,4.5,3,()=>'#e8e0d0');P.l(24,24,29,29,'#3a8ac4');P(13,7,'#8ac4ff');P(8,11,'#8ac4ff')},
+    wire:P=>{ring(P,14,14,11,7,(x,y,d)=>((Math.round(Math.atan2(y-14,x-14)*8))%2)?'#ff6a4a':'#c03a2a');ring(P,14,14,7,5.5,()=>'#7a2014');
+      P.l(23,22,28,27,'#ff6a4a');P.l(23,23,28,28,'#c03a2a');P.r(28,27,2,3,'#d0a040');P(29,30,'#fff0a0');P(10,5,'#ffb0a0')},
+    bulb:P=>{P.ball(15.5,12,9,9,{l:'#fffbd0',b:'#f9f871',m:'#e0c040',d:'#b09020',h:'#ffffff'});P.l(13,10,15,16,'#ff9a1f');P.l(18,10,16,16,'#ff9a1f');
+      for(let y=20;y<=26;y++)P.r(11,y,10,1,y%2?'#8f9bb0':'#d0d6e2');P.r(13,27,6,2,'#3a3a46');P.r(12,20,1,7,'#e0e6f0')},
+    boards:P=>{for(let k=0;k<3;k++){const y=8+k*6,x0=2+k*2,x1=29-k;P.box(x0,y,x1-x0,4,R('#c89a5a'));for(let x=x0+3;x<x1-2;x+=7)P.l(x,y+1,x+3,y+1,'#a07a42');P(x0+5,y+2,'#5a3a1a');P(x1-6,y+1,'#5a3a1a')}},
+    bricks:P=>{const B=(x0,y0,c)=>{const r=R(c);P.box(x0,y0,12,6,r);P(x0+3,y0+2,r.d);P(x0+8,y0+3,r.l)};B(3,22,'#b0583a');B(16,22,'#a4502f');B(9,15,'#b8603f');B(5,8,'#b0583a');P.r(3,28,26,1,'#8a8070')},
+    bandage:P=>{ring(P,13,17,10,0,(x,y,d)=>d<3?'#c8c4b8':d>9?'#b0ac9e':(Math.round(d)%3===0?'#d8d4c8':'#f0ece4'));ring(P,13,17,3,0,()=>'#a09c90');
+      P.box(20,22,10,4,R('#f0ece4'));P.r(13,10,3,7,'#d8303f');P.r(11,12,7,3,'#d8303f');P(13,10,'#ff7a8a')},
+    cement:P=>{for(let y=7;y<=28;y++)for(let x=6;x<=25;x++){if((y===7||y===28)&&(x===6||x===25))continue;P(x,y,y<=8?'#e0dcd0':x===25||y===28?'#8a8678':x===6?'#d0ccc0':'#b0aca0')}
+      P.r(10,5,12,3,'#c0bcb0');P.l(10,5,8,7,'#c0bcb0');P.l(21,5,23,7,'#8a8678');P.r(9,14,14,5,'#c43a3a');P.r(10,15,12,1,'#ff6a5a');P.r(12,21,2,2,'#5a5650');P.r(18,21,2,2,'#5a5650')},
+    antisep:P=>{P.box(10,12,12,17,R('#5aa040'));P.r(13,6,6,6,'#e6e2ea');P.r(13,6,6,1,'#ffffff');P.r(17,6,2,6,'#b8b4c4');P.r(14,4,4,2,'#d8303f');
+      P.box(12,16,8,8,R('#f0ece4'));P.r(15,17,2,6,'#d8303f');P.r(13,19,6,2,'#d8303f');P.r(11,13,1,14,'#a0d080')},
+    fuel:P=>{P.box(5,8,22,21,R('#d8303f'));P.r(9,3,10,2,'#3a3a46');P.r(9,5,2,3,'#3a3a46');P.r(17,5,2,3,'#3a3a46');P.r(22,4,3,4,'#d0b040');P(22,4,'#fff0a0');
+      P.l(9,12,22,25,'#8a1a2a');P.l(22,12,9,25,'#8a1a2a');P.l(10,12,23,25,'#a02030');P.r(6,9,20,1,'#ff8a9a')},
+    rebar:P=>{for(let k=0;k<3;k++){const o=k*4-4;for(let t=0;t<26;t++){const x=3+t,y=27-t+o;P(x,y,t%3===0?'#5a3218':'#a0663a');P(x,y+1,'#6a3e1e')}}P.r(14,13,4,3,'#c0c7d4');P(15,13,'#ffffff')},
+    sheet:P=>{for(let y=8;y<=25;y++)for(let x=3+Math.floor((y-8)/4);x<=28+Math.floor((y-8)/4)-3;x++)P(x,y,(x-y>=0&&x-y<=2)?'#e8eef8':y===25?'#4a5262':y===8?'#c8d0dc':'#9aa3b5');
+      for(const[x,y]of[[6,10],[24,10],[9,23],[27,23]])P(x,y,'#4a5262')},
+    cap:P=>{for(const cx of[7,15,23]){P.r(cx-2,6,5,18,'#2a70c0');P.r(cx-2,6,1,18,'#5ab0ff');P.r(cx+2,6,1,18,'#1a4a90');P.r(cx-2,6,5,2,'#c0c7d4');P.r(cx-1,9,3,1,'#ffffff');
+      P.r(cx-1,24,1,5,'#c0c7d4');P.r(cx+1,24,1,4,'#9aa3b5')}},
+    chip:P=>{for(const i of[10,13,16,19,22]){P.r(i,5,1,3,'#c0c7d4');P.r(i,24,1,3,'#9aa3b5');P.r(5,i,3,1,'#c0c7d4');P.r(24,i,3,1,'#9aa3b5')}
+      P.box(8,8,16,16,{l:'#3a3d48',b:'#15171c',m:'#15171c',d:'#0a0b0e'});P.r(11,11,4,4,'#5fd35f');P(11,11,'#b0ffb0');P.r(17,18,3,3,'#2a2d36');P.l(15,13,20,13,'#3a3d48')},
+    battery:P=>{P.box(4,10,24,18,R('#2a2d36'));P.r(4,10,24,1,'#4a4e58');P.r(4,16,24,2,'#ffb02e');P.r(4,16,24,1,'#ffd870');
+      P.r(7,6,5,4,'#c43a3a');P.r(7,6,5,1,'#ff6a5a');P.r(20,6,5,4,'#3a3d48');P.r(20,6,5,1,'#62667a');P.r(8,21,3,1,'#e0e0e0');P.r(9,20,1,3,'#e0e0e0');P.r(21,21,3,1,'#e0e0e0')},
+    servo:P=>{P.box(4,10,18,18,R('#8a4dbf'));P.ball(13,19,5,5,R('#c0c7d4'));P.ball(13,19,1.6,1.6,{l:DK,b:DK,m:DK,d:DK,h:DK});
+      P.r(22,17,8,3,'#c0c7d4');P.r(22,17,8,1,'#ffffff');P.r(22,19,8,1,'#8f9bb0');P.r(6,26,14,1,'#3a1a4a');P(6,12,'#e0b0ff')},
+    cpu:P=>{for(let i=5;i<=26;i+=3){P(i,3,'#d0b040');P(i,28,'#a08020');P(3,i,'#d0b040');P(28,i,'#a08020')}
+      P.box(4,4,24,24,{l:'#3a7a4a',b:'#2a5a3a',m:'#1e4a2e',d:'#14301e'});P.box(10,10,12,12,STEEL);P.r(13,13,6,6,'#22e6ff');P(13,13,'#c8faff');P.r(18,18,1,1,'#127a8a')},
+    gpu:P=>{P.box(1,8,30,16,R('#1c1f28'));P.r(1,8,30,1,'#4a4e58');
+      for(const cx of[9,22]){ring(P,cx,16,6,0,(x,y,d)=>d<1.6?'#ff9a1f':d>5.2?'#2a2d36':((Math.round(Math.atan2(y-16,x-cx)*2.5))%2?'#3a3f4e':'#6a7080'))}
+      for(let x=5;x<=26;x+=3)P.r(x,24,2,3,'#d0b040');P.r(28,10,2,2,'#ff9a1f')}};
+  D.mag=P=>{P.box(6,3,20,26,R('#f0e6f2'));P.r(6,3,20,9,'#ff7ad0');P.r(6,3,2,26,'#b03a8a');P.r(9,5,14,2,'#ffffff');P.r(10,8,8,1,'#ffd0f0');
+    for(let y=14;y<=24;y+=3)for(let x=10;x<=22;x++)P(x,y,x%4===0?'#c8b8d0':'#8a7a9a');P.r(22,12,2,8,'#22e6ff')};
+  D.book=P=>{P.box(6,4,20,25,R('#a0522d'));P.r(6,4,4,25,'#5a2a1a');P.r(24,6,2,21,'#f0e6d0');P.r(24,6,1,21,'#c8bca0');
+    P.r(12,10,10,2,'#e0b070');P.r(12,14,10,1,'#e0b070');P.r(14,20,6,3,'#ffd23f');P(16,21,'#a0522d');P.l(10,4,10,28,'#3a1a10')};
+  D.disk=P=>{ring(P,15.5,15.5,12.5,0,(x,y,d)=>d<2.3?null:d<4?'#c0c7d4':((x*3+y*5)%11<2&&d>5?'#ffffff':d>11.4?'#127a8a':(Math.round(Math.atan2(y-15.5,x-15.5)*4))%2?'#22e6ff':'#5ae8ff'));
+    P.l(8,8,12,6,'#ff2fa8');P.l(7,10,11,7,'#ff2fa8');P(22,22,'#ffffff')};
+  D.fuelS=P=>{P.box(10,14,12,15,R('#ff7a2a'));P.r(12,9,6,2,'#3a3a46');P.r(12,11,2,3,'#3a3a46');P.r(16,11,2,3,'#3a3a46');P.r(20,10,2,4,'#d0b040');P.r(12,19,8,4,'#ffd8a0');P.r(13,20,6,1,'#c87a2a')};
+  D.fuelL=P=>{P.box(2,6,28,24,R('#f0c030'));P.r(8,2,14,2,'#3a3a46');P.r(8,4,2,2,'#3a3a46');P.r(20,4,2,2,'#3a3a46');P.r(25,3,3,3,'#c0c7d4');
+    P.r(8,11,16,14,'#2a2d36');P.r(9,12,14,12,'#f0c030');P.l(9,12,22,23,'#2a2d36');P.l(10,12,23,23,'#2a2d36');P.r(3,7,26,1,'#ffe27a')};
   for(const k in D)MAT_ICON[k]=pixIcon(D[k]);
 }
 // ---- props

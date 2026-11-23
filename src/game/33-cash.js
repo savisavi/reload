@@ -1,6 +1,8 @@
 // ================= CREDITS AS LOOT: enemies and stashes drop cash, banked on a successful evac =================
-const CASH_ICON=pixIcon(P=>{const g=['#8a6a10','#c8a020','#f9d030','#fff1a0'];for(let s=0;s<3;s++){const y=11-s*3,x=3+(s===1?2:0);
-  for(let i=0;i<8;i++){P(x+i,y,g[i===0||i===7?0:1]);P(x+i,y+1,g[i===0||i===7?0:(i<3?3:2)])}}P(11,3,'#fff1a0');P(12,2,'#fff1a0');P(13,3,'#fff1a0');P(12,4,'#fff1a0')});
+const CASH_ICON=pixIcon(P=>{const G={l:'#fff1a0',b:'#f9d030',m:'#c8a020',d:'#8a6a10'};
+  for(let s=0;s<4;s++){const y=24-s*5,x=4+(s%2)*3;P.r(x,y,16,4,G.b);P.r(x,y,16,1,G.l);P.r(x,y+3,16,1,G.d);P.r(x,y+1,1,2,G.l);P.r(x+15,y+1,1,2,G.m);for(let i=x+3;i<x+14;i+=3)P(i,y+2,G.m)}
+  P.ball(23,10,6,6,G);P.r(22,6,2,8,G.d);P.r(20,7,5,1,G.d);P.r(20,12,5,1,G.d);P(21,7,G.l);
+  P(27,3,'#ffffff');P.r(26,4,3,1,'#fff1a0');P.r(27,3,1,3,'#fff1a0')});
 ITEMGEN.cash=function(it,r,f){it.kind='кредиты';it.amount=Math.max(1,f.n|0);it.rar=it.amount>=60?2:it.amount>=25?1:0;it.name=`${it.amount}₵`;it.lines=['Кредиты'];it.icon=CASH_ICON};
 ITEM_W.cash=0;BASEV.cash=0;CAT_N.cash='Кредиты';
 const cashRoll=(base,f)=>Math.max(1,Math.round(base*(1+.35*(f-1))*(.6+Math.random()*.8)));
