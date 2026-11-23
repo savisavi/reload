@@ -77,22 +77,24 @@ Object.assign(DEATH_MAT,{toybot:'mech',vacbot:'mech',mannequin:'mech',frostcrab:
   return M}}
 {const _rm=renderMap;renderMap=function(M){const base=DEEP_BASE[M.biome];if(!base)return _rm(M);const b=M.biome;M.biome=base;let res;try{res=_rm(M)}finally{M.biome=b}
   const c=res.c,x=c.getContext('2d'),{W,H,t}=M,R=RNG((M.seed^0x51ee)>>>0),T=(a,bb)=>a<0||bb<0||a>=W||bb>=H?0:t[bb*W+a];
-  const[tc,ta]=DEEP_TINT[b];x.globalCompositeOperation='color';x.globalAlpha=ta;x.fillStyle=tc;x.fillRect(0,0,c.width,c.height);x.globalAlpha=1;x.globalCompositeOperation='source-over';
-  const px=(X,Y,col)=>{x.fillStyle=col;x.fillRect(X,Y,1,1)};
-  for(let ty=0;ty<H;ty++)for(let tx=0;tx<W;tx++){const v=T(tx,ty),i=ty*W+tx,bx=tx*TS,by=ty*TS;if(!v)continue;
-    if(b==='frost'){if(v===1){for(let k=0;k<6;k++)px(bx+R.int(0,15),by+R.int(0,15),R.f()<.5?'#e8f4ff':'#c8e0f0');
-        if(M.ice[i]){x.globalAlpha=.45;x.fillStyle='#bfe9ff';x.fillRect(bx,by,16,16);x.globalAlpha=.8;for(let k=0;k<3;k++){const sx=R.int(1,10),sy=R.int(2,13);x.fillStyle='#ffffff';x.fillRect(bx+sx,by+sy,R.int(2,5),1)}x.globalAlpha=1}}
-      else if(v===2&&(T(tx,ty+1)===1||T(tx,ty+1)===3)){x.fillStyle='#eef8ff';x.fillRect(bx,by,16,2);for(let k=0;k<3;k++){const ix=bx+R.int(1,14),l=R.int(2,5);for(let j=0;j<l;j++)px(ix,by+14+j-(l-2),j===l-1?'#ffffff':'#a8dcf8')}}}
-    if(b==='biolab'){if(v===1&&M.grass[i]){for(let k=0;k<14;k++){const gx=bx+R.int(0,15),gy=by+R.int(2,15);px(gx,gy,R.f()<.5?'#3f9a3a':'#5ad04a');px(gx,gy-1,'#2a6a2a')}if(R.f()<.3)px(bx+R.int(2,13),by+R.int(2,13),R.f()<.5?'#ff6ad0':'#ffd23f')}
-      else if(v===2&&(T(tx,ty+1)===1||T(tx,ty+1)===3)){for(let k=0;k<2;k++){const vx=bx+R.int(1,14),l=R.int(6,16);for(let j=0;j<l;j++){px(vx+(j%5===2?1:0),by+j,'#2f7a2a');if(j%4===1)px(vx+1,by+j,'#5ad04a')}if(R.f()<.4)px(vx,by+l-1,'#22e6ff')}}
-      else if(v===2&&T(tx,ty+1)===2&&R.f()<.25){x.fillStyle='#1e4a1e';x.beginPath();x.arc(bx+8,by+8,7,0,7);x.fill();x.fillStyle='#2f7a2a';x.beginPath();x.arc(bx+6,by+6,4,0,7);x.fill()}}
-    if(b==='desert'){if(v===1){for(let py=0;py<16;py+=3){const off=Math.round(2*Math.sin((tx*16+py)*.25));x.globalAlpha=.35;x.fillStyle='#f0d090';x.fillRect(bx,by+py+off,16,1)}x.globalAlpha=1;
-        if(M.dune[i]){x.globalAlpha=.6;x.fillStyle='#d8b070';x.beginPath();x.ellipse(bx+8,by+10,8,5,0,0,7);x.fill();x.fillStyle='#f0d090';x.fillRect(bx+3,by+6,10,1);x.globalAlpha=1}}
-      else if(v===2&&(T(tx,ty+1)===1)){x.fillStyle='#d8b070';for(let k=0;k<16;k++){const h=2+Math.round(2*Math.sin(k*.5+tx));x.fillRect(bx+k,by+16-h,1,h)}}}
-    if(b==='fog'&&v===1&&R.f()<.15){x.globalAlpha=.25;x.fillStyle='#ffffff';x.fillRect(bx+R.int(0,8),by+R.int(0,12),R.int(4,8),2);x.globalAlpha=1}
-    if(b==='factory'){if(v===1&&M.conv&&M.conv[i]){x.fillStyle='#1a1a20';x.fillRect(bx,by+3,16,10);x.fillStyle='#3a3a44';x.fillRect(bx,by+3,16,1);x.fillRect(bx,by+12,16,1)}
-      else if(v===1&&R.f()<.06){for(let k=0;k<16;k++)px(bx+k,by+15,((k>>1)&1)?'#ffd23f':'#1a1a1a')}
-      else if(v===2&&(T(tx,ty+1)===1)&&R.f()<.2){x.fillStyle='#8a4a20';x.fillRect(bx+2,by+9,12,1);x.fillRect(bx+2,by+12,12,1);px(bx+4,by+8,'#c06a30')}}}
+  const[tc,ta]=DEEP_TINT[b];const keep=document.createElement('canvas');keep.width=c.width;keep.height=c.height;keep.getContext('2d').drawImage(c,0,0);
+  x.globalCompositeOperation='color';x.globalAlpha=ta;x.fillStyle=tc;x.fillRect(0,0,c.width,c.height);x.globalAlpha=1;x.globalCompositeOperation='destination-in';x.drawImage(keep,0,0);x.globalCompositeOperation='source-over'; // tint only the baked tiles
+  // biome dressing, drawn in sprite pixels (the baked map is SPX per tile)
+  const N=SPX,px=(X,Y,col)=>{x.fillStyle=col;x.fillRect(X,Y,1,1)},rc=(X,Y,w,h,col)=>{x.fillStyle=col;x.fillRect(X,Y,w,h)};
+  for(let ty=0;ty<H;ty++)for(let tx=0;tx<W;tx++){const v=T(tx,ty),i=ty*W+tx,bx=tx*N,by=ty*N;if(!v)continue;
+    if(b==='frost'){if(v===1){for(let k=0;k<14;k++)px(bx+R.int(0,31),by+R.int(0,31),R.f()<.5?'#e8f4ff':'#c8e0f0');
+        if(M.ice[i]){x.globalAlpha=.45;rc(bx,by,N,N,'#bfe9ff');x.globalAlpha=.85;for(let k=0;k<4;k++){const sx=R.int(2,20),sy=R.int(4,27),l=R.int(4,10);rc(bx+sx,by+sy,l,1,'#ffffff');px(bx+sx+l,by+sy+1,'#d8f2ff')}x.globalAlpha=1}}
+      else if(v===2&&(T(tx,ty+1)===1||T(tx,ty+1)===3)){rc(bx,by,N,3,'#eef8ff');rc(bx,by+3,N,1,'#c8e4f4');for(let k=0;k<4;k++){const ix=bx+R.int(2,29),l=R.int(3,9);for(let j=0;j<l;j++)px(ix,by+28+j-(l-3),j===l-1?'#ffffff':'#a8dcf8');px(ix+1,by+28-(l-3),'#d8f2ff')}}}
+    if(b==='biolab'){if(v===1&&M.grass[i]){for(let k=0;k<30;k++){const gx=bx+R.int(0,31),gy=by+R.int(4,31),h=R.int(1,3);for(let j=0;j<h;j++)px(gx,gy-j,j===h-1?'#7dff4f':R.f()<.5?'#3f9a3a':'#5ad04a');px(gx,gy+1,'#2a6a2a')}if(R.f()<.3){const fx=bx+R.int(4,26),fy=by+R.int(4,26),fc=R.f()<.5?'#ff6ad0':'#ffd23f';px(fx,fy,fc);px(fx-1,fy+1,fc);px(fx+1,fy+1,fc);px(fx,fy+2,fc);px(fx,fy+1,'#ffffff')}}
+      else if(v===2&&(T(tx,ty+1)===1||T(tx,ty+1)===3)){for(let k=0;k<2;k++){const vx=bx+R.int(2,28),l=R.int(12,32);for(let j=0;j<l;j++){const sw=Math.round(Math.sin(j*.45+k)*1.2);px(vx+sw,by+j,'#2f7a2a');if(j%6===3){px(vx+sw+1,by+j,'#5ad04a');px(vx+sw+2,by+j-1,'#3f9a3a')}}if(R.f()<.4){px(vx,by+l-1,'#22e6ff');px(vx,by+l-2,'#a8f8ff')}}}
+      else if(v===2&&T(tx,ty+1)===2&&R.f()<.25){x.fillStyle='#1e4a1e';x.beginPath();x.arc(bx+16,by+16,14,0,7);x.fill();x.fillStyle='#2f7a2a';x.beginPath();x.arc(bx+12,by+12,8,0,7);x.fill();x.fillStyle='#3f9a3a';x.beginPath();x.arc(bx+10,by+10,3,0,7);x.fill()}}
+    if(b==='desert'){if(v===1){for(let py=0;py<N;py+=6){x.globalAlpha=.32;for(let k=0;k<N;k++){const off=Math.round(3*Math.sin((tx*N+k)*.12+py));px(bx+k,by+py+off,'#f0d090')}}x.globalAlpha=1;
+        if(M.dune[i]){x.globalAlpha=.6;x.fillStyle='#d8b070';x.beginPath();x.ellipse(bx+16,by+20,16,10,0,0,7);x.fill();rc(bx+6,by+12,20,1,'#f0d090');rc(bx+9,by+11,14,1,'#f8e0a8');x.globalAlpha=1}}
+      else if(v===2&&(T(tx,ty+1)===1)){for(let k=0;k<N;k++){const h=4+Math.round(4*Math.sin(k*.25+tx));rc(bx+k,by+N-h,1,h,'#d8b070');px(bx+k,by+N-h,'#f0d090')}}}
+    if(b==='fog'&&v===1&&R.f()<.15){x.globalAlpha=.22;rc(bx+R.int(0,16),by+R.int(0,24),R.int(8,16),3,'#ffffff');x.globalAlpha=1}
+    if(b==='factory'){if(v===1&&M.conv&&M.conv[i]){rc(bx,by+6,N,20,'#1a1a20');rc(bx,by+6,N,1,'#4a4a54');rc(bx,by+7,N,1,'#2a2a32');rc(bx,by+25,N,1,'#3a3a44');for(let k=0;k<N;k+=4)rc(bx+k,by+8,1,17,'#14141a')}
+      else if(v===1&&R.f()<.06){for(let k=0;k<N;k++){px(bx+k,by+29,((k>>2)&1)?'#ffd23f':'#1a1a1a');px(bx+k,by+30,((k>>2)&1)?'#c8a020':'#141414')}}
+      else if(v===2&&(T(tx,ty+1)===1)&&R.f()<.2){rc(bx+4,by+18,24,2,'#8a4a20');rc(bx+4,by+18,24,1,'#b06a30');rc(bx+4,by+24,24,2,'#8a4a20');rc(bx+4,by+24,24,1,'#b06a30');rc(bx+8,by+16,2,2,'#c06a30')}}}
   const L=DEEP_LIGHT[b];for(const l of res.lights)if(l.kind!=='exit'&&l.kind!=='water')l.c=L.slice();
   return res}}
 // ---------- hero statuses ----------
